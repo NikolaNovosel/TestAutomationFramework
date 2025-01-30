@@ -21,7 +21,7 @@ namespace Core.Factory
         // Switches between Chrome and Firefox based on test condition.
         public static IWebDriver SwitchBetweenChromeAndFirefox()
         {
-            if (Testlogger.IsTestCase4Running)
+            if (TestUtils.IsTestCase4Running)
             {
                 IBrowser browser = new FirefoxBrowser();
                 browser.GetDriverManager();

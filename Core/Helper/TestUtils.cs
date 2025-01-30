@@ -6,7 +6,7 @@ using Serilog;
 
 namespace Core.Helper
 {
-    public static class Testlogger
+    public static class TestUtils
     {
         // Checks if the current test case is "TestCase4"
         public static bool IsTestCase4Running => TestContext.CurrentContext.Test.Name is "TestCase4";

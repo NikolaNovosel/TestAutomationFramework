@@ -26,7 +26,7 @@ namespace Core.Singleton
         // Switches between Chrome and Firefox based on the test case
         public static IWebDriver SwitchBetweenChromeAndFirefox()
         {
-            if (Testlogger.IsTestCase4Running)
+            if (TestUtils.IsTestCase4Running)
             {
                 new DriverManager().SetUpDriver(new FirefoxConfig());
                 _driver = new FirefoxDriver(DriverOption.GetFirefoxOptions());

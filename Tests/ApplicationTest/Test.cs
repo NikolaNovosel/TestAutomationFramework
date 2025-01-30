@@ -33,16 +33,16 @@ namespace Tests.ApplicationTest
             _driver = FactoryBrowser.SwitchBetweenChromeAndFirefox();
             FactoryBrowser.ManageWindow();
             FactoryBrowser.GetUrl();
-            Testlogger.GetLog();
+            TestUtils.GetLog();
         }
 
         // Disposes of the WebDriver instance
         [TearDown]
         public void TearDown()
         {
-            if (Testlogger.TestFailed)
+            if (TestUtils.TestFailed)
             {
-                Testlogger.TakeScreenShot(_driver!);
+                TestUtils.TakeScreenShot(_driver!);
             }
 
             Log.CloseAndFlush();
