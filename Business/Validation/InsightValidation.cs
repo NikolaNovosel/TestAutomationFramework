@@ -3,6 +3,7 @@ using FluentAssertions;
 using JetBrains.Annotations;
 using Serilog;
 using NUnit.Framework;
+using OpenQA.Selenium;
 
 namespace Business.Validation
 {
@@ -10,13 +11,22 @@ namespace Business.Validation
     /// Provides validation logic for Insight page functionality, using a <see cref="InsightsPage"/> instance.
     /// This class is responsible for verifying search results, input validation, and related behaviors.
     /// </summary>
-    public class InsightValidation(InsightsPage insightPage)
+    public class InsightValidation
     {
+        // Private field to store an instance of the InsightPage
+        private readonly InsightsPage _insightPage;
+
+        // Constructor takes an IWebDriver instance as a parameter, which is used to initialize the InsightPage
+        public InsightValidation(IWebDriver driver)
+        {
+            _insightPage = new(driver);
+        }
+
         // Returns the trimmed text of the main page article
-        public string GetMainPageArticleTextTrim() => insightPage.GetMainPageArticleTextTrim();
+        public string GetMainPageArticleTextTrim() => _insightPage.GetMainPageArticleTextTrim();
 
         // Returns the text of the inside article
-        public string GetInsideArticleText() => insightPage.GetInsideArticleText();
+        public string GetInsideArticleText() => _insightPage.GetInsideArticleText();
 
         /// Validates that the trimmed text of the main page article matches the text of the inside article.
         [AssertionMethod]

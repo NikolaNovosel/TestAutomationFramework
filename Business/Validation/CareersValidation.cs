@@ -12,10 +12,19 @@ namespace Business.Validation
     /// Provides validation logic for functionality related to the Careers page.
     /// This class is responsible for verifying job title text and related behaviors.
     /// </summary>
-    public class CareersValidation(CareersPage careersPage)
+    public class CareersValidation
     {
+        // Private field to store an instance of the CareersPage
+        private readonly CareersPage _careersPage;
+
+        // Constructor takes an IWebDriver instance as a parameter, which is used to initialize the CareersPage
+        public CareersValidation(IWebDriver driver)
+        {
+            _careersPage = new (driver);
+        }
+
         // Returns the job title text from the Careers page.
-        private string GetCareersArticleText() => careersPage.GetCareersArticleText();
+        private string GetCareersArticleText() => _careersPage.GetCareersArticleText();
 
         // Validates that the job title text contains the specified keyword.
         [AssertionMethod]

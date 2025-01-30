@@ -1,5 +1,4 @@
 ﻿using Business.ApplicationContext;
-using Business.ApplicationInterface;
 using Business.Validation;
 using NUnit.Framework;
 using Serilog;
@@ -15,10 +14,9 @@ namespace Tests.ApplicationTest
         [Test]
         public void TestCase4()
         {
-            InsightsPage insightPage = new(Driver!);
-            InsightContext insightContext = new(insightPage);
+            InsightContext insightContext = new(Driver!);
 
-            new InsightContext(insightPage)
+            new InsightContext(Driver!)
                 .ClickInsight()
                 .SwipeCarousel();
 
@@ -26,14 +24,14 @@ namespace Tests.ApplicationTest
             string mainPageArticleTextTrimmed = insightContext.GetMainPageArticleTextTrim();
 
 
-            new InsightContext(insightPage)
+            new InsightContext(Driver!)
                 .ClickReadMore();
 
 
             Log.Information("The Read More button in the carousel clicked");
             Log.Information("Insight page interactions completed successfully");
 
-            new InsightValidation(insightPage)
+            new InsightValidation(Driver!)
                 .ValidateMainPageArticleTextTrimIsEqualToInsideArticleText(mainPageArticleTextTrimmed);
         }
     }

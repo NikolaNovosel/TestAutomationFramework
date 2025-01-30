@@ -1,0 +1,14 @@
+2025-01-30 23:52:00.925 +01:00 [INF] Opens the search bar
+2025-01-30 23:52:01.874 +01:00 [INF] Enters the search string
+2025-01-30 23:52:02.802 +01:00 [INF] Submits the search
+2025-01-30 23:52:05.761 +01:00 [INF] Scroll to the last link
+2025-01-30 23:52:06.970 +01:00 [INF] Search page interactions completed successfully
+2025-01-30 23:52:07.634 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-01-30 23:52:07.686 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-01-30 23:52:17.625 +01:00 [INF] Opens the search bar
+2025-01-30 23:52:18.117 +01:00 [INF] Enters the search string
+2025-01-30 23:52:18.719 +01:00 [INF] Submits the search
+2025-01-30 23:52:21.196 +01:00 [INF] Scroll to the last link
+2025-01-30 23:52:22.721 +01:00 [INF] Search page interactions completed successfully
+2025-01-30 23:52:22.834 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-01-30 23:52:22.877 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation

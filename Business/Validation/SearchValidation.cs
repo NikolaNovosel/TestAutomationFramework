@@ -11,13 +11,22 @@ namespace Business.Validation
     /// Provides validation logic for search functionality, using a <see cref="SearchPage"/> instance.
     /// This class is responsible for verifying search results, input validation, and related behaviors.
     /// </summary>
-    public class SearchValidation(SearchPage searchPage)
+    public class SearchValidation
     {
+        // Private field to store an instance of the SearchPage
+        private readonly SearchPage _searchPage;
+
+        // Constructor takes an IWebDriver instance as a parameter, which is used to initialize the SearchPage
+        public SearchValidation(IWebDriver driver)
+        {
+            _searchPage = new(driver);
+        }
+
         // Check if the last 20th link is visible
-        public bool HasLastLink() => searchPage.HasLastLink();
+        public bool HasLastLink() => _searchPage.HasLastLink();
 
         // Checks if all the links containing the keyword 
-        public bool CheckIfAllLinksContainKeyword(string keyword) => searchPage.CheckIfAllLinksContainKeyword(keyword);
+        public bool CheckIfAllLinksContainKeyword(string keyword) => _searchPage.CheckIfAllLinksContainKeyword(keyword);
 
         // Validates that not all links contain the keyword "BLOCKCHAIN" and Automation
         [AssertionMethod]

@@ -1,6 +1,5 @@
 ﻿using Business.ApplicationContext;
 using Business.Validation;
-using Business.ApplicationInterface;
 using NUnit.Framework;
 using Serilog;
 
@@ -15,9 +14,7 @@ namespace Tests.ApplicationTest
         [Test, TestCaseSource(typeof(Test), nameof(SearchPage))]
         public void TestCase2(string keyword)
         {
-            SearchPage searchPage = new(Driver!);
-             
-            new SearchContext(searchPage)
+            new SearchContext(Driver!)
                 .ClickMagnifierIcon()
                 .SendKeysSearch(keyword)
                 .ClickFindSearch()
@@ -25,7 +22,7 @@ namespace Tests.ApplicationTest
 
             Log.Information("Search page interactions completed successfully");
 
-            new SearchValidation(searchPage)
+            new SearchValidation(Driver!)
                 .ValidateAllLinksNotContainOtherKeywords(keyword)
                 .ValidateAllLinksContainTheKeywordCloud(keyword)
                 .ValidateLastLinkResultsDisplayed();

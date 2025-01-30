@@ -1,4 +1,5 @@
 ﻿using Business.ApplicationInterface;
+using OpenQA.Selenium;
 
 namespace Business.ApplicationContext
 {
@@ -6,12 +7,21 @@ namespace Business.ApplicationContext
     /// Provides context and functionality related to the Careers page.
     /// This class encapsulates interactions with the <see cref="CareersPage"/> for testing or operational purposes.
     /// </summary>
-    public class CareersContext(CareersPage careersPage)
+    public class CareersContext
     {
+        // Private field to store an instance of the CareerPage
+        private readonly CareersPage _careerPage;
+
+        // Constructor takes an IWebDriver instance as a parameter, which is used to initialize the AboutPage
+        public CareersContext(IWebDriver driver)
+        {
+            _careerPage = new (driver);
+        }
+
         // Navigates to the Careers page  
         public CareersContext ClickCareers()
         {
-            careersPage.ClickCareers();
+            _careerPage.ClickCareers();
 
             return this;
         }
@@ -19,7 +29,7 @@ namespace Business.ApplicationContext
         // Enters a keyword into the search field  
         public CareersContext SendKeysKeyword(string keyword) 
         {
-            careersPage.SendKeysKeyword(keyword);
+            _careerPage.SendKeysKeyword(keyword);
 
             return this;
         }
@@ -27,7 +37,7 @@ namespace Business.ApplicationContext
         // Opens the location dropdown  
         public CareersContext ClickLocation()
         {
-            careersPage.ClickLocation();
+            _careerPage.ClickLocation();
             
             return this;
         }
@@ -35,7 +45,7 @@ namespace Business.ApplicationContext
         // Selects all locations
         public CareersContext ClickAllLocations()
         {
-            careersPage.ClickAllLocations();
+            _careerPage.ClickAllLocations();
 
             return this;
         }
@@ -43,7 +53,7 @@ namespace Business.ApplicationContext
         // Checks the remote filter  
         public CareersContext ClickRemote()
         {
-            careersPage.ClickRemote();
+            _careerPage.ClickRemote();
 
             return this;
         }
@@ -51,7 +61,7 @@ namespace Business.ApplicationContext
         // Submits the job search  
         public CareersContext ClickFindCareers()
         {
-            careersPage.ClickFindCareers();
+            _careerPage.ClickFindCareers();
 
             return this;
         }
@@ -59,7 +69,7 @@ namespace Business.ApplicationContext
         // Opens the latest job result
         public CareersContext ClickViewAndApply()
         {
-            careersPage.ClickViewAndApply();
+            _careerPage.ClickViewAndApply();
             
             return this;
         }

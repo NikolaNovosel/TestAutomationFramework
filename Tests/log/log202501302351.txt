@@ -1,0 +1,22 @@
+2025-01-30 23:51:09.581 +01:00 [INF] Navigate to the Insights page
+2025-01-30 23:51:14.374 +01:00 [INF] Swipes the carousel
+2025-01-30 23:51:15.578 +01:00 [INF] Swipes the carousel
+2025-01-30 23:51:16.505 +01:00 [INF] Try to wait for the main article to be displayed
+2025-01-30 23:51:16.811 +01:00 [INF] Main article displayed
+2025-01-30 23:51:16.811 +01:00 [INF] Try to click the Read More button in the carousel
+2025-01-30 23:51:16.909 +01:00 [ERR] Error: Element <a class="custom-link link-with-bottom-arrow color-link body-text font-900 slider-cta-link" href="https://www.epam.com/research-results-from-the-survey-of-leaders-in-it-and-people-departments"> is not clickable at point (357,571) because another element <div id="onetrust-group-container" class="ot-sdk-eight ot-sdk-columns"> obscures it
+2025-01-30 23:51:16.911 +01:00 [INF] Wait for the cookie to be displayed
+2025-01-30 23:51:16.962 +01:00 [INF] Execute java script to set cookie display to none
+2025-01-30 23:51:16.981 +01:00 [INF] Click the Read More button in the carousel
+2025-01-30 23:51:22.847 +01:00 [INF] Error gracefully handled
+2025-01-30 23:51:22.848 +01:00 [INF] The Read More button in the carousel clicked
+2025-01-30 23:51:22.848 +01:00 [INF] Insight page interactions completed successfully
+2025-01-30 23:51:23.140 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-01-30 23:51:37.962 +01:00 [INF] Opens the search bar
+2025-01-30 23:51:39.267 +01:00 [INF] Enters the search string
+2025-01-30 23:51:40.166 +01:00 [INF] Submits the search
+2025-01-30 23:51:41.247 +01:00 [INF] Scroll to the last link
+2025-01-30 23:51:46.441 +01:00 [INF] Search page interactions completed successfully
+2025-01-30 23:51:47.547 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-01-30 23:51:47.750 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation

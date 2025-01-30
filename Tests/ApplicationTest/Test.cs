@@ -46,9 +46,7 @@ namespace Tests.ApplicationTest
             if (TestUtils.HasTestFailed())
             {
                 // Take screenshot method
-                var screenshot = ((ITakesScreenshot)_driver!).GetScreenshot();
-                var screenshotPath = Path.Combine(Location.ScreenShot, "screenshot", $"screenshot_{DateTime.Now:yyyyMMdd_HHmmss}.png");
-                screenshot.SaveAsFile(screenshotPath);
+                new TestUtils(_driver!).TakeScreenShot();
             }
 
             Log.CloseAndFlush();

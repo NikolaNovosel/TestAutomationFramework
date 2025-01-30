@@ -1,8 +1,5 @@
 ﻿using Business.ApplicationContext;
-using Business.ApplicationInterface;
 using Business.Validation;
-using Core.Data;
-using Core.Helper;
 using NUnit.Framework;
 using Serilog;
 
@@ -17,9 +14,7 @@ namespace Tests.ApplicationTest
         [Test]
         public void TestCase3()
         {
-            AboutPage about = new(Driver!);
-
-            new AboutContext(about)
+            new AboutContext(Driver!)
                 .ClickAbout()
                 .ScrollToEpamAtGlance()
                 .ClickDownload();

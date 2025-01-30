@@ -1,5 +1,4 @@
 ﻿using Business.ApplicationContext;
-using Business.ApplicationInterface;
 using Business.Validation;
 using NUnit.Framework;
 using Serilog;
@@ -15,9 +14,7 @@ namespace Tests.ApplicationTest
         [Test]
         public void TestCase1()
         {
-            CareersPage careersPage = new(Driver!);
-
-            new CareersContext(careersPage)
+            new CareersContext(Driver!)
                 .ClickCareers()
                 .SendKeysKeyword(TestData!.CareersPage)
                 .ClickLocation()
@@ -29,7 +26,7 @@ namespace Tests.ApplicationTest
             Log.Information("The latest job result opened");
             Log.Information("Careers page interactions completed successfully");
 
-            new CareersValidation(careersPage)
+            new CareersValidation(Driver!)
                 .ValidateCareersArticleTextContainKeyword(TestData!.CareersPage);
         }
     }
