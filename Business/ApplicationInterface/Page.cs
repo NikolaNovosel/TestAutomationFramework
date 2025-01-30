@@ -28,7 +28,7 @@ namespace Business.ApplicationInterface
         protected Page(IWebDriver driver)
         {
             _driver = driver;
-            _wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            _wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             _actions = new Actions(driver);
         }
 
