@@ -6,6 +6,7 @@ using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager;
 using Core.Helper;
 using Core.Data;
+using NUnit.Framework;
 
 namespace Core.Singleton
 {
@@ -23,10 +24,13 @@ namespace Core.Singleton
 
         }
 
+        // Checks if the current test case is "TestCase4"
+        private static bool IsTestCase4Running => TestContext.CurrentContext.Test.Name is "TestCase4";
+
         // Switches between Chrome and Firefox based on the test case
         public static IWebDriver SwitchBetweenChromeAndFirefox()
         {
-            if (TestUtils.IsTestCase4Running)
+            if (IsTestCase4Running)
             {
                 new DriverManager().SetUpDriver(new FirefoxConfig());
                 _driver = new FirefoxDriver(DriverOption.GetFirefoxOptions());

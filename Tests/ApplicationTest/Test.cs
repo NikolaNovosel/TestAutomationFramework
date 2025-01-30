@@ -6,6 +6,8 @@ using Serilog;
 using Core.Helper;
 using OpenQA.Selenium.Firefox;
 using Core.Singleton;
+using Core.Data;
+using NUnit.Framework.Interfaces;
 
 namespace Tests.ApplicationTest
 {
@@ -34,6 +36,7 @@ namespace Tests.ApplicationTest
             _driver = DriverSingleton.SwitchBetweenChromeAndFirefox();
             DriverSingleton.ManageWindow();
             DriverSingleton.GetUrl();
+
             TestUtils.GetLog();
         }
 
@@ -41,12 +44,17 @@ namespace Tests.ApplicationTest
         [TearDown]
         public void TearDown()
         {
-            if (TestUtils.TestFailed)
+            // Indicates whether the last executed test failed
+            if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
             {
-                TestUtils.TakeScreenShot(_driver!);
+                // Take screenshot method
+                var screenshot = ((ITakesScreenshot)_driver!).GetScreenshot();
+                var screenshotPath = Path.Combine(Location.ScreenShot, "screenshot", $"screenshot_{DateTime.Now:yyyyMMdd_HHmmss}.png");
+                screenshot.SaveAsFile(screenshotPath);
             }
 
             Log.CloseAndFlush();
+
             DriverSingleton.Dispose();
         }
     }

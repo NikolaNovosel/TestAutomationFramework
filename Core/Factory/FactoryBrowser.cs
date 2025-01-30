@@ -1,5 +1,6 @@
 ﻿using Core.Data;
 using Core.Helper;
+using NUnit.Framework;
 using OpenQA.Selenium;
 
 namespace Core.Factory
@@ -18,10 +19,13 @@ namespace Core.Factory
             
         }
 
+        // Checks if the current test case is "TestCase4"
+        private static bool IsTestCase4Running => TestContext.CurrentContext.Test.Name is "TestCase4";
+
         // Switches between Chrome and Firefox based on test condition.
         public static IWebDriver SwitchBetweenChromeAndFirefox()
         {
-            if (TestUtils.IsTestCase4Running)
+            if (IsTestCase4Running)
             {
                 IBrowser browser = new FirefoxBrowser();
                 browser.GetDriverManager();
