@@ -5,6 +5,7 @@ using Core.Factory;
 using Serilog;
 using Core.Helper;
 using OpenQA.Selenium.Firefox;
+using Core.Singleton;
 
 namespace Tests.ApplicationTest
 {
@@ -30,9 +31,9 @@ namespace Tests.ApplicationTest
         [SetUp]
         public void Setup()
         {
-            _driver = FactoryBrowser.SwitchBetweenChromeAndFirefox();
-            FactoryBrowser.ManageWindow();
-            FactoryBrowser.GetUrl();
+            _driver = DriverSingleton.SwitchBetweenChromeAndFirefox();
+            DriverSingleton.ManageWindow();
+            DriverSingleton.GetUrl();
             TestUtils.GetLog();
         }
 
@@ -46,7 +47,7 @@ namespace Tests.ApplicationTest
             }
 
             Log.CloseAndFlush();
-            FactoryBrowser.Dispose();
+            DriverSingleton.Dispose();
         }
     }
 }
