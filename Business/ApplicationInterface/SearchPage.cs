@@ -72,6 +72,7 @@ namespace Business.ApplicationInterface
         {
             Log.Information("Scroll to the last link");
             Actions.ScrollByAmount(0, ScrolledLastLink.Location.Y).Perform(); 
+            Wait.Until(driver => LastSearchResultLink.Displayed);
         }
 
         // Check if the last 20th link is visible

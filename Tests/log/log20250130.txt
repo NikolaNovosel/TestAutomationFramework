@@ -1,0 +1,53 @@
+2025-01-30 13:29:01.452 +01:00 [INF] Navigates to the About page
+2025-01-30 13:29:02.531 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-01-30 13:29:05.816 +01:00 [INF] Try to click the download button
+2025-01-30 13:29:06.108 +01:00 [INF] The download button clicked
+2025-01-30 13:29:06.108 +01:00 [INF] About page interactions completed successfully
+2025-01-30 13:29:06.684 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\Documents\Downloads"
+2025-01-30 13:29:14.616 +01:00 [INF] Navigates to the Careers page
+2025-01-30 13:29:15.347 +01:00 [INF] Enters a keyword into the search field
+2025-01-30 13:29:18.053 +01:00 [INF] Try to open the location dropdown list
+2025-01-30 13:29:18.629 +01:00 [INF] The location dropdown opened
+2025-01-30 13:29:18.629 +01:00 [INF] Selects all locations
+2025-01-30 13:29:19.121 +01:00 [INF] Try to check the remote filter
+2025-01-30 13:29:19.234 +01:00 [INF] The remote filter checked
+2025-01-30 13:29:19.234 +01:00 [INF] Submits the job search
+2025-01-30 13:29:21.412 +01:00 [INF] Try to open the latest job result
+2025-01-30 13:29:24.066 +01:00 [INF] The latest job result opened
+2025-01-30 13:29:24.067 +01:00 [INF] Careers page interactions completed successfully
+2025-01-30 13:29:26.867 +01:00 [INF] Successfully validate that the article text ".NET Developer
+REMOTE" contains the keyword ".NET"
+2025-01-30 13:29:44.843 +01:00 [INF] Navigate to the Insights page
+2025-01-30 13:29:47.870 +01:00 [INF] Swipes the carousel
+2025-01-30 13:29:48.493 +01:00 [INF] Swipes the carousel
+2025-01-30 13:29:49.076 +01:00 [INF] Try to wait for the main article to be displayed
+2025-01-30 13:29:54.465 +01:00 [ERR] Error: Timed out after 5 seconds
+2025-01-30 13:29:54.465 +01:00 [INF] Swipes the carousel
+2025-01-30 13:29:55.056 +01:00 [INF] Error gracefully handled
+2025-01-30 13:29:55.097 +01:00 [INF] Main article displayed
+2025-01-30 13:29:55.097 +01:00 [INF] Try to click the Read More button in the carousel
+2025-01-30 13:29:59.046 +01:00 [INF] The Read More button in the carousel clicked
+2025-01-30 13:29:59.046 +01:00 [INF] Insight page interactions completed successfully
+2025-01-30 13:29:59.310 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-01-30 13:30:10.788 +01:00 [INF] Opens the search bar
+2025-01-30 13:30:11.188 +01:00 [INF] Enters the search string
+2025-01-30 13:30:11.645 +01:00 [INF] Submits the search
+2025-01-30 13:30:13.960 +01:00 [INF] Scroll to the last link
+2025-01-30 13:30:15.223 +01:00 [INF] Search page interactions completed successfully
+2025-01-30 13:30:15.678 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-01-30 13:30:15.800 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-01-30 13:30:24.451 +01:00 [INF] Opens the search bar
+2025-01-30 13:30:24.813 +01:00 [INF] Enters the search string
+2025-01-30 13:30:25.167 +01:00 [INF] Submits the search
+2025-01-30 13:30:25.937 +01:00 [INF] Scroll to the last link
+2025-01-30 13:30:28.373 +01:00 [INF] Search page interactions completed successfully
+2025-01-30 13:30:29.269 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-01-30 13:30:29.379 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-01-30 13:30:38.775 +01:00 [INF] Opens the search bar
+2025-01-30 13:30:39.205 +01:00 [INF] Enters the search string
+2025-01-30 13:30:39.695 +01:00 [INF] Submits the search
+2025-01-30 13:30:40.357 +01:00 [INF] Scroll to the last link
+2025-01-30 13:30:42.958 +01:00 [INF] Search page interactions completed successfully
+2025-01-30 13:30:43.131 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-01-30 13:30:43.178 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
