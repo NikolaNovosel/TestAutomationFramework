@@ -1,0 +1,34 @@
+﻿using Core.Data;
+using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
+using Serilog;
+
+namespace Core.Helper
+{
+    public static class Testlogger
+    {
+        // Checks if the current test case is "TestCase4"
+        public static bool IsTestCase4Running => TestContext.CurrentContext.Test.Name is "TestCase4";
+
+        // Indicates whether the last executed test failed
+        public static bool TestFailed => TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed;
+
+        // Configures and creates a logger instance for writing logs to console and a rolling log file.
+        public static void GetLog()
+        {
+             Log.Logger = new LoggerConfiguration()
+            .WriteTo.Console()
+            .WriteTo.File(Location.Logs, rollingInterval: RollingInterval.Day)
+            .CreateLogger();
+        }
+
+        // Take screenshot method
+        public static void TakeScreenShot(IWebDriver driver)
+        {
+            var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+            var screenshotPath = Path.Combine(Location.ScreenShot, "screenshot", $"screenshot_{DateTime.Now:yyyyMMdd_HHmmss}.png");
+            screenshot.SaveAsFile(screenshotPath);
+        }
+    }
+}
