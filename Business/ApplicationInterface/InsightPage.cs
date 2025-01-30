@@ -49,7 +49,7 @@ namespace Business.ApplicationInterface
             try
             {
                 Log.Information("Try to wait for the main article to be displayed");
-                Wait.Until(driver => MainArticleParent.Displayed);
+                Wait.Until(driver => MainArticle.Displayed);
             }
             catch (WebDriverTimeoutException ex)
             {
