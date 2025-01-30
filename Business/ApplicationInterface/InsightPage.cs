@@ -76,7 +76,7 @@ namespace Business.ApplicationInterface
                 Log.Error($"Error: {ex.Message}");
 
                 Log.Information("Wait for the cookie to be displayed");
-                Wait.Until(driver => Cookie.Enabled);
+                Wait.Until(driver => Driver.FindElement(By.CssSelector("#onetrust-group-container")).Displayed);
 
                 Log.Information("Execute java script to set cookie display to none");
                 Driver.ExecuteJavaScript("document.querySelector('#onetrust-banner-sdk').style.display='none'");
