@@ -259,3 +259,4 @@ C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\T
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\obj\Debug\net8.0\Tests.pdb
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\obj\Debug\net8.0\Tests.genruntimeconfig.cache
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\obj\Debug\net8.0\ref\Tests.dll
+C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\RestSharp.dll

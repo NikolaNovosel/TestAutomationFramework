@@ -165,6 +165,14 @@
           }
         }
       },
+      "RestSharp/112.1.0": {
+        "runtime": {
+          "lib/net8.0/RestSharp.dll": {
+            "assemblyVersion": "112.1.0.0",
+            "fileVersion": "112.1.0.0"
+          }
+        }
+      },
       "Selenium.Support/4.28.0": {
         "dependencies": {
           "Selenium.WebDriver": "4.28.0"
@@ -295,6 +303,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Json": "9.0.1",
           "NUnit": "4.3.2",
+          "RestSharp": "112.1.0",
           "Selenium.WebDriver": "4.28.0",
           "Serilog": "4.2.0",
           "Serilog.Formatting.Compact": "3.0.0",
@@ -421,6 +430,13 @@
       "sha512": "sha512-puVXayXNmEu7MFQSUswGmUjOy3M3baprMbkLl5PAutpeDoGTr+jPv33qAYsqxywi2wJCq8l/O3EhHoLulPE1iQ==",
       "path": "nunit/4.3.2",
       "hashPath": "nunit.4.3.2.nupkg.sha512"
+    },
+    "RestSharp/112.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bOUGNZqhhv/QeCXHTKEUil846yBjwWXpzPKjO67kFvaAOoF361z7jLY5BMnuZ6WD2WQRA750sNMcK7MSPCQ5Mg==",
+      "path": "restsharp/112.1.0",
+      "hashPath": "restsharp.112.1.0.nupkg.sha512"
     },
     "Selenium.Support/4.28.0": {
       "type": "package",

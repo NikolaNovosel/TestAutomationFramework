@@ -8,6 +8,12 @@ namespace Core.Helper
 {
     public class TestUtils(IWebDriver driver)
     {
+        // Checks if the current test  is "ApiTest"
+        public static bool IsNotApiTestRunning()
+        {
+            return !TestContext.CurrentContext.Test.ClassName!.EndsWith("ApiTest");
+        }
+
         // Checks if the current test case is "TestCase4"
         public static bool IsTestCase4Running()
         { 

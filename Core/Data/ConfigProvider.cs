@@ -25,5 +25,8 @@ namespace Core.Data
 
         // Provide the WebDriver url
         public static readonly string? Url = Config["url"];
+
+        // Provide the Api url
+        public static readonly string? Api = Config["api"];
     }
 }

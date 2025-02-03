@@ -145,6 +145,10 @@
               "target": "Package",
               "version": "[4.3.2, )"
             },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[112.1.0, )"
+            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.28.0, )"

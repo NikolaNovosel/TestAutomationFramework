@@ -56,3 +56,64 @@ REMOTE" contains the keyword ".NET"
 2025-02-03 11:06:26.053 +01:00 [INF] Search page interactions completed successfully
 2025-02-03 11:06:26.176 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
 2025-02-03 11:06:26.225 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-03 14:05:06.534 +01:00 [INF] Navigates to the About page
+2025-02-03 14:05:10.748 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-03 14:05:12.548 +01:00 [INF] Try to click the download button
+2025-02-03 14:05:13.078 +01:00 [INF] The download button clicked
+2025-02-03 14:05:13.079 +01:00 [INF] About page interactions completed successfully
+2025-02-03 14:05:14.069 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\Documents\Downloads"
+2025-02-03 14:05:26.166 +01:00 [INF] Navigates to the Careers page
+2025-02-03 14:05:27.227 +01:00 [INF] Enters a keyword into the search field
+2025-02-03 14:05:30.789 +01:00 [INF] Try to open the location dropdown list
+2025-02-03 14:05:31.495 +01:00 [INF] The location dropdown opened
+2025-02-03 14:05:31.496 +01:00 [INF] Selects all locations
+2025-02-03 14:05:32.018 +01:00 [INF] Try to check the remote filter
+2025-02-03 14:05:32.090 +01:00 [INF] The remote filter checked
+2025-02-03 14:05:32.091 +01:00 [INF] Submits the job search
+2025-02-03 14:05:35.595 +01:00 [INF] Try to open the latest job result
+2025-02-03 14:05:38.603 +01:00 [ERR] Error: element click intercepted: Element <a href="https://www.epam.com/careers/job-listings/job.epamgdo_blt91c6747c9117a35d_en-us_Other_Argentina.remote_net-developer" class="button-text primary-button-preset white-background-preset search-result__item-apply-23">...</a> is not clickable at point (1440, 1215). Other element would receive the click: <div id="onetrust-banner-sdk" class="otFlat bottom ot-wo-title vertical-align-content ot-buttons-fw" tabindex="0" role="region" aria-label="Cookie banner" style="bottom: 0px;">...</div>
+  (Session info: chrome=132.0.6834.160)
+2025-02-03 14:05:38.604 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-03 14:05:38.684 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-03 14:05:38.708 +01:00 [INF] Open the latest job result
+2025-02-03 14:05:39.956 +01:00 [INF] Error gracefully handled
+2025-02-03 14:05:39.956 +01:00 [INF] The latest job result opened
+2025-02-03 14:05:39.956 +01:00 [INF] Careers page interactions completed successfully
+2025-02-03 14:05:45.144 +01:00 [INF] Successfully validate that the article text ".NET Developer
+REMOTE" contains the keyword ".NET"
+2025-02-03 14:06:11.134 +01:00 [INF] Navigate to the Insights page
+2025-02-03 14:06:16.376 +01:00 [INF] Swipes the carousel
+2025-02-03 14:06:18.201 +01:00 [INF] Swipes the carousel
+2025-02-03 14:06:19.041 +01:00 [INF] Try to wait for the main article to be displayed
+2025-02-03 14:06:19.376 +01:00 [INF] Main article displayed
+2025-02-03 14:06:19.377 +01:00 [INF] Try to click the Read More button in the carousel
+2025-02-03 14:06:19.521 +01:00 [ERR] Error: Element <a class="custom-link link-with-bottom-arrow color-link body-text font-900 slider-cta-link" href="https://www.epam.com/research-results-from-the-survey-of-leaders-in-it-and-people-departments"> is not clickable at point (327,571) because another element <div id="onetrust-policy-text"> obscures it
+2025-02-03 14:06:19.521 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-03 14:06:19.584 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-03 14:06:19.623 +01:00 [INF] Click the Read More button in the carousel
+2025-02-03 14:06:27.353 +01:00 [INF] Error gracefully handled
+2025-02-03 14:06:27.353 +01:00 [INF] The Read More button in the carousel clicked
+2025-02-03 14:06:27.353 +01:00 [INF] Insight page interactions completed successfully
+2025-02-03 14:06:28.126 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-02-03 14:06:40.711 +01:00 [INF] Opens the search bar
+2025-02-03 14:06:49.382 +01:00 [INF] Enters the search string
+2025-02-03 14:06:50.997 +01:00 [INF] Submits the search
+2025-02-03 14:06:54.933 +01:00 [INF] Scroll to the last link
+2025-02-03 14:06:56.724 +01:00 [INF] Search page interactions completed successfully
+2025-02-03 14:06:57.701 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-02-03 14:06:58.068 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-03 14:07:18.711 +01:00 [INF] Opens the search bar
+2025-02-03 14:07:19.718 +01:00 [INF] Enters the search string
+2025-02-03 14:07:20.361 +01:00 [INF] Submits the search
+2025-02-03 14:07:21.346 +01:00 [INF] Scroll to the last link
+2025-02-03 14:07:24.110 +01:00 [INF] Search page interactions completed successfully
+2025-02-03 14:07:24.759 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-02-03 14:07:24.815 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-03 14:07:36.712 +01:00 [INF] Opens the search bar
+2025-02-03 14:07:38.213 +01:00 [INF] Enters the search string
+2025-02-03 14:07:39.660 +01:00 [INF] Submits the search
+2025-02-03 14:07:43.636 +01:00 [INF] Scroll to the last link
+2025-02-03 14:07:44.704 +01:00 [INF] Search page interactions completed successfully
+2025-02-03 14:07:44.901 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-02-03 14:07:44.993 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation

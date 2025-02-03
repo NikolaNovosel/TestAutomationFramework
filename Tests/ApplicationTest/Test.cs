@@ -4,8 +4,7 @@ using Core.Data;
 using Core.Factory;
 using Serilog;
 using Core.Helper;
-using OpenQA.Selenium.Firefox;
-using Core.Singleton;
+using Core.Api;
 
 namespace Tests.ApplicationTest
 {
@@ -27,13 +26,24 @@ namespace Tests.ApplicationTest
         // Provides access to the WebDriver instance
         protected IWebDriver? Driver => _driver;
 
+        // Stores and access to the WebDriver instance
+        private UserClient? _userClient;
+
+        // Provides access to the WebDriver instance
+        protected UserClient? UserClient => _userClient;
+
         // Initializes the WebDriver instance
         [SetUp]
         public void Setup()
         {
-            _driver = FactoryBrowser.SwitchBetweenChromeAndFirefox();
-            FactoryBrowser.ManageWindow();
-            FactoryBrowser.GetUrl();
+            _userClient = new UserClient();
+
+            if (TestUtils.IsNotApiTestRunning())
+            {
+                _driver = FactoryBrowser.SwitchBetweenChromeAndFirefox();
+                FactoryBrowser.ManageWindow();
+                FactoryBrowser.GetUrl();
+            }
 
             TestUtils.GetLog();
         }
@@ -49,9 +59,12 @@ namespace Tests.ApplicationTest
                 new TestUtils(_driver!).TakeScreenShot();
             }
 
-            Log.CloseAndFlush();
+            if (TestUtils.IsNotApiTestRunning())
+            {
+                FactoryBrowser.Dispose();
+            }
 
-            FactoryBrowser.Dispose();
+            Log.CloseAndFlush();
         }
     }
 }
