@@ -36,15 +36,17 @@ namespace Tests.ApplicationTest
         [SetUp]
         public void Setup()
         {
-            //Initialize Rest
-            _rest = new Rest();
-
             // Indicates whether the last Api test is running to initialize WebDriver instance
             if (TestUtils.IsNotApiTestRunning())
             {
                 _driver = FactoryBrowser.SwitchBetweenChromeAndFirefox();
                 FactoryBrowser.ManageWindow();
                 FactoryBrowser.GetUrl();
+            }
+            else
+            {
+                //Initialize Rest
+                _rest = new Rest();
             }
 
             //Initialize Logger
@@ -56,7 +58,7 @@ namespace Tests.ApplicationTest
         public void TearDown()
         {
             // Indicates whether the last executed test failed to consider screenshot
-            if (TestUtils.HasTestFailed())
+            if (TestUtils.HasTestFailed() && TestUtils.IsNotApiTestRunning())
             {
                 // Take screenshot method
                 new TestUtils(_driver!).TakeScreenShot();

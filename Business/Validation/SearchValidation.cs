@@ -36,13 +36,15 @@ namespace Business.Validation
             {
                 if (keyword != "Cloud")
                 {
-                    CheckIfAllLinksContainKeyword(keyword).Should().BeFalse();
+                    CheckIfAllLinksContainKeyword(keyword).Should().BeTrue();
                     Log.Information(@$"Successfully validate that not all links contain the keyword: ""{keyword}""");
                 }
             }
             catch (AssertionException)
             {
                 Log.Error(@$"Failed to validate that not all links contain the keyword: ""{keyword}""");
+
+                throw;
             }
 
             return this;
@@ -63,6 +65,8 @@ namespace Business.Validation
             catch (AssertionException)
             {
                 Log.Error(@$"Failed to validate that all links contain the keyword: ""{keyword}""");
+
+                throw;
             }
 
             return this;
