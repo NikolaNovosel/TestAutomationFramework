@@ -13,7 +13,7 @@ namespace Tests.ApplicationTest
     /// Test class for browser interactions, utilizing DriverSingleton and Data class for test data
     /// Initializes and tears down WebDriver within the Setup and TearDown methods
     /// </summary>
-    internal class Test
+    internal abstract class Test
     {
         // Deserializes and stores test data
         protected readonly static TestData? TestData = TestDataReader.DeserializeData();
