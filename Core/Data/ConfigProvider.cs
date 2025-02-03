@@ -11,22 +11,28 @@ namespace Core.Data
         private static readonly IConfigurationBuilder _builder = new ConfigurationBuilder().AddJsonFile(Location.JsonAppSettings);
 
         // Build the configuration and assign it to the Configuration property
-        private static readonly IConfiguration Config = _builder.Build();
+        private static readonly IConfiguration ConfigReader = _builder.Build();
 
         // Provide Path to the downloaded file
         public static readonly string FilePath =
-        Path.Combine(Config["downloadDir"]!, Config["fileName"]!);
+        Path.Combine(ConfigReader["downloadDir"]!, ConfigReader["fileName"]!);
 
         // Provide path to the downloaded directory
-        public static readonly string DownloadDir = Path.Combine(Config["downloadDir"]!);
+        public static readonly string DownloadDir = Path.Combine(ConfigReader["downloadDir"]!);
 
         // Provide the downloaded file name
-        public static readonly string? FileName = Config["fileName"];
+        public static readonly string? FileName = ConfigReader["fileName"];
 
         // Provide the WebDriver url
-        public static readonly string? Url = Config["url"];
+        public static readonly string? Url = ConfigReader["url"];
 
         // Provide the Api url
-        public static readonly string? Api = Config["api"];
+        public static readonly string? Api = ConfigReader["api"];
+
+        // Provide the Api endpoint users
+        public static readonly string? Users = ConfigReader["endpoint:0"];
+
+        // Provide the Api endpoint invalidendpoint
+        public static readonly string? Invalid = ConfigReader["endpoint:1"];
     }
 }

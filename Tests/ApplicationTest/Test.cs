@@ -20,24 +20,26 @@ namespace Tests.ApplicationTest
         // Reads and stores search page parameters from a source
         protected readonly static IEnumerable<string> SearchPage = TestDataReader.ReadSearchPage();
 
-        // Stores and access to the WebDriver instance
+        // Stores access to the WebDriver instance
         private IWebDriver? _driver;
 
         // Provides access to the WebDriver instance
         protected IWebDriver? Driver => _driver;
 
-        // Stores and access to the WebDriver instance
-        private UserClient? _userClient;
+        // Stores access to the Rest instance
+        private Rest? _rest;
 
-        // Provides access to the WebDriver instance
-        protected UserClient? UserClient => _userClient;
+        // Provides access to the Rest instance
+        protected Rest? Rest => _rest;
 
-        // Initializes the WebDriver instance
+        // Initializes Rest, WebDriver and Logger instances
         [SetUp]
         public void Setup()
         {
-            _userClient = new UserClient();
+            //Initialize Rest
+            _rest = new Rest();
 
+            // Indicates whether the last Api test is running to initialize WebDriver instance
             if (TestUtils.IsNotApiTestRunning())
             {
                 _driver = FactoryBrowser.SwitchBetweenChromeAndFirefox();
@@ -45,10 +47,11 @@ namespace Tests.ApplicationTest
                 FactoryBrowser.GetUrl();
             }
 
+            //Initialize Logger
             TestUtils.GetLog();
         }
 
-        // Disposes of the WebDriver instance
+        // Disposes of the WebDriver and Logger instances
         [TearDown]
         public void TearDown()
         {
@@ -59,11 +62,13 @@ namespace Tests.ApplicationTest
                 new TestUtils(_driver!).TakeScreenShot();
             }
 
+            // Indicates whether the last Api test is running to dispose WebDriver instance
             if (TestUtils.IsNotApiTestRunning())
             {
                 FactoryBrowser.Dispose();
             }
 
+            //Dispose Logger
             Log.CloseAndFlush();
         }
     }

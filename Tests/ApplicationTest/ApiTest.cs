@@ -1,6 +1,8 @@
 ﻿using Business.Model;
 using Business.Validation;
+using Core.Data;
 using NUnit.Framework;
+using Serilog;
 
 namespace Tests.ApplicationTest
 {
@@ -12,7 +14,11 @@ namespace Tests.ApplicationTest
         [Test]
         public async Task Task1()
         {
-            var response = await UserClient!.GetUsersAsync<User>();
+            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api);
+
+            var response = await Rest!.GetAsync<User>();
+
+            Log.Information("GET request completed");
 
             ApiValidation.ValidateUser(response);
             ApiValidation.ValidateOkResponse(response);
@@ -22,7 +28,12 @@ namespace Tests.ApplicationTest
         [Test]
         public async Task Task2()
         {
-            var response = await UserClient!.GetUsersAsync<User>();
+            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api);
+
+            var response = await Rest!.GetAsync<User>();
+
+            Log.Information("GET request completed");
+
 
             ApiValidation.ValidateContentTypeHeader(response);
             ApiValidation.ValidateOkResponse(response);
@@ -32,7 +43,11 @@ namespace Tests.ApplicationTest
         [Test]
         public async Task Task3()
         {
-            var response = await UserClient!.GetUsersAsync<User>();
+            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api);
+
+            var response = await Rest!.GetAsync<User>();
+
+            Log.Information("GET request completed");
 
             ApiValidation.ValidateTenUsers(response);
             ApiValidation.ValidateUserDistinct(response);
@@ -51,7 +66,11 @@ namespace Tests.ApplicationTest
                 Username = "Doe"
             };
 
-            var response = await UserClient!.CreateUserAsync<User>(user);
+            Log.Information("Executing Post request for User at {Endpoint}", ConfigProvider.Api);
+
+            var response = await Rest!.CreateAsync<User>(user);
+
+            Log.Information("Post request completed");
 
             ApiValidation.ValidateResponseNotEmpty(response);
             ApiValidation.ValidateResponseContainsId(response);
@@ -62,7 +81,11 @@ namespace Tests.ApplicationTest
         [Test]
         public async Task Task5()
         {
-            var response = await UserClient!.GetInvalidEndpointAsync();
+            Log.Information("Executing GET request for invalid end point at {Endpoint}", ConfigProvider.Api);
+
+            var response = await Rest!.GetAsync();
+
+            Log.Information("Get request completed");
 
             ApiValidation.ValidateNotFoundResponse(response);
         }
