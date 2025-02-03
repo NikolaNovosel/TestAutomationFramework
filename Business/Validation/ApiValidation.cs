@@ -204,7 +204,7 @@ namespace Business.Validation
             try
             {
                 response.Data!.Id.Should().BeGreaterThan(0);
-                Log.Information("Successfuly validate that the response contains a valid Id value: {UserId}", response.Data!.Id);
+                Log.Information("Successfully validate that the response contains a valid Id value: {UserId}", response.Data!.Id);
             }
             catch (AssertionException)
             {

@@ -6,8 +6,6 @@ using Serilog;
 
 namespace Tests.ApplicationTest
 {
-    //[TestFixture]
-    //[Parallelizable(ParallelScope.Children)]
     internal class ApiTest : Test
     {
         //Tasks #1. Validate that the list of users can be received successfully

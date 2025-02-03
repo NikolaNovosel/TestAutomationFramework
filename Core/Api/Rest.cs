@@ -19,9 +19,7 @@ namespace Core.Api
             var request = new RequestDirector().GetUsersRequest();
 
             Log.Information("Get the response from the type");
-            var response = await _client.ExecuteAsync<List<T>>(request);
-
-            return response;
+            return await _client.ExecuteAsync<List<T>>(request);
         }
 
         // Send the get request for the invalid end point and get the response for the invalid endpoint
@@ -31,9 +29,7 @@ namespace Core.Api
             var request = new RequestDirector().GetInvalidRequest();
 
             Log.Information("Get the response from the invalid end point");
-            var response = await _client.ExecuteAsync(request);
-
-            return response;
+            return await _client.ExecuteAsync(request);
         }
 
         // Send the post request object and get the response for the created object
@@ -43,9 +39,7 @@ namespace Core.Api
             var request = new RequestDirector().PostUsersRequest(user);
 
             Log.Information("Get the response for the created object");
-            var response = await _client.ExecuteAsync<T>(request);
-
-            return response;
+            return await _client.ExecuteAsync<T>(request);
         }
     }
 }
