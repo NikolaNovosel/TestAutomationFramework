@@ -85,6 +85,9 @@ jobs:
       - name: Build 
         run: dotnet build --no-restore 
 
+      - name: Preload WebDriverManager Drivers
+        run: dotnet test --filter "Category=PreloadDrivers"
+
       - name: Run UI Tests
         run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
