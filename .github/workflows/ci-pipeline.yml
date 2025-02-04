@@ -60,21 +60,15 @@ jobs:
     
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
-        run: |
-          sudo apt-get install -y chromium-chromedriver
-          echo "CHROME_BIN=/usr/bin/chromium-browser" >> $GITHUB_ENV
-          echo "WEBDRIVER_BIN=/usr/bin/chromedriver" >> $GITHUB_ENV
+        uses: browser-actions/setup-chrome@v1
 
-      - name: Install Firefox and Geckodriver
+      - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
         uses: browser-actions/setup-firefox@v1
 
       - name: Install EdgeDriver
         if: ${{ github.event.inputs.browser == 'edge' }}
-        run: |
-          sudo apt-get install -y microsoft-edge-stable
-          echo "EDGE_BIN=/usr/bin/microsoft-edge" >> $GITHUB_ENV
-          echo "WEBDRIVER_BIN=/usr/bin/edgedriver" >> $GITHUB_ENV
+      - uses: browser-actions/setup-edge@v1
 
       - name: Restore Dependencies
         run: dotnet restore
