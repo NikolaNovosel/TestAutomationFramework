@@ -39,6 +39,12 @@ jobs:
       - name: Run API Tests
         run: dotnet test --no-build --filter Category=API --logger trx --results-directory TestResults
 
+      - name: Format TRX file with PowerShell
+        shell: pwsh
+        run: |
+             [xml]$xml = Get-Content -Path api-test-results.trx
+             $xml.Save("api-test-results.trx")
+
       - name: Upload API test results
         uses: actions/upload-artifact@v4
         with:
