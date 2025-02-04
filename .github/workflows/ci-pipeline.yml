@@ -57,18 +57,83 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'
-    
+
+      - name: Create download directory
+        run: mkdir -p $GITHUB_WORKSPACE/Downloads
+        
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
         uses: browser-actions/setup-chrome@v1
 
+      - name: Run Chrome with custom preferences
+        run: |
+          google-chrome --headless --disable-gpu --no-sandbox --disable-dev-shm-usage \
+          --download-default-directory=/tmp/chrome-downloads \
+          --disable-popup-blocking \
+          --disable-extensions \
+          --disable-background-networking \
+          --disable-background-timer-throttling \
+          --disable-backgrounding-occluded-windows \
+          --disable-breakpad \
+          --disable-client-side-phishing-detection \
+          --disable-component-update \
+          --disable-default-apps \
+          --disable-domain-reliability \
+          --disable-features=AudioServiceOutOfProcess \
+          --disable-hang-monitor \
+          --disable-ipc-flooding-protection \
+          --disable-renderer-backgrounding \
+          --disable-sync \
+          --force-color-profile=srgb \
+          --metrics-recording-only \
+          --no-first-run \
+          --safebrowsing-disable-auto-update \
+          --password-store=basic \
+          --use-mock-keychain &
+          sleep 10 # Wait for Chrome to start
+
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
         uses: browser-actions/setup-firefox@v1
+        
+      - name: Set Firefox download directory
+        run: |
+          mkdir -p /firefox-downloads
+          echo 'user_pref("browser.download.dir", "/tmp/firefox-downloads");' >> /tmp/firefox-prefs.js
+          echo 'user_pref("browser.download.folderList", 2);' >> /tmp/firefox-prefs.js
+          echo 'user_pref("browser.download.manager.showWhenStarting", false);' >> /tmp/firefox-prefs.js
+          echo 'user_pref("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream");' >> /tmp/firefox-prefs.js
 
       - name: Install EdgeDriver
         if: ${{ github.event.inputs.browser == 'edge' }}
         uses: browser-actions/setup-edge@v1
+
+      - name: Run Edge with custom preferences
+        run: |
+         microsoft-edge --headless --disable-gpu --no-sandbox --disable-dev-shm-usage \
+          --download-default-directory=/tmp/edge-downloads \
+          --disable-popup-blocking \
+          --disable-extensions \
+          --disable-background-networking \
+          --disable-background-timer-throttling \
+          --disable-backgrounding-occluded-windows \
+          --disable-breakpad \
+          --disable-client-side-phishing-detection \
+          --disable-component-update \
+          --disable-default-apps \
+          --disable-domain-reliability \
+          --disable-features=AudioServiceOutOfProcess \
+          --disable-hang-monitor \
+          --disable-ipc-flooding-protection \
+          --disable-renderer-backgrounding \
+          --disable-sync \
+          --force-color-profile=srgb \
+          --metrics-recording-only \
+          --no-first-run \
+          --safebrowsing-disable-auto-update \
+          --password-store=basic \
+          --use-mock-keychain &
+          sleep 10 # Wait for Edge to start
 
       - name: Restore Dependencies
         run: dotnet restore
@@ -81,7 +146,6 @@ jobs:
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
-          chmod -R 755 ./Tests/downloads
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
