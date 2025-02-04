@@ -85,7 +85,9 @@ namespace Business.Validation
                     user.Website.Should().NotBeNullOrWhiteSpace();
                     user.Company.Should().NotBeNull();
 
-                    Log.Information("Successfully validate each user: ID {UserId}, Name {UserName}", user.Id, user.Name);
+                    Log.Information("Successfully validate each user: " +
+                    "ID {UserId}, Name {Name}, User Name {UserName}, Email {Email}, Address {Address}, Phone {Phone}, Website {Website}, Company {Company}"
+                    , user.Id, user.Name, user.Username, user.Email, user.Address, user.Phone, user.Website, user.Company.Name);
                 }
                 catch (AssertionException)
                 {
@@ -171,7 +173,7 @@ namespace Business.Validation
                 response.Data.Should().AllSatisfy(user =>
                 {
                     user.Company!.Name.Should().NotBeNullOrWhiteSpace();
-                    Log.Information("Successfuly validate users have company name - User: ID {UserId}, Name: {UserName}, have Company name: {CompanyName}", user.Id, user.Name, user.Company);
+                    Log.Information("Successfuly validate users have company name - User: ID {UserId}, Name: {UserName}, have Company name: {CompanyName}", user.Id, user.Name, user.Company.Name);
                 });
             }
             catch (AssertionException)

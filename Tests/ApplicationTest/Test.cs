@@ -1,10 +1,10 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using Core.Data;
-using Core.Factory;
 using Serilog;
 using Core.Helper;
 using Core.Api;
+using Core.Singleton;
 
 namespace Tests.ApplicationTest
 {
@@ -39,18 +39,21 @@ namespace Tests.ApplicationTest
             // Indicates whether the last Api test is running to initialize WebDriver instance
             if (TestUtils.IsNotApiTestRunning())
             {
-                _driver = FactoryBrowser.SwitchBetweenChromeAndFirefox();
-                FactoryBrowser.ManageWindow();
-                FactoryBrowser.GetUrl();
+                _driver = DriverSingleton.SwitchBetweenChromeAndFirefox();
+                DriverSingleton.ManageWindow();
+                DriverSingleton.GetUrl();
+
+                //Initialize Ui Logger
+                TestUtils.GetUiLog();
             }
             else
             {
                 //Initialize Rest
                 _rest = new Rest();
-            }
 
-            //Initialize Logger
-            TestUtils.GetLog();
+                //Initialize Api Logger
+                TestUtils.GetApiLog();
+            }
         }
 
         // Disposes of the WebDriver and Logger instances
@@ -67,7 +70,7 @@ namespace Tests.ApplicationTest
             // Indicates whether the last Api test is running to dispose WebDriver instance
             if (TestUtils.IsNotApiTestRunning())
             {
-                FactoryBrowser.Dispose();
+                DriverSingleton.Dispose();
             }
 
             //Dispose Logger

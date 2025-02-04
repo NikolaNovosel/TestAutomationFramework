@@ -26,13 +26,22 @@ namespace Core.Helper
             return TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed;
         }
 
-        // Configures and creates a logger instance for writing logs to console and a rolling log file.
-        public static void GetLog()
+        // Configures and creates a logger instance for writing ui logs to console and a rolling log file.
+        public static void GetUiLog()
         {
              Log.Logger = new LoggerConfiguration()
             .WriteTo.Console()
-            .WriteTo.File(Location.Logs, rollingInterval: RollingInterval.Day)
+            .WriteTo.File(Location.UiLogs, rollingInterval: RollingInterval.Day)
             .CreateLogger();
+        }
+
+        // Configures and creates a logger instance for writing api logs to console and a rolling log file.
+        public static void GetApiLog()
+        {
+            Log.Logger = new LoggerConfiguration()
+           .WriteTo.Console()
+           .WriteTo.File(Location.ApiLogs, rollingInterval: RollingInterval.Day)
+           .CreateLogger();
         }
 
         // Take screenshot method

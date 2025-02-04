@@ -14,8 +14,11 @@
         // Path to test data json
         public static readonly string JsonTestData = Path.Combine(_projectPath, "json", "testdata.json");
 
-        // Path to log data text
-        public static readonly string Logs = Path.Combine(_projectPath, "log", "log.txt");
+        // Path to ui log data text
+        public static readonly string UiLogs = Path.Combine(_projectPath, "log_ui", "log.txt");
+
+        // Path to api log data text
+        public static readonly string ApiLogs = Path.Combine(_projectPath, "log_api", "log.txt");
 
         // Provide the path to main project directory
         public readonly static string ScreenShot = _projectPath;
