@@ -33,7 +33,7 @@ jobs:
           
       # Step 3: Set up Chrome Driver
       - name: Install Chrome and ChromeDriver
-      - uses: browser-actions/setup-chrome@v1
+        uses: browser-actions/setup-chrome@v1
         with:
           chrome-version: 120
           install-chromedriver: true
