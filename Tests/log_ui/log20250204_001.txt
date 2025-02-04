@@ -95,3 +95,72 @@ REMOTE" contains the keyword ".NET"
 2025-02-04 23:08:21.550 +01:00 [INF] Search page interactions completed successfully
 2025-02-04 23:08:21.580 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
 2025-02-04 23:08:21.610 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 23:16:47.859 +01:00 [INF] Navigates to the About page
+2025-02-04 23:16:56.369 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-04 23:16:56.864 +01:00 [INF] Try to click the download button
+2025-02-04 23:17:02.696 +01:00 [INF] The download button clicked
+2025-02-04 23:17:02.696 +01:00 [INF] About page interactions completed successfully
+2025-02-04 23:17:02.737 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-04 23:54:53.498 +01:00 [INF] Navigates to the About page
+2025-02-04 23:54:58.433 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-04 23:54:59.212 +01:00 [INF] Try to click the download button
+2025-02-04 23:55:04.680 +01:00 [INF] The download button clicked
+2025-02-04 23:55:04.680 +01:00 [INF] About page interactions completed successfully
+2025-02-04 23:55:04.890 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-04 23:55:19.973 +01:00 [INF] Navigates to the Careers page
+2025-02-04 23:55:34.783 +01:00 [INF] Enters a keyword into the search field
+2025-02-04 23:55:35.009 +01:00 [INF] Try to open the location dropdown list
+2025-02-04 23:55:35.084 +01:00 [ERR] Error: Element <span class="select2-selection__arrow"> is not clickable at point (704,663) because another element <div id="onetrust-banner-sdk" class="otFlat bottom ot-wo-title vertical-align-content ot-buttons-fw"> obscures it
+2025-02-04 23:55:35.084 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-04 23:55:35.097 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-04 23:55:35.102 +01:00 [INF] Open the location dropdown list
+2025-02-04 23:55:35.800 +01:00 [INF] Error gracefully handled
+2025-02-04 23:55:35.802 +01:00 [INF] The location dropdown opened
+2025-02-04 23:55:35.802 +01:00 [INF] Selects all locations
+2025-02-04 23:55:36.562 +01:00 [INF] Try to check the remote filter
+2025-02-04 23:55:36.585 +01:00 [INF] The remote filter checked
+2025-02-04 23:55:36.585 +01:00 [INF] Submits the job search
+2025-02-04 23:55:37.729 +01:00 [INF] Try to open the latest job result
+2025-02-04 23:55:39.911 +01:00 [ERR] Error: Element <a class="button-text primary-button-preset white-background-preset search-result__item-apply-23" href="https://www.epam.com/careers/job-listings/job.epamgdo_blt91c6747c9117a35d_en-us_Other_Argentina.remote_net-developer"> is not clickable at point (1089,652) because another element <div id="onetrust-banner-sdk" class="otFlat bottom ot-wo-title vertical-align-content ot-buttons-fw"> obscures it
+2025-02-04 23:55:39.911 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-04 23:55:39.934 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-04 23:55:39.938 +01:00 [INF] Open the latest job result
+2025-02-04 23:55:42.317 +01:00 [INF] Error gracefully handled
+2025-02-04 23:55:42.317 +01:00 [INF] The latest job result opened
+2025-02-04 23:55:42.317 +01:00 [INF] Careers page interactions completed successfully
+2025-02-04 23:55:42.524 +01:00 [INF] Successfully validate that the article text ".NET Developer
+REMOTE" contains the keyword ".NET"
+2025-02-04 23:55:56.465 +01:00 [INF] Navigate to the Insights page
+2025-02-04 23:55:57.901 +01:00 [INF] Swipes the carousel
+2025-02-04 23:55:58.654 +01:00 [INF] Swipes the carousel
+2025-02-04 23:55:59.258 +01:00 [INF] Try to wait for the main article to be displayed
+2025-02-04 23:56:04.690 +01:00 [ERR] Error: Timed out after 5 seconds
+2025-02-04 23:56:04.690 +01:00 [INF] Swipes the carousel
+2025-02-04 23:56:05.256 +01:00 [INF] Error gracefully handled
+2025-02-04 23:56:05.288 +01:00 [INF] Main article displayed
+2025-02-04 23:56:05.289 +01:00 [INF] Try to click the Read More button in the carousel
+2025-02-04 23:56:08.346 +01:00 [INF] The Read More button in the carousel clicked
+2025-02-04 23:56:08.346 +01:00 [INF] Insight page interactions completed successfully
+2025-02-04 23:56:08.583 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-02-04 23:56:22.490 +01:00 [INF] Opens the search bar
+2025-02-04 23:56:22.927 +01:00 [INF] Enters the search string
+2025-02-04 23:56:23.063 +01:00 [INF] Submits the search
+2025-02-04 23:56:24.440 +01:00 [INF] Scroll to the last link
+2025-02-04 23:56:25.807 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 23:56:25.869 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-02-04 23:56:25.895 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 23:56:38.310 +01:00 [INF] Opens the search bar
+2025-02-04 23:56:38.713 +01:00 [INF] Enters the search string
+2025-02-04 23:56:38.822 +01:00 [INF] Submits the search
+2025-02-04 23:56:40.742 +01:00 [INF] Scroll to the last link
+2025-02-04 23:56:41.579 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 23:56:41.618 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-02-04 23:56:41.641 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 23:56:53.194 +01:00 [INF] Opens the search bar
+2025-02-04 23:56:53.671 +01:00 [INF] Enters the search string
+2025-02-04 23:56:53.931 +01:00 [INF] Submits the search
+2025-02-04 23:56:55.589 +01:00 [INF] Scroll to the last link
+2025-02-04 23:56:56.444 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 23:56:56.471 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-02-04 23:56:56.492 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation

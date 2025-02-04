@@ -516,3 +516,74 @@
 2025-02-04 23:06:29.107 +01:00 [INF] Get request completed
 2025-02-04 23:06:29.108 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
 2025-02-04 23:06:29.108 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 23:55:06.415 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/users
+2025-02-04 23:55:06.432 +01:00 [INF] Send the get request for the type
+2025-02-04 23:55:06.434 +01:00 [INF] Get the response from the type
+2025-02-04 23:55:06.721 +01:00 [INF] GET request completed
+2025-02-04 23:55:06.725 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham, User Name Bret, Email Sincere@april.biz, Address Business.Model.Address, Phone 1-770-736-8031 x56442, Website hildegard.org, Company Romaguera-Crona
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 2, Name Ervin Howell, User Name Antonette, Email Shanna@melissa.tv, Address Business.Model.Address, Phone 010-692-6593 x09125, Website anastasia.net, Company Deckow-Crist
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 3, Name Clementine Bauch, User Name Samantha, Email Nathan@yesenia.net, Address Business.Model.Address, Phone 1-463-123-4447, Website ramiro.info, Company Romaguera-Jacobson
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 4, Name Patricia Lebsack, User Name Karianne, Email Julianne.OConner@kory.org, Address Business.Model.Address, Phone 493-170-9623 x156, Website kale.biz, Company Robel-Corkery
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 5, Name Chelsey Dietrich, User Name Kamren, Email Lucio_Hettinger@annie.ca, Address Business.Model.Address, Phone (254)954-1289, Website demarco.info, Company Keebler LLC
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 6, Name Mrs. Dennis Schulist, User Name Leopoldo_Corkery, Email Karley_Dach@jasper.info, Address Business.Model.Address, Phone 1-477-935-8478 x6430, Website ola.org, Company Considine-Lockman
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 7, Name Kurtis Weissnat, User Name Elwyn.Skiles, Email Telly.Hoeger@billy.biz, Address Business.Model.Address, Phone 210.067.6132, Website elvis.io, Company Johns Group
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 8, Name Nicholas Runolfsdottir V, User Name Maxime_Nienow, Email Sherwood@rosamond.me, Address Business.Model.Address, Phone 586.493.6943 x140, Website jacynthe.com, Company Abernathy Group
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 9, Name Glenna Reichert, User Name Delphine, Email Chaim_McDermott@dana.io, Address Business.Model.Address, Phone (775)976-6794 x41206, Website conrad.com, Company Yost and Sons
+2025-02-04 23:55:06.728 +01:00 [INF] Successfully validate each user: ID 10, Name Clementina DuBuque, User Name Moriah.Stanton, Email Rey.Padberg@karina.biz, Address Business.Model.Address, Phone 024-648-3804, Website ambrose.net, Company Hoeger LLC
+2025-02-04 23:55:06.880 +01:00 [ERR] Fail to validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 23:55:06.894 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/users
+2025-02-04 23:55:06.900 +01:00 [INF] Send the get request for the type
+2025-02-04 23:55:06.901 +01:00 [INF] Get the response from the type
+2025-02-04 23:55:06.984 +01:00 [INF] GET request completed
+2025-02-04 23:55:06.986 +01:00 [INF] Successfully validate Content Type - Expected: application/json, Actual: application/json
+2025-02-04 23:55:06.988 +01:00 [ERR] Fail to validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 23:55:06.990 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/users
+2025-02-04 23:55:06.998 +01:00 [INF] Send the get request for the type
+2025-02-04 23:55:06.998 +01:00 [INF] Get the response from the type
+2025-02-04 23:55:07.064 +01:00 [INF] GET request completed
+2025-02-04 23:55:07.066 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 23:55:07.072 +01:00 [INF] Successfully validate that All users IDs are unique
+2025-02-04 23:55:07.080 +01:00 [INF] Successfuly validate non-empty users: User Name Leanne Graham and Username Bret
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Ervin Howell and Username Antonette
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Clementine Bauch and Username Samantha
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Patricia Lebsack and Username Karianne
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Chelsey Dietrich and Username Kamren
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Mrs. Dennis Schulist and Username Leopoldo_Corkery
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Kurtis Weissnat and Username Elwyn.Skiles
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Nicholas Runolfsdottir V and Username Maxime_Nienow
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Glenna Reichert and Username Delphine
+2025-02-04 23:55:07.081 +01:00 [INF] Successfuly validate non-empty users: User Name Clementina DuBuque and Username Moriah.Stanton
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 1, Name: Leanne Graham, have Company name: Romaguera-Crona
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 2, Name: Ervin Howell, have Company name: Deckow-Crist
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 3, Name: Clementine Bauch, have Company name: Romaguera-Jacobson
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 4, Name: Patricia Lebsack, have Company name: Robel-Corkery
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 5, Name: Chelsey Dietrich, have Company name: Keebler LLC
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 6, Name: Mrs. Dennis Schulist, have Company name: Considine-Lockman
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 7, Name: Kurtis Weissnat, have Company name: Johns Group
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 8, Name: Nicholas Runolfsdottir V, have Company name: Abernathy Group
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 9, Name: Glenna Reichert, have Company name: Yost and Sons
+2025-02-04 23:55:07.083 +01:00 [INF] Successfuly validate users have company name - User: ID 10, Name: Clementina DuBuque, have Company name: Hoeger LLC
+2025-02-04 23:55:07.084 +01:00 [ERR] Fail to validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 23:55:07.089 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/users
+2025-02-04 23:55:07.097 +01:00 [INF] Send the post request object
+2025-02-04 23:55:07.098 +01:00 [INF] Get the response for the created object
+2025-02-04 23:55:07.552 +01:00 [INF] Post request completed
+2025-02-04 23:55:07.552 +01:00 [INF] Successfuly validate Response Content - Expected: non-empty, Actual: {
+  "id": 11,
+  "name": "John",
+  "username": "Doe",
+  "email": null,
+  "address": null,
+  "phone": null,
+  "website": null,
+  "company": null
+}
+2025-02-04 23:55:07.552 +01:00 [INF] Successfully validate that the response contains a valid Id value: 11
+2025-02-04 23:55:07.553 +01:00 [INF] Successfully validate API response - Expected Status: Created (201), Actual: "Created"
+2025-02-04 23:55:07.553 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 23:55:07.555 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/invalidendpoint
+2025-02-04 23:55:07.563 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 23:55:07.564 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 23:55:07.643 +01:00 [INF] Get request completed
+2025-02-04 23:55:07.643 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 23:55:07.643 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
