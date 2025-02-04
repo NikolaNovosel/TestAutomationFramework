@@ -85,9 +85,6 @@ jobs:
       - name: Build 
         run: dotnet build --no-restore 
 
-      - name: Run WebDriverManager
-        run: dotnet WebDriverManager.dll
-
       - name: Run UI Tests
         run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
