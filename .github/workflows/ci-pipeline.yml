@@ -39,12 +39,6 @@ jobs:
       - name: Run API Tests
         run: dotnet test --no-build --filter Category=API --logger trx --results-directory TestResults
 
-      - name: Format TRX file with PowerShell
-        shell: pwsh
-        run: |
-             [xml]$xml = Get-Content -Path api-test-results.trx
-             $xml.Save("api-test-results.trx")
-
       - name: Upload API test results
         uses: actions/upload-artifact@v4
         with:
@@ -74,7 +68,7 @@ jobs:
       - name: Install FirefoxDriver
         if: ${{ github.event.inputs.browser == 'firefox' }}
         run: |
-          sudo apt install firefox-esr
+          sudo apt-get install -y firefox-geckodriver
           echo "FIREFOX_BIN=/usr/bin/firefox" >> $GITHUB_ENV
           echo "WEBDRIVER_BIN=/usr/bin/geckodriver" >> $GITHUB_ENV
 
@@ -92,7 +86,7 @@ jobs:
         run: dotnet build --no-restore 
 
       - name: Run UI Tests
-        run: dotnet test --filter Category=UI --logger trx --results-directory TestResults
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
           BROWSER: ${{ github.event.inputs.browser }}
 
