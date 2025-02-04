@@ -1,0 +1,104 @@
+name: CI Pipeline for API & UI Tests
+on:
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: "Choose browser for UI tests"
+        required: true
+        default: "firefox"
+        type: choice
+        options:
+          - chrome
+          - firefox
+          - edge
+jobs:
+ api-tests:
+      name: Build and run API tests
+      runs-on: ubuntu-latest
+      
+      steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore Dependencies
+        run: dotnet restore
+        
+      - name: Build 
+        run: dotnet build --no-restore 
+        
+      - name: Run API Tests
+        run: dotnet test --no-build --filter Category=API --logger trx --results-directory TestResults
+
+      - name: Upload API test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: api-test-results
+          path: TestResults
+          
+ ui-tests:
+    name: Build and run UI tests
+    runs-on: ubuntu-latest
+    needs: api-tests
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Install ChromeDriver
+        if: ${{ github.event.inputs.browser == 'chrome' }}
+        run: |
+          sudo apt-get install -y chromium-chromedriver
+          echo "CHROME_BIN=/usr/bin/chromium-browser" >> $GITHUB_ENV
+          echo "WEBDRIVER_BIN=/usr/bin/chromedriver" >> $GITHUB_ENV
+
+      - name: Install FirefoxDriver
+        if: ${{ github.event.inputs.browser == 'firefox' }}
+        run: |
+          sudo apt-get install -y firefox-geckodriver
+          echo "FIREFOX_BIN=/usr/bin/firefox" >> $GITHUB_ENV
+          echo "WEBDRIVER_BIN=/usr/bin/geckodriver" >> $GITHUB_ENV
+
+      - name: Install EdgeDriver
+        if: ${{ github.event.inputs.browser == 'edge' }}
+        run: |
+          sudo apt-get install -y microsoft-edge-stable
+          echo "EDGE_BIN=/usr/bin/microsoft-edge" >> $GITHUB_ENV
+          echo "WEBDRIVER_BIN=/usr/bin/edgedriver" >> $GITHUB_ENV
+
+      - name: Restore Dependencies
+        run: dotnet restore
+
+      - name: Build 
+        run: dotnet build --no-restore 
+
+      - name: Run UI Tests
+        run: dotnet test --no-build  --filter Category=UI --logger trx --results-directory TestResults
+        env:
+          BROWSER: ${{ github.event.inputs.browser }}
+
+      - name: Upload UI Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: ui-test-results
+          path: TestResults
+
+      - name: Upload UI Test Screenshots
+        if: success() || failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: ui-test-screenshots
+          path: Screenshots/
