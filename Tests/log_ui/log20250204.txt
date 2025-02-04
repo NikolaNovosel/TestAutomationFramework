@@ -1253,3 +1253,57 @@ REMOTE" contains the keyword ".NET"
 2025-02-04 20:53:41.530 +01:00 [INF] Search page interactions completed successfully
 2025-02-04 20:53:41.627 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
 2025-02-04 20:53:41.746 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 21:26:15.284 +01:00 [INF] Navigates to the About page
+2025-02-04 21:26:16.656 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-04 21:26:19.427 +01:00 [INF] Try to click the download button
+2025-02-04 21:26:19.891 +01:00 [INF] The download button clicked
+2025-02-04 21:26:19.892 +01:00 [INF] About page interactions completed successfully
+2025-02-04 21:26:21.172 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-04 21:26:30.151 +01:00 [INF] Navigates to the Careers page
+2025-02-04 21:26:30.671 +01:00 [INF] Enters a keyword into the search field
+2025-02-04 21:26:32.955 +01:00 [INF] Try to open the location dropdown list
+2025-02-04 21:26:33.416 +01:00 [INF] The location dropdown opened
+2025-02-04 21:26:33.416 +01:00 [INF] Selects all locations
+2025-02-04 21:26:33.792 +01:00 [INF] Try to check the remote filter
+2025-02-04 21:26:33.857 +01:00 [INF] The remote filter checked
+2025-02-04 21:26:33.858 +01:00 [INF] Submits the job search
+2025-02-04 21:26:35.759 +01:00 [INF] Try to open the latest job result
+2025-02-04 21:26:38.525 +01:00 [INF] The latest job result opened
+2025-02-04 21:26:38.525 +01:00 [INF] Careers page interactions completed successfully
+2025-02-04 21:26:39.938 +01:00 [INF] Successfully validate that the article text ".NET Developer
+REMOTE" contains the keyword ".NET"
+2025-02-04 21:26:53.871 +01:00 [INF] Navigate to the Insights page
+2025-02-04 21:26:56.011 +01:00 [INF] Swipes the carousel
+2025-02-04 21:26:56.612 +01:00 [INF] Swipes the carousel
+2025-02-04 21:26:57.177 +01:00 [INF] Try to wait for the main article to be displayed
+2025-02-04 21:27:02.187 +01:00 [ERR] Error: Timed out after 5 seconds
+2025-02-04 21:27:02.187 +01:00 [INF] Swipes the carousel
+2025-02-04 21:27:02.844 +01:00 [INF] Error gracefully handled
+2025-02-04 21:27:02.911 +01:00 [INF] Main article displayed
+2025-02-04 21:27:02.911 +01:00 [INF] Try to click the Read More button in the carousel
+2025-02-04 21:27:06.462 +01:00 [INF] The Read More button in the carousel clicked
+2025-02-04 21:27:06.462 +01:00 [INF] Insight page interactions completed successfully
+2025-02-04 21:27:06.690 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-02-04 21:27:15.701 +01:00 [INF] Opens the search bar
+2025-02-04 21:27:15.987 +01:00 [INF] Enters the search string
+2025-02-04 21:27:16.311 +01:00 [INF] Submits the search
+2025-02-04 21:27:16.935 +01:00 [INF] Scroll to the last link
+2025-02-04 21:27:19.420 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 21:27:19.642 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-02-04 21:27:19.684 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 21:27:27.325 +01:00 [INF] Opens the search bar
+2025-02-04 21:27:27.699 +01:00 [INF] Enters the search string
+2025-02-04 21:27:28.564 +01:00 [INF] Submits the search
+2025-02-04 21:27:29.097 +01:00 [INF] Scroll to the last link
+2025-02-04 21:27:31.068 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 21:27:31.212 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-02-04 21:27:31.243 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 21:27:40.376 +01:00 [INF] Opens the search bar
+2025-02-04 21:27:40.675 +01:00 [INF] Enters the search string
+2025-02-04 21:27:41.492 +01:00 [INF] Submits the search
+2025-02-04 21:27:42.101 +01:00 [INF] Scroll to the last link
+2025-02-04 21:27:44.755 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 21:27:44.849 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-02-04 21:27:44.892 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 23:04:15.115 +01:00 [INF] Navigates to the Careers page
