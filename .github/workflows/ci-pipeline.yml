@@ -78,6 +78,12 @@ jobs:
         run: dotnet build --no-restore 
         working-directory: ./Tests
 
+      # Step 5: Set correct permissions
+      - name: Set correct permissions
+        run: |
+          chmod -R 755 ./Tests/bin
+          chmod -R 755 ./Tests/obj
+
       - name: Run UI Tests
         run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
