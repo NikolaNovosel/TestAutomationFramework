@@ -83,20 +83,12 @@ jobs:
         run: dotnet restore
         working-directory: ./Tests
 
-      - name: Build 
-        run: dotnet build --no-restore 
-        working-directory: ./Tests
-        
-      - name: Set correct permissions
+      - name: Build and Run UI Tests
         run: |
-          chmod -R 755 ./bin
-          chmod -R 755 ./obj
-
-      - name: Run UI Tests
-        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
+          dotnet build --no-restore --configuration Release ./Tests &&
+          dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults ./Tests
         env:
           BROWSER: ${{ github.event.inputs.browser }}
-        working-directory: ./Tests
 
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
