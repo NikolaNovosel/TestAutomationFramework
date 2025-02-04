@@ -67,10 +67,7 @@ jobs:
 
       - name: Install Firefox and Geckodriver
         if: ${{ github.event.inputs.browser == 'firefox' }}
-        run: |
-          sudo add-apt-repository -y ppa:mozillateam/ppa
-          sudo apt-get update
-          sudo apt-get install -y firefox geckodriver
+        uses: browser-actions/setup-firefox@v1
 
       - name: Install EdgeDriver
         if: ${{ github.event.inputs.browser == 'edge' }}
