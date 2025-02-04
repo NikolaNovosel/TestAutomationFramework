@@ -58,9 +58,6 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Create download directory
-        run: mkdir -p $GITHUB_WORKSPACE/Downloads
-        
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
         uses: browser-actions/setup-chrome@v1
@@ -98,7 +95,7 @@ jobs:
         
       - name: Set Firefox download directory
         run: |
-          mkdir -p /firefox-downloads
+          run: mkdir -p $GITHUB_WORKSPACE/Downloads
           echo 'user_pref("browser.download.dir", "/tmp/firefox-downloads");' >> /tmp/firefox-prefs.js
           echo 'user_pref("browser.download.folderList", 2);' >> /tmp/firefox-prefs.js
           echo 'user_pref("browser.download.manager.showWhenStarting", false);' >> /tmp/firefox-prefs.js
