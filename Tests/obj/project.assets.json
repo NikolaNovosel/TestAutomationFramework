@@ -2081,7 +2081,8 @@
       "NUnit >= 4.3.2",
       "NUnit3TestAdapter >= 4.6.0",
       "Selenium.WebDriver >= 4.28.0",
-      "Serilog.Sinks.Console >= 6.0.0"
+      "Serilog.Sinks.Console >= 6.0.0",
+      "WebDriverManager >= 2.17.5"
     ]
   },
   "packageFolders": {
@@ -2160,6 +2161,10 @@
           "Serilog.Sinks.Console": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "WebDriverManager": {
+            "target": "Package",
+            "version": "[2.17.5, )"
           }
         },
         "imports": [
