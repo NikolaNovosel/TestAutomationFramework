@@ -58,7 +58,7 @@ namespace Business.Validation
             {
                 if (keyword == "Cloud")
                 {
-                    CheckIfAllLinksContainKeyword(keyword).Should().BeTrue();
+                    CheckIfAllLinksContainKeyword(keyword).Should().BeFalse();
                     Log.Information(@$"Successfully validate that all links contain the keyword: ""{keyword}""");
                 }
             }

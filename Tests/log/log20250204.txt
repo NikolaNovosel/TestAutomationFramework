@@ -1,0 +1,137 @@
+2025-02-04 17:13:28.263 +01:00 [INF] Navigates to the About page
+2025-02-04 17:13:32.169 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-04 17:13:33.183 +01:00 [INF] Try to click the download button
+2025-02-04 17:13:33.522 +01:00 [INF] The download button clicked
+2025-02-04 17:13:33.522 +01:00 [INF] About page interactions completed successfully
+2025-02-04 17:13:35.169 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\Documents\Downloads"
+2025-02-04 17:13:37.407 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 17:13:37.427 +01:00 [INF] Send the get request for the type
+2025-02-04 17:13:37.430 +01:00 [INF] Get the response from the type
+2025-02-04 17:13:37.751 +01:00 [INF] GET request completed
+2025-02-04 17:13:37.758 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 17:13:37.761 +01:00 [INF] Successfully validate each user: ID 2, Name Ervin Howell
+2025-02-04 17:13:37.761 +01:00 [INF] Successfully validate each user: ID 3, Name Clementine Bauch
+2025-02-04 17:13:37.761 +01:00 [INF] Successfully validate each user: ID 4, Name Patricia Lebsack
+2025-02-04 17:13:37.762 +01:00 [INF] Successfully validate each user: ID 5, Name Chelsey Dietrich
+2025-02-04 17:13:37.762 +01:00 [INF] Successfully validate each user: ID 6, Name Mrs. Dennis Schulist
+2025-02-04 17:13:37.762 +01:00 [INF] Successfully validate each user: ID 7, Name Kurtis Weissnat
+2025-02-04 17:13:37.762 +01:00 [INF] Successfully validate each user: ID 8, Name Nicholas Runolfsdottir V
+2025-02-04 17:13:37.762 +01:00 [INF] Successfully validate each user: ID 9, Name Glenna Reichert
+2025-02-04 17:13:37.762 +01:00 [INF] Successfully validate each user: ID 10, Name Clementina DuBuque
+2025-02-04 17:13:37.764 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 17:13:37.766 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 17:13:37.769 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 17:13:37.780 +01:00 [INF] Send the get request for the type
+2025-02-04 17:13:37.780 +01:00 [INF] Get the response from the type
+2025-02-04 17:13:37.866 +01:00 [INF] GET request completed
+2025-02-04 17:13:37.874 +01:00 [INF] Successfully validate Content Type - Expected: application/json, Actual: application/json
+2025-02-04 17:13:37.875 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 17:13:37.875 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 17:13:37.880 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 17:13:37.898 +01:00 [INF] Send the get request for the type
+2025-02-04 17:13:37.899 +01:00 [INF] Get the response from the type
+2025-02-04 17:13:38.006 +01:00 [INF] GET request completed
+2025-02-04 17:13:38.011 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 17:13:38.028 +01:00 [INF] Successfully validate that All users IDs are unique
+2025-02-04 17:13:38.074 +01:00 [INF] Successfuly validate non-empty users: User Name Leanne Graham and Username Bret
+2025-02-04 17:13:38.079 +01:00 [INF] Successfuly validate non-empty users: User Name Ervin Howell and Username Antonette
+2025-02-04 17:13:38.079 +01:00 [INF] Successfuly validate non-empty users: User Name Clementine Bauch and Username Samantha
+2025-02-04 17:13:38.079 +01:00 [INF] Successfuly validate non-empty users: User Name Patricia Lebsack and Username Karianne
+2025-02-04 17:13:38.080 +01:00 [INF] Successfuly validate non-empty users: User Name Chelsey Dietrich and Username Kamren
+2025-02-04 17:13:38.080 +01:00 [INF] Successfuly validate non-empty users: User Name Mrs. Dennis Schulist and Username Leopoldo_Corkery
+2025-02-04 17:13:38.080 +01:00 [INF] Successfuly validate non-empty users: User Name Kurtis Weissnat and Username Elwyn.Skiles
+2025-02-04 17:13:38.080 +01:00 [INF] Successfuly validate non-empty users: User Name Nicholas Runolfsdottir V and Username Maxime_Nienow
+2025-02-04 17:13:38.080 +01:00 [INF] Successfuly validate non-empty users: User Name Glenna Reichert and Username Delphine
+2025-02-04 17:13:38.080 +01:00 [INF] Successfuly validate non-empty users: User Name Clementina DuBuque and Username Moriah.Stanton
+2025-02-04 17:13:38.088 +01:00 [INF] Successfuly validate users have company name - User: ID 1, Name: Leanne Graham, have Company name: Business.Model.Company
+2025-02-04 17:13:38.092 +01:00 [INF] Successfuly validate users have company name - User: ID 2, Name: Ervin Howell, have Company name: Business.Model.Company
+2025-02-04 17:13:38.092 +01:00 [INF] Successfuly validate users have company name - User: ID 3, Name: Clementine Bauch, have Company name: Business.Model.Company
+2025-02-04 17:13:38.092 +01:00 [INF] Successfuly validate users have company name - User: ID 4, Name: Patricia Lebsack, have Company name: Business.Model.Company
+2025-02-04 17:13:38.093 +01:00 [INF] Successfuly validate users have company name - User: ID 5, Name: Chelsey Dietrich, have Company name: Business.Model.Company
+2025-02-04 17:13:38.093 +01:00 [INF] Successfuly validate users have company name - User: ID 6, Name: Mrs. Dennis Schulist, have Company name: Business.Model.Company
+2025-02-04 17:13:38.093 +01:00 [INF] Successfuly validate users have company name - User: ID 7, Name: Kurtis Weissnat, have Company name: Business.Model.Company
+2025-02-04 17:13:38.093 +01:00 [INF] Successfuly validate users have company name - User: ID 8, Name: Nicholas Runolfsdottir V, have Company name: Business.Model.Company
+2025-02-04 17:13:38.093 +01:00 [INF] Successfuly validate users have company name - User: ID 9, Name: Glenna Reichert, have Company name: Business.Model.Company
+2025-02-04 17:13:38.094 +01:00 [INF] Successfuly validate users have company name - User: ID 10, Name: Clementina DuBuque, have Company name: Business.Model.Company
+2025-02-04 17:13:38.094 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 17:13:38.094 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 17:13:38.098 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 17:13:38.118 +01:00 [INF] Send the post request object
+2025-02-04 17:13:38.120 +01:00 [INF] Get the response for the created object
+2025-02-04 17:13:38.432 +01:00 [INF] Post request completed
+2025-02-04 17:13:38.433 +01:00 [INF] Successfuly validate Response Content - Expected: non-empty, Actual: {
+  "id": 11,
+  "name": "John",
+  "username": "Doe",
+  "email": null,
+  "address": null,
+  "phone": null,
+  "website": null,
+  "company": null
+}
+2025-02-04 17:13:38.434 +01:00 [INF] Successfully validate that the response contains a valid Id value: 11
+2025-02-04 17:13:38.435 +01:00 [INF] Successfully validate API response - Expected Status: Created (201), Actual: "Created"
+2025-02-04 17:13:38.435 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 17:13:38.439 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 17:13:38.458 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 17:13:38.458 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 17:13:38.564 +01:00 [INF] Get request completed
+2025-02-04 17:13:38.565 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 17:13:38.565 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 17:13:46.049 +01:00 [INF] Navigates to the Careers page
+2025-02-04 17:13:46.849 +01:00 [INF] Enters a keyword into the search field
+2025-02-04 17:13:50.071 +01:00 [INF] Try to open the location dropdown list
+2025-02-04 17:13:50.633 +01:00 [INF] The location dropdown opened
+2025-02-04 17:13:50.633 +01:00 [INF] Selects all locations
+2025-02-04 17:13:51.383 +01:00 [INF] Try to check the remote filter
+2025-02-04 17:13:51.637 +01:00 [INF] The remote filter checked
+2025-02-04 17:13:51.637 +01:00 [INF] Submits the job search
+2025-02-04 17:13:53.977 +01:00 [INF] Try to open the latest job result
+2025-02-04 17:13:57.322 +01:00 [ERR] Error: element click intercepted: Element <a href="https://www.epam.com/careers/job-listings/job.epamgdo_blt91c6747c9117a35d_en-us_Other_Argentina.remote_net-developer" class="button-text primary-button-preset white-background-preset search-result__item-apply-23">...</a> is not clickable at point (1440, 1215). Other element would receive the click: <div id="onetrust-banner-sdk" class="otFlat bottom ot-wo-title vertical-align-content ot-buttons-fw" tabindex="0" role="region" aria-label="Cookie banner" style="bottom: 0px;">...</div>
+  (Session info: chrome=132.0.6834.160)
+2025-02-04 17:13:57.322 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-04 17:13:57.389 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-04 17:13:57.405 +01:00 [INF] Open the latest job result
+2025-02-04 17:14:00.718 +01:00 [INF] Error gracefully handled
+2025-02-04 17:14:00.718 +01:00 [INF] The latest job result opened
+2025-02-04 17:14:00.718 +01:00 [INF] Careers page interactions completed successfully
+2025-02-04 17:14:02.508 +01:00 [INF] Successfully validate that the article text ".NET Developer
+REMOTE" contains the keyword ".NET"
+2025-02-04 17:14:22.033 +01:00 [INF] Navigate to the Insights page
+2025-02-04 17:14:24.946 +01:00 [INF] Swipes the carousel
+2025-02-04 17:14:25.824 +01:00 [INF] Swipes the carousel
+2025-02-04 17:14:26.412 +01:00 [INF] Try to wait for the main article to be displayed
+2025-02-04 17:14:31.594 +01:00 [ERR] Error: Timed out after 5 seconds
+2025-02-04 17:14:31.594 +01:00 [INF] Swipes the carousel
+2025-02-04 17:14:32.216 +01:00 [INF] Error gracefully handled
+2025-02-04 17:14:32.320 +01:00 [INF] Main article displayed
+2025-02-04 17:14:32.320 +01:00 [INF] Try to click the Read More button in the carousel
+2025-02-04 17:14:32.477 +01:00 [ERR] Error: Element <a class="custom-link link-with-bottom-arrow color-link body-text font-900 slider-cta-link" href="https://www.epam.com/research-results-from-the-survey-of-leaders-in-it-and-people-departments"> is not clickable at point (599,571) because another element <div id="onetrust-group-container" class="ot-sdk-eight ot-sdk-columns"> obscures it
+2025-02-04 17:14:32.477 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-04 17:14:32.550 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-04 17:14:32.573 +01:00 [INF] Click the Read More button in the carousel
+2025-02-04 17:14:38.128 +01:00 [INF] Error gracefully handled
+2025-02-04 17:14:38.128 +01:00 [INF] The Read More button in the carousel clicked
+2025-02-04 17:14:38.128 +01:00 [INF] Insight page interactions completed successfully
+2025-02-04 17:14:38.695 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-02-04 17:14:50.519 +01:00 [INF] Opens the search bar
+2025-02-04 17:14:50.929 +01:00 [INF] Enters the search string
+2025-02-04 17:14:51.894 +01:00 [INF] Submits the search
+2025-02-04 17:14:52.565 +01:00 [INF] Scroll to the last link
+2025-02-04 17:14:55.449 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 17:14:55.676 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-02-04 17:14:55.734 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 17:15:04.110 +01:00 [INF] Opens the search bar
+2025-02-04 17:15:04.707 +01:00 [INF] Enters the search string
+2025-02-04 17:15:05.156 +01:00 [INF] Submits the search
+2025-02-04 17:15:07.029 +01:00 [INF] Scroll to the last link
+2025-02-04 17:15:08.680 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 17:15:09.236 +01:00 [ERR] Failed to validate that all links contain the keyword: "Cloud"
+2025-02-04 17:15:18.520 +01:00 [INF] Opens the search bar
+2025-02-04 17:15:18.858 +01:00 [INF] Enters the search string
+2025-02-04 17:15:19.825 +01:00 [INF] Submits the search
+2025-02-04 17:15:20.451 +01:00 [INF] Scroll to the last link
+2025-02-04 17:15:23.193 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 17:15:23.313 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-02-04 17:15:23.374 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
