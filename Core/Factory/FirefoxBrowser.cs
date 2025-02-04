@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager;
 using Core.Data;
+using OpenQA.Selenium.Edge;
 
 namespace Core.Factory
 {

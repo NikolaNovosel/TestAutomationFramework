@@ -14,6 +14,8 @@ namespace Core.Singleton
         internal static ChromeOptions GetChromeOptions()
         {
             var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArgument("--no-sandbox");
+            chromeOptions.AddArgument("--disable-dev-shm-usage");
             chromeOptions.AddArgument("headless");
             chromeOptions.AddUserProfilePreference("download.default_directory", ConfigProvider.DownloadDir);
             return chromeOptions;
@@ -33,6 +35,8 @@ namespace Core.Singleton
         internal static EdgeOptions GetEdgeOptions()
         {
             var edgeOptions = new EdgeOptions();
+            edgeOptions.AddArgument("--no-sandbox");
+            edgeOptions.AddArgument("--disable-dev-shm-usage");
             edgeOptions.AddArgument("--headless");
             edgeOptions.AddUserProfilePreference("download.default_directory", ConfigProvider.DownloadDir);
             return edgeOptions;

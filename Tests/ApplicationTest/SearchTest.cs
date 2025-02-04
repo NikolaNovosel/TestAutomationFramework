@@ -8,6 +8,7 @@ namespace Tests.ApplicationTest
     /// <summary>
     /// Test class for search functionality
     /// </summary>
+    [Category("UI")]
     internal class SearchTest : Test
     {
         // Tests search results for different keywords

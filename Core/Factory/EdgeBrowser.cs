@@ -18,6 +18,8 @@ namespace Core.Factory
         public DriverOptions GetDriverOptions()
         {
             var edgeOptions = new EdgeOptions();
+            edgeOptions.AddArgument("--no-sandbox");
+            edgeOptions.AddArgument("--disable-dev-shm-usage");
             edgeOptions.AddArgument("--headless");
             edgeOptions.AddUserProfilePreference("download.default_directory", ConfigProvider.DownloadDir);
             return edgeOptions;

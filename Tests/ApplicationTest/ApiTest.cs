@@ -6,6 +6,10 @@ using Serilog;
 
 namespace Tests.ApplicationTest
 {
+    /// <summary>
+    /// Test class for Api testing
+    /// </summary>
+    [Category("API")]
     internal class ApiTest : Test
     {
         //Tasks #1. Validate that the list of users can be received successfully

@@ -8,6 +8,7 @@ namespace Tests.ApplicationTest
     /// <summary>
     /// Test class for Insight page functionality
     /// </summary
+    [Category("UI")]
     internal class InsightTest : Test
     {
         // Tests Insight page interactions and article consistency across pages

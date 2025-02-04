@@ -8,6 +8,7 @@ namespace Tests.ApplicationTest
     /// <summary>
     /// Test class for About page functionality
     /// </summary>
+    [Category("UI")]
     internal class AboutTest : Test
     {
         // Tests About page interactions and file download

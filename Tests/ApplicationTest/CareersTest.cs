@@ -8,6 +8,7 @@ namespace Tests.ApplicationTest
     /// <summary>
     /// Test class for Careers page functionality
     /// </summary>
+    [Category("UI")]
     internal class CareersTest : Test
     {
         // Test Careers page interactions and article content
