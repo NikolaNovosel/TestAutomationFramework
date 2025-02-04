@@ -37,13 +37,13 @@ jobs:
         run: dotnet build --no-restore 
         
       - name: Run API Tests
-        run: dotnet test --no-build --filter Category=API --results-directory TestResults
+        run: dotnet test --no-build --filter Category=API --results-directory ./TestResults/ApiTests 2>&1 | tee ./TestResults/ApiTests/test_output.log 
 
       - name: Upload API test results
         uses: actions/upload-artifact@v4
         with:
-          name: api-test-results
-          path: TestResults 
+           name: test-logs
+           path: ./TestResults/ApiTests/test_output.log 
  ui-tests:
     name: Build and run UI tests
     runs-on: ubuntu-latest
@@ -86,19 +86,19 @@ jobs:
         run: dotnet build --no-restore 
 
       - name: Run UI Tests
-        run: dotnet test --no-build  --filter Category=UI --results-directory TestResults
+        run: dotnet test --no-build  --filter Category=UI --results-directory ./TestResults/UiTests 2>&1 | tee ./TestResults/UiTests/test_output.log 
         env:
           BROWSER: ${{ github.event.inputs.browser }}
 
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
         with:
-          name: ui-test-results
-          path: TestResults
+          name: test-logs
+          path: ./TestResults/UiTests/test_output.log
 
       - name: Upload UI Test Screenshots
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-screenshots
-          path: Screenshots
+          path: ./Screenshots
