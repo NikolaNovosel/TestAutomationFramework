@@ -17,7 +17,7 @@ namespace Business.Validation
         {
             try
             {
-                response.StatusCode.Should().Be(HttpStatusCode.NotFound);
+                response.StatusCode.Should().Be(HttpStatusCode.OK);
                 Log.Information("Successfully validate API response - Expected Status: OK, Actual: {StatusCode}", response.StatusCode);
             }
             catch (AssertionException)
