@@ -58,13 +58,12 @@ jobs:
         with:
           dotnet-version: '8.0.x'
     
-      - name: Install Chrome dependencies 
-        run: | 
-          sudo apt-get update 
-          sudo apt-get install -y wget unzip xvfb libxi6 libgconf-2-4 
-          sudo apt-get install -y google-chrome-stable 
-          google-chrome --version 
-          which google-chrome    
+      - name: Install ChromeDriver
+        if: ${{ github.event.inputs.browser == 'chrome' }}
+        run: |
+          sudo apt-get install -y chromium-chromedriver
+          echo "CHROME_BIN=/usr/bin/chromium-browser" >> $GITHUB_ENV
+          echo "WEBDRIVER_BIN=/usr/bin/chromedriver" >> $GITHUB_ENV
 
       - name: Install FirefoxDriver
         if: ${{ github.event.inputs.browser == 'firefox' }}
