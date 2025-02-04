@@ -67,7 +67,7 @@ jobs:
 
       # Step 7: Upload Test Results
       - name: Upload Test Results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: ./Tests/TestResults
