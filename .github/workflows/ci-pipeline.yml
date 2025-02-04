@@ -68,7 +68,7 @@ jobs:
       - name: Install FirefoxDriver
         if: ${{ github.event.inputs.browser == 'firefox' }}
         run: |
-          sudo apt-get install -y firefox-geckodriver
+          sudo apt install firefox-esr
           echo "FIREFOX_BIN=/usr/bin/firefox" >> $GITHUB_ENV
           echo "WEBDRIVER_BIN=/usr/bin/geckodriver" >> $GITHUB_ENV
 
