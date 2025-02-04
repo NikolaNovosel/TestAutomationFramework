@@ -81,14 +81,17 @@ jobs:
 
       - name: Restore Dependencies
         run: dotnet restore
+        working-directory: ./Tests
 
       - name: Build 
         run: dotnet build --no-restore 
+        working-directory: ./Tests
 
       - name: Run UI Tests
         run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
           BROWSER: ${{ github.event.inputs.browser }}
+        working-directory: ./Tests
 
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
