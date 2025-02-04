@@ -10,13 +10,14 @@ namespace Tests.ApplicationTest
     /// Test class for Api testing
     /// </summary>
     [Category("API")]
+    [Parallelizable]
     internal class ApiTest : Test
     {
         //Tasks #1. Validate that the list of users can be received successfully
         [Test]
         public async Task Task1()
         {
-            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api);
+            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api + ConfigProvider.Users);
 
             var response = await Rest!.GetAsync<User>();
 
@@ -30,12 +31,11 @@ namespace Tests.ApplicationTest
         [Test]
         public async Task Task2()
         {
-            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api);
+            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api + ConfigProvider.Users);
 
             var response = await Rest!.GetAsync<User>();
 
             Log.Information("GET request completed");
-
 
             ApiValidation.ValidateContentTypeHeader(response);
             ApiValidation.ValidateOkResponse(response);
@@ -45,7 +45,7 @@ namespace Tests.ApplicationTest
         [Test]
         public async Task Task3()
         {
-            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api);
+            Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.Api + ConfigProvider.Users);
 
             var response = await Rest!.GetAsync<User>();
 
@@ -68,7 +68,7 @@ namespace Tests.ApplicationTest
                 Username = "Doe"
             };
 
-            Log.Information("Executing Post request for User at {Endpoint}", ConfigProvider.Api);
+            Log.Information("Executing Post request for User at {Endpoint}", ConfigProvider.Api + ConfigProvider.Users);
 
             var response = await Rest!.CreateAsync<User>(user);
 
@@ -83,7 +83,7 @@ namespace Tests.ApplicationTest
         [Test]
         public async Task Task5()
         {
-            Log.Information("Executing GET request for invalid end point at {Endpoint}", ConfigProvider.Api);
+            Log.Information("Executing GET request for invalid end point at {Endpoint}", ConfigProvider.Api + ConfigProvider.Invalid);
 
             var response = await Rest!.GetAsync();
 
