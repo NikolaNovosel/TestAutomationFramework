@@ -31,12 +31,11 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Install EdgeDriver
-        if: ${{ github.event.inputs.browser == 'edge' }}
-        run: |
-          sudo apt-get install -y microsoft-edge-stable
-          echo "EDGE_BIN=/usr/bin/microsoft-edge" >> $GITHUB_ENV
-          echo "WEBDRIVER_BIN=/usr/bin/edgedriver" >> $GITHUB_ENV
+      - name: Setup Chrome
+      - uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 120
+          install-chromedriver: true
 
       # Step 4: Build the project
       - name: Build the project
