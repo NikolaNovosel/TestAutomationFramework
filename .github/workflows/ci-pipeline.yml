@@ -57,7 +57,7 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'
-
+    
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
         run: |
@@ -65,10 +65,12 @@ jobs:
           echo "CHROME_BIN=/usr/bin/chromium-browser" >> $GITHUB_ENV
           echo "WEBDRIVER_BIN=/usr/bin/chromedriver" >> $GITHUB_ENV
 
-      - name: Install FirefoxDriver
+      - name: Install Firefox and Geckodriver
         if: ${{ github.event.inputs.browser == 'firefox' }}
         run: |
-          sudo apt install firefox-esr
+          sudo add-apt-repository -y ppa:mozillateam/ppa
+          sudo apt-get update
+          sudo apt-get install -y firefox geckodriver
 
       - name: Install EdgeDriver
         if: ${{ github.event.inputs.browser == 'edge' }}
@@ -84,7 +86,7 @@ jobs:
         run: dotnet build --no-restore 
 
       - name: Run UI Tests
-        run: dotnet test --filter Category=UI --logger trx --results-directory TestResults
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
           BROWSER: ${{ github.event.inputs.browser }}
 
@@ -99,4 +101,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-screenshots
-          path: Screenshots/          
+          path: Screenshots
