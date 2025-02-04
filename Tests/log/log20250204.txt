@@ -532,3 +532,827 @@
 2025-02-04 00:40:50.308 +01:00 [INF] Get request completed
 2025-02-04 00:40:50.309 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
 2025-02-04 00:40:50.309 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:45:48.988 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:45:48.988 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:45:48.988 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:45:48.988 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:45:48.988 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:45:49.159 +01:00 [INF] Send the post request object
+2025-02-04 00:45:49.158 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:45:49.159 +01:00 [INF] Send the get request for the type
+2025-02-04 00:45:49.159 +01:00 [INF] Send the get request for the type
+2025-02-04 00:45:49.159 +01:00 [INF] Send the get request for the type
+2025-02-04 00:45:49.164 +01:00 [INF] Get the response from the type
+2025-02-04 00:45:49.164 +01:00 [INF] Get the response from the type
+2025-02-04 00:45:49.164 +01:00 [INF] Get the response from the type
+2025-02-04 00:45:49.164 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:45:49.168 +01:00 [INF] Get the response for the created object
+2025-02-04 00:45:50.157 +01:00 [INF] Get request completed
+2025-02-04 00:45:50.220 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:45:50.231 +01:00 [INF] GET request completed
+2025-02-04 00:45:50.232 +01:00 [INF] GET request completed
+2025-02-04 00:45:50.235 +01:00 [INF] GET request completed
+2025-02-04 00:45:50.277 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:45:50.279 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 00:46:20.919 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:21.001 +01:00 [INF] Send the get request for the type
+2025-02-04 00:46:21.003 +01:00 [INF] Get the response from the type
+2025-02-04 00:46:21.436 +01:00 [INF] GET request completed
+2025-02-04 00:46:21.469 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 00:46:21.473 +01:00 [INF] Successfully validate each user: ID 2, Name Ervin Howell
+2025-02-04 00:46:21.473 +01:00 [INF] Successfully validate each user: ID 3, Name Clementine Bauch
+2025-02-04 00:46:21.473 +01:00 [INF] Successfully validate each user: ID 4, Name Patricia Lebsack
+2025-02-04 00:46:21.473 +01:00 [INF] Successfully validate each user: ID 5, Name Chelsey Dietrich
+2025-02-04 00:46:21.473 +01:00 [INF] Successfully validate each user: ID 6, Name Mrs. Dennis Schulist
+2025-02-04 00:46:21.473 +01:00 [INF] Successfully validate each user: ID 7, Name Kurtis Weissnat
+2025-02-04 00:46:21.474 +01:00 [INF] Successfully validate each user: ID 8, Name Nicholas Runolfsdottir V
+2025-02-04 00:46:21.474 +01:00 [INF] Successfully validate each user: ID 9, Name Glenna Reichert
+2025-02-04 00:46:21.474 +01:00 [INF] Successfully validate each user: ID 10, Name Clementina DuBuque
+2025-02-04 00:46:21.477 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:46:21.479 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:46:21.486 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:21.500 +01:00 [INF] Send the get request for the type
+2025-02-04 00:46:21.500 +01:00 [INF] Get the response from the type
+2025-02-04 00:46:21.605 +01:00 [INF] GET request completed
+2025-02-04 00:46:21.616 +01:00 [INF] Successfully validate Content Type - Expected: application/json, Actual: application/json
+2025-02-04 00:46:21.617 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:46:21.617 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:46:21.620 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:21.640 +01:00 [INF] Send the get request for the type
+2025-02-04 00:46:21.641 +01:00 [INF] Get the response from the type
+2025-02-04 00:46:21.740 +01:00 [INF] GET request completed
+2025-02-04 00:46:21.745 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 00:46:21.753 +01:00 [INF] Successfully validate that All users IDs are unique
+2025-02-04 00:46:21.772 +01:00 [INF] Successfuly validate non-empty users: User Name Leanne Graham and Username Bret
+2025-02-04 00:46:21.773 +01:00 [INF] Successfuly validate non-empty users: User Name Ervin Howell and Username Antonette
+2025-02-04 00:46:21.773 +01:00 [INF] Successfuly validate non-empty users: User Name Clementine Bauch and Username Samantha
+2025-02-04 00:46:21.773 +01:00 [INF] Successfuly validate non-empty users: User Name Patricia Lebsack and Username Karianne
+2025-02-04 00:46:21.773 +01:00 [INF] Successfuly validate non-empty users: User Name Chelsey Dietrich and Username Kamren
+2025-02-04 00:46:21.774 +01:00 [INF] Successfuly validate non-empty users: User Name Mrs. Dennis Schulist and Username Leopoldo_Corkery
+2025-02-04 00:46:21.774 +01:00 [INF] Successfuly validate non-empty users: User Name Kurtis Weissnat and Username Elwyn.Skiles
+2025-02-04 00:46:21.774 +01:00 [INF] Successfuly validate non-empty users: User Name Nicholas Runolfsdottir V and Username Maxime_Nienow
+2025-02-04 00:46:21.774 +01:00 [INF] Successfuly validate non-empty users: User Name Glenna Reichert and Username Delphine
+2025-02-04 00:46:21.774 +01:00 [INF] Successfuly validate non-empty users: User Name Clementina DuBuque and Username Moriah.Stanton
+2025-02-04 00:46:21.780 +01:00 [INF] Successfuly validate users have company name - User: ID 1, Name: Leanne Graham, have Company name: Business.Model.Company
+2025-02-04 00:46:21.781 +01:00 [INF] Successfuly validate users have company name - User: ID 2, Name: Ervin Howell, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfuly validate users have company name - User: ID 3, Name: Clementine Bauch, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfuly validate users have company name - User: ID 4, Name: Patricia Lebsack, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfuly validate users have company name - User: ID 5, Name: Chelsey Dietrich, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfuly validate users have company name - User: ID 6, Name: Mrs. Dennis Schulist, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfuly validate users have company name - User: ID 7, Name: Kurtis Weissnat, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfuly validate users have company name - User: ID 8, Name: Nicholas Runolfsdottir V, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfuly validate users have company name - User: ID 9, Name: Glenna Reichert, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfuly validate users have company name - User: ID 10, Name: Clementina DuBuque, have Company name: Business.Model.Company
+2025-02-04 00:46:21.782 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:46:21.782 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:46:21.784 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:21.799 +01:00 [INF] Send the post request object
+2025-02-04 00:46:21.800 +01:00 [INF] Get the response for the created object
+2025-02-04 00:46:22.315 +01:00 [INF] Post request completed
+2025-02-04 00:46:22.316 +01:00 [INF] Successfuly validate Response Content - Expected: non-empty, Actual: {
+  "id": 11,
+  "name": "John",
+  "username": "Doe",
+  "email": null,
+  "address": null,
+  "phone": null,
+  "website": null,
+  "company": null
+}
+2025-02-04 00:46:22.317 +01:00 [INF] Successfully validate that the response contains a valid Id value: 11
+2025-02-04 00:46:22.319 +01:00 [INF] Successfully validate API response - Expected Status: Created (201), Actual: "Created"
+2025-02-04 00:46:22.319 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:46:22.323 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:22.342 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:46:22.342 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:46:22.470 +01:00 [INF] Get request completed
+2025-02-04 00:46:22.471 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:46:22.471 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:46:28.497 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:28.569 +01:00 [INF] Send the get request for the type
+2025-02-04 00:46:28.571 +01:00 [INF] Get the response from the type
+2025-02-04 00:46:28.919 +01:00 [INF] GET request completed
+2025-02-04 00:46:28.942 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 2, Name Ervin Howell
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 3, Name Clementine Bauch
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 4, Name Patricia Lebsack
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 5, Name Chelsey Dietrich
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 6, Name Mrs. Dennis Schulist
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 7, Name Kurtis Weissnat
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 8, Name Nicholas Runolfsdottir V
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 9, Name Glenna Reichert
+2025-02-04 00:46:28.945 +01:00 [INF] Successfully validate each user: ID 10, Name Clementina DuBuque
+2025-02-04 00:46:28.948 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:46:28.950 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:46:28.959 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:28.972 +01:00 [INF] Send the get request for the type
+2025-02-04 00:46:28.972 +01:00 [INF] Get the response from the type
+2025-02-04 00:46:29.072 +01:00 [INF] GET request completed
+2025-02-04 00:46:29.076 +01:00 [INF] Successfully validate Content Type - Expected: application/json, Actual: application/json
+2025-02-04 00:46:29.076 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:46:29.076 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:46:29.082 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:29.093 +01:00 [INF] Send the get request for the type
+2025-02-04 00:46:29.093 +01:00 [INF] Get the response from the type
+2025-02-04 00:46:29.200 +01:00 [INF] GET request completed
+2025-02-04 00:46:29.203 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 00:46:29.214 +01:00 [INF] Successfully validate that All users IDs are unique
+2025-02-04 00:46:29.240 +01:00 [INF] Successfuly validate non-empty users: User Name Leanne Graham and Username Bret
+2025-02-04 00:46:29.241 +01:00 [INF] Successfuly validate non-empty users: User Name Ervin Howell and Username Antonette
+2025-02-04 00:46:29.242 +01:00 [INF] Successfuly validate non-empty users: User Name Clementine Bauch and Username Samantha
+2025-02-04 00:46:29.242 +01:00 [INF] Successfuly validate non-empty users: User Name Patricia Lebsack and Username Karianne
+2025-02-04 00:46:29.242 +01:00 [INF] Successfuly validate non-empty users: User Name Chelsey Dietrich and Username Kamren
+2025-02-04 00:46:29.242 +01:00 [INF] Successfuly validate non-empty users: User Name Mrs. Dennis Schulist and Username Leopoldo_Corkery
+2025-02-04 00:46:29.242 +01:00 [INF] Successfuly validate non-empty users: User Name Kurtis Weissnat and Username Elwyn.Skiles
+2025-02-04 00:46:29.242 +01:00 [INF] Successfuly validate non-empty users: User Name Nicholas Runolfsdottir V and Username Maxime_Nienow
+2025-02-04 00:46:29.242 +01:00 [INF] Successfuly validate non-empty users: User Name Glenna Reichert and Username Delphine
+2025-02-04 00:46:29.242 +01:00 [INF] Successfuly validate non-empty users: User Name Clementina DuBuque and Username Moriah.Stanton
+2025-02-04 00:46:29.246 +01:00 [INF] Successfuly validate users have company name - User: ID 1, Name: Leanne Graham, have Company name: Business.Model.Company
+2025-02-04 00:46:29.248 +01:00 [INF] Successfuly validate users have company name - User: ID 2, Name: Ervin Howell, have Company name: Business.Model.Company
+2025-02-04 00:46:29.249 +01:00 [INF] Successfuly validate users have company name - User: ID 3, Name: Clementine Bauch, have Company name: Business.Model.Company
+2025-02-04 00:46:29.250 +01:00 [INF] Successfuly validate users have company name - User: ID 4, Name: Patricia Lebsack, have Company name: Business.Model.Company
+2025-02-04 00:46:29.250 +01:00 [INF] Successfuly validate users have company name - User: ID 5, Name: Chelsey Dietrich, have Company name: Business.Model.Company
+2025-02-04 00:46:29.250 +01:00 [INF] Successfuly validate users have company name - User: ID 6, Name: Mrs. Dennis Schulist, have Company name: Business.Model.Company
+2025-02-04 00:46:29.250 +01:00 [INF] Successfuly validate users have company name - User: ID 7, Name: Kurtis Weissnat, have Company name: Business.Model.Company
+2025-02-04 00:46:29.250 +01:00 [INF] Successfuly validate users have company name - User: ID 8, Name: Nicholas Runolfsdottir V, have Company name: Business.Model.Company
+2025-02-04 00:46:29.250 +01:00 [INF] Successfuly validate users have company name - User: ID 9, Name: Glenna Reichert, have Company name: Business.Model.Company
+2025-02-04 00:46:29.250 +01:00 [INF] Successfuly validate users have company name - User: ID 10, Name: Clementina DuBuque, have Company name: Business.Model.Company
+2025-02-04 00:46:29.250 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:46:29.251 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:46:29.257 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:29.274 +01:00 [INF] Send the post request object
+2025-02-04 00:46:29.276 +01:00 [INF] Get the response for the created object
+2025-02-04 00:46:29.561 +01:00 [INF] Post request completed
+2025-02-04 00:46:29.561 +01:00 [INF] Successfuly validate Response Content - Expected: non-empty, Actual: {
+  "id": 11,
+  "name": "John",
+  "username": "Doe",
+  "email": null,
+  "address": null,
+  "phone": null,
+  "website": null,
+  "company": null
+}
+2025-02-04 00:46:29.562 +01:00 [INF] Successfully validate that the response contains a valid Id value: 11
+2025-02-04 00:46:29.562 +01:00 [INF] Successfully validate API response - Expected Status: Created (201), Actual: "Created"
+2025-02-04 00:46:29.562 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:46:29.566 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:46:29.577 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:46:29.577 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:46:29.674 +01:00 [INF] Get request completed
+2025-02-04 00:46:29.674 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:46:29.674 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:47:43.563 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:47:43.704 +01:00 [INF] Send the get request for the type
+2025-02-04 00:47:43.709 +01:00 [INF] Get the response from the type
+2025-02-04 00:47:44.248 +01:00 [INF] GET request completed
+2025-02-04 00:47:44.279 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 00:47:44.283 +01:00 [INF] Successfully validate each user: ID 2, Name Ervin Howell
+2025-02-04 00:47:44.284 +01:00 [INF] Successfully validate each user: ID 3, Name Clementine Bauch
+2025-02-04 00:47:44.284 +01:00 [INF] Successfully validate each user: ID 4, Name Patricia Lebsack
+2025-02-04 00:47:44.284 +01:00 [INF] Successfully validate each user: ID 5, Name Chelsey Dietrich
+2025-02-04 00:47:44.284 +01:00 [INF] Successfully validate each user: ID 6, Name Mrs. Dennis Schulist
+2025-02-04 00:47:44.284 +01:00 [INF] Successfully validate each user: ID 7, Name Kurtis Weissnat
+2025-02-04 00:47:44.284 +01:00 [INF] Successfully validate each user: ID 8, Name Nicholas Runolfsdottir V
+2025-02-04 00:47:44.284 +01:00 [INF] Successfully validate each user: ID 9, Name Glenna Reichert
+2025-02-04 00:47:44.284 +01:00 [INF] Successfully validate each user: ID 10, Name Clementina DuBuque
+2025-02-04 00:47:44.287 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:47:44.289 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:47:44.300 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:47:44.316 +01:00 [INF] Send the get request for the type
+2025-02-04 00:47:44.316 +01:00 [INF] Get the response from the type
+2025-02-04 00:47:44.434 +01:00 [INF] GET request completed
+2025-02-04 00:47:44.446 +01:00 [INF] Successfully validate Content Type - Expected: application/json, Actual: application/json
+2025-02-04 00:47:44.447 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:47:44.447 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:47:44.452 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:47:44.482 +01:00 [INF] Send the get request for the type
+2025-02-04 00:47:44.482 +01:00 [INF] Get the response from the type
+2025-02-04 00:47:44.612 +01:00 [INF] GET request completed
+2025-02-04 00:47:44.616 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 00:47:44.631 +01:00 [INF] Successfully validate that All users IDs are unique
+2025-02-04 00:47:44.652 +01:00 [INF] Successfuly validate non-empty users: User Name Leanne Graham and Username Bret
+2025-02-04 00:47:44.656 +01:00 [INF] Successfuly validate non-empty users: User Name Ervin Howell and Username Antonette
+2025-02-04 00:47:44.656 +01:00 [INF] Successfuly validate non-empty users: User Name Clementine Bauch and Username Samantha
+2025-02-04 00:47:44.657 +01:00 [INF] Successfuly validate non-empty users: User Name Patricia Lebsack and Username Karianne
+2025-02-04 00:47:44.657 +01:00 [INF] Successfuly validate non-empty users: User Name Chelsey Dietrich and Username Kamren
+2025-02-04 00:47:44.658 +01:00 [INF] Successfuly validate non-empty users: User Name Mrs. Dennis Schulist and Username Leopoldo_Corkery
+2025-02-04 00:47:44.658 +01:00 [INF] Successfuly validate non-empty users: User Name Kurtis Weissnat and Username Elwyn.Skiles
+2025-02-04 00:47:44.658 +01:00 [INF] Successfuly validate non-empty users: User Name Nicholas Runolfsdottir V and Username Maxime_Nienow
+2025-02-04 00:47:44.658 +01:00 [INF] Successfuly validate non-empty users: User Name Glenna Reichert and Username Delphine
+2025-02-04 00:47:44.659 +01:00 [INF] Successfuly validate non-empty users: User Name Clementina DuBuque and Username Moriah.Stanton
+2025-02-04 00:47:44.664 +01:00 [INF] Successfuly validate users have company name - User: ID 1, Name: Leanne Graham, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 2, Name: Ervin Howell, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 3, Name: Clementine Bauch, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 4, Name: Patricia Lebsack, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 5, Name: Chelsey Dietrich, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 6, Name: Mrs. Dennis Schulist, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 7, Name: Kurtis Weissnat, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 8, Name: Nicholas Runolfsdottir V, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 9, Name: Glenna Reichert, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfuly validate users have company name - User: ID 10, Name: Clementina DuBuque, have Company name: Business.Model.Company
+2025-02-04 00:47:44.666 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 00:47:44.666 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:47:44.669 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:47:44.687 +01:00 [INF] Send the post request object
+2025-02-04 00:47:44.692 +01:00 [INF] Get the response for the created object
+2025-02-04 00:47:45.213 +01:00 [INF] Post request completed
+2025-02-04 00:47:45.214 +01:00 [INF] Successfuly validate Response Content - Expected: non-empty, Actual: {
+  "id": 11,
+  "name": "John",
+  "username": "Doe",
+  "email": null,
+  "address": null,
+  "phone": null,
+  "website": null,
+  "company": null
+}
+2025-02-04 00:47:45.215 +01:00 [INF] Successfully validate that the response contains a valid Id value: 11
+2025-02-04 00:47:45.215 +01:00 [INF] Successfully validate API response - Expected Status: Created (201), Actual: "Created"
+2025-02-04 00:47:45.215 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 00:47:45.217 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:47:45.232 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:47:45.232 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:47:45.367 +01:00 [INF] Get request completed
+2025-02-04 00:47:45.367 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:47:45.368 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:48:40.396 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:40.396 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:40.396 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:40.396 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:40.396 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:40.525 +01:00 [INF] Send the post request object
+2025-02-04 00:48:40.525 +01:00 [INF] Send the get request for the type
+2025-02-04 00:48:40.525 +01:00 [INF] Send the get request for the type
+2025-02-04 00:48:40.525 +01:00 [INF] Send the get request for the type
+2025-02-04 00:48:40.525 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:48:40.527 +01:00 [INF] Get the response from the type
+2025-02-04 00:48:40.527 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:48:40.527 +01:00 [INF] Get the response from the type
+2025-02-04 00:48:40.527 +01:00 [INF] Get the response from the type
+2025-02-04 00:48:40.530 +01:00 [INF] Get the response for the created object
+2025-02-04 00:48:40.974 +01:00 [INF] Get request completed
+2025-02-04 00:48:40.988 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:48:41.014 +01:00 [INF] GET request completed
+2025-02-04 00:48:41.015 +01:00 [INF] GET request completed
+2025-02-04 00:48:41.015 +01:00 [INF] GET request completed
+2025-02-04 00:48:41.021 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:48:41.023 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 00:48:41.024 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 00:48:51.850 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:51.850 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:51.851 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:51.850 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:51.850 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:48:52.047 +01:00 [INF] Send the get request for the type
+2025-02-04 00:48:52.047 +01:00 [INF] Send the get request for the type
+2025-02-04 00:48:52.047 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:48:52.047 +01:00 [INF] Send the get request for the type
+2025-02-04 00:48:52.047 +01:00 [INF] Send the post request object
+2025-02-04 00:48:52.050 +01:00 [INF] Get the response from the type
+2025-02-04 00:48:52.050 +01:00 [INF] Get the response from the type
+2025-02-04 00:48:52.050 +01:00 [INF] Get the response from the type
+2025-02-04 00:48:52.050 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:48:52.052 +01:00 [INF] Get the response for the created object
+2025-02-04 00:48:52.780 +01:00 [INF] Get request completed
+2025-02-04 00:48:52.794 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:48:52.820 +01:00 [INF] GET request completed
+2025-02-04 00:48:52.820 +01:00 [INF] GET request completed
+2025-02-04 00:48:52.820 +01:00 [INF] GET request completed
+2025-02-04 00:48:52.824 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:48:52.827 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 00:50:13.248 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:13.248 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:13.248 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:13.248 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:13.248 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:13.351 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:13.351 +01:00 [INF] Send the post request object
+2025-02-04 00:50:13.351 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:13.351 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:50:13.351 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:13.353 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:13.353 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:13.353 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:13.353 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:50:13.355 +01:00 [INF] Get the response for the created object
+2025-02-04 00:50:13.758 +01:00 [INF] Get request completed
+2025-02-04 00:50:13.766 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:50:13.785 +01:00 [INF] GET request completed
+2025-02-04 00:50:13.785 +01:00 [INF] GET request completed
+2025-02-04 00:50:13.785 +01:00 [INF] GET request completed
+2025-02-04 00:50:13.785 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:50:20.120 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:20.120 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:20.120 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:20.120 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:20.120 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:20.225 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:20.225 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:20.225 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:50:20.224 +01:00 [INF] Send the post request object
+2025-02-04 00:50:20.225 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:20.227 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:20.227 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:20.228 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:20.228 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:50:20.231 +01:00 [INF] Get the response for the created object
+2025-02-04 00:50:20.637 +01:00 [INF] Get request completed
+2025-02-04 00:50:20.647 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:50:20.667 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:50:20.667 +01:00 [INF] GET request completed
+2025-02-04 00:50:20.667 +01:00 [INF] GET request completed
+2025-02-04 00:50:20.667 +01:00 [INF] GET request completed
+2025-02-04 00:50:26.702 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:26.702 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:26.702 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:26.702 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:26.702 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:26.803 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:50:26.803 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:26.803 +01:00 [INF] Send the post request object
+2025-02-04 00:50:26.803 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:26.803 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:26.806 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:26.806 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:26.806 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:50:26.806 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:26.808 +01:00 [INF] Get the response for the created object
+2025-02-04 00:50:27.208 +01:00 [INF] Get request completed
+2025-02-04 00:50:27.214 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:50:27.233 +01:00 [INF] GET request completed
+2025-02-04 00:50:27.233 +01:00 [INF] GET request completed
+2025-02-04 00:50:27.233 +01:00 [INF] GET request completed
+2025-02-04 00:50:27.236 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:50:27.237 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 00:50:27.240 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 00:50:55.323 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:55.322 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:55.323 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:55.322 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:55.323 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:50:55.509 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:55.509 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:55.509 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:50:55.509 +01:00 [INF] Send the get request for the type
+2025-02-04 00:50:55.509 +01:00 [INF] Send the post request object
+2025-02-04 00:50:55.512 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:55.512 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:55.513 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:50:55.513 +01:00 [INF] Get the response from the type
+2025-02-04 00:50:55.515 +01:00 [INF] Get the response for the created object
+2025-02-04 00:50:56.182 +01:00 [INF] Get request completed
+2025-02-04 00:50:56.197 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:50:56.229 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:50:56.233 +01:00 [INF] GET request completed
+2025-02-04 00:50:56.233 +01:00 [INF] GET request completed
+2025-02-04 00:50:56.233 +01:00 [INF] GET request completed
+2025-02-04 00:51:04.857 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:51:04.857 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:51:04.857 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:51:04.857 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 00:51:04.857 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 00:51:05.072 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 00:51:05.072 +01:00 [INF] Send the post request object
+2025-02-04 00:51:05.072 +01:00 [INF] Send the get request for the type
+2025-02-04 00:51:05.072 +01:00 [INF] Send the get request for the type
+2025-02-04 00:51:05.072 +01:00 [INF] Send the get request for the type
+2025-02-04 00:51:05.076 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 00:51:05.076 +01:00 [INF] Get the response from the type
+2025-02-04 00:51:05.076 +01:00 [INF] Get the response from the type
+2025-02-04 00:51:05.076 +01:00 [INF] Get the response from the type
+2025-02-04 00:51:05.078 +01:00 [INF] Get the response for the created object
+2025-02-04 00:51:05.768 +01:00 [INF] Get request completed
+2025-02-04 00:51:05.789 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 00:51:05.821 +01:00 [INF] Post request completed
+2025-02-04 00:51:05.828 +01:00 [INF] GET request completed
+2025-02-04 00:51:05.828 +01:00 [INF] GET request completed
+2025-02-04 00:51:05.828 +01:00 [INF] GET request completed
+2025-02-04 00:51:05.840 +01:00 [INF] Successfuly validate Response Content - Expected: non-empty, Actual: {
+  "id": 11,
+  "name": "John",
+  "username": "Doe",
+  "email": null,
+  "address": null,
+  "phone": null,
+  "website": null,
+  "company": null
+}
+2025-02-04 00:51:05.840 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 00:51:05.843 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 00:51:05.843 +01:00 [INF] Successfully validate that the response contains a valid Id value: 11
+2025-02-04 01:01:27.419 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:01:27.770 +01:00 [INF] Send the get request for the type
+2025-02-04 01:01:27.782 +01:00 [INF] Get the response from the type
+2025-02-04 01:01:28.696 +01:00 [INF] GET request completed
+2025-02-04 01:01:28.769 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 01:01:28.774 +01:00 [INF] Successfully validate each user: ID 2, Name Ervin Howell
+2025-02-04 01:01:28.776 +01:00 [INF] Successfully validate each user: ID 3, Name Clementine Bauch
+2025-02-04 01:01:28.776 +01:00 [INF] Successfully validate each user: ID 4, Name Patricia Lebsack
+2025-02-04 01:01:28.776 +01:00 [INF] Successfully validate each user: ID 5, Name Chelsey Dietrich
+2025-02-04 01:01:28.777 +01:00 [INF] Successfully validate each user: ID 6, Name Mrs. Dennis Schulist
+2025-02-04 01:01:28.777 +01:00 [INF] Successfully validate each user: ID 7, Name Kurtis Weissnat
+2025-02-04 01:01:28.777 +01:00 [INF] Successfully validate each user: ID 8, Name Nicholas Runolfsdottir V
+2025-02-04 01:01:28.777 +01:00 [INF] Successfully validate each user: ID 9, Name Glenna Reichert
+2025-02-04 01:01:28.792 +01:00 [INF] Successfully validate each user: ID 10, Name Clementina DuBuque
+2025-02-04 01:01:28.796 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 01:01:28.799 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 01:01:31.599 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:01:31.612 +01:00 [INF] Send the get request for the type
+2025-02-04 01:01:31.613 +01:00 [INF] Get the response from the type
+2025-02-04 01:01:31.734 +01:00 [INF] GET request completed
+2025-02-04 01:01:31.740 +01:00 [INF] Successfully validate Content Type - Expected: application/json, Actual: application/json
+2025-02-04 01:01:31.740 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 01:01:31.740 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 01:01:40.682 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:01:40.694 +01:00 [INF] Send the get request for the type
+2025-02-04 01:01:40.695 +01:00 [INF] Get the response from the type
+2025-02-04 01:01:40.798 +01:00 [INF] GET request completed
+2025-02-04 01:01:40.801 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 01:01:40.813 +01:00 [INF] Successfully validate that All users IDs are unique
+2025-02-04 01:01:40.841 +01:00 [INF] Successfuly validate non-empty users: User Name Leanne Graham and Username Bret
+2025-02-04 01:01:40.844 +01:00 [INF] Successfuly validate non-empty users: User Name Ervin Howell and Username Antonette
+2025-02-04 01:01:40.844 +01:00 [INF] Successfuly validate non-empty users: User Name Clementine Bauch and Username Samantha
+2025-02-04 01:01:40.845 +01:00 [INF] Successfuly validate non-empty users: User Name Patricia Lebsack and Username Karianne
+2025-02-04 01:01:40.845 +01:00 [INF] Successfuly validate non-empty users: User Name Chelsey Dietrich and Username Kamren
+2025-02-04 01:01:40.845 +01:00 [INF] Successfuly validate non-empty users: User Name Mrs. Dennis Schulist and Username Leopoldo_Corkery
+2025-02-04 01:01:40.845 +01:00 [INF] Successfuly validate non-empty users: User Name Kurtis Weissnat and Username Elwyn.Skiles
+2025-02-04 01:01:40.845 +01:00 [INF] Successfuly validate non-empty users: User Name Nicholas Runolfsdottir V and Username Maxime_Nienow
+2025-02-04 01:01:40.845 +01:00 [INF] Successfuly validate non-empty users: User Name Glenna Reichert and Username Delphine
+2025-02-04 01:01:40.845 +01:00 [INF] Successfuly validate non-empty users: User Name Clementina DuBuque and Username Moriah.Stanton
+2025-02-04 01:01:40.850 +01:00 [INF] Successfuly validate users have company name - User: ID 1, Name: Leanne Graham, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 2, Name: Ervin Howell, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 3, Name: Clementine Bauch, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 4, Name: Patricia Lebsack, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 5, Name: Chelsey Dietrich, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 6, Name: Mrs. Dennis Schulist, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 7, Name: Kurtis Weissnat, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 8, Name: Nicholas Runolfsdottir V, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 9, Name: Glenna Reichert, have Company name: Business.Model.Company
+2025-02-04 01:01:40.851 +01:00 [INF] Successfuly validate users have company name - User: ID 10, Name: Clementina DuBuque, have Company name: Business.Model.Company
+2025-02-04 01:01:40.852 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 01:01:40.852 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 01:01:41.988 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:01:42.011 +01:00 [INF] Send the post request object
+2025-02-04 01:01:42.016 +01:00 [INF] Get the response for the created object
+2025-02-04 01:01:42.539 +01:00 [INF] Post request completed
+2025-02-04 01:01:42.542 +01:00 [INF] Successfuly validate Response Content - Expected: non-empty, Actual: {
+  "id": 11,
+  "name": "John",
+  "username": "Doe",
+  "email": null,
+  "address": null,
+  "phone": null,
+  "website": null,
+  "company": null
+}
+2025-02-04 01:01:42.542 +01:00 [INF] Successfully validate that the response contains a valid Id value: 11
+2025-02-04 01:01:42.543 +01:00 [INF] Successfully validate API response - Expected Status: Created (201), Actual: "Created"
+2025-02-04 01:01:42.543 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 01:01:43.069 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:01:43.079 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:01:43.079 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:01:43.188 +01:00 [INF] Get request completed
+2025-02-04 01:01:43.188 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:01:43.189 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:05:50.715 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:50.715 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:50.715 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:50.715 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:50.715 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:50.871 +01:00 [INF] Send the post request object
+2025-02-04 01:05:50.871 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:05:50.871 +01:00 [INF] Send the get request for the type
+2025-02-04 01:05:50.871 +01:00 [INF] Send the get request for the type
+2025-02-04 01:05:50.871 +01:00 [INF] Send the get request for the type
+2025-02-04 01:05:50.875 +01:00 [INF] Get the response from the type
+2025-02-04 01:05:50.875 +01:00 [INF] Get the response from the type
+2025-02-04 01:05:50.876 +01:00 [INF] Get the response from the type
+2025-02-04 01:05:50.875 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:05:50.878 +01:00 [INF] Get the response for the created object
+2025-02-04 01:05:51.367 +01:00 [INF] Get request completed
+2025-02-04 01:05:51.400 +01:00 [INF] GET request completed
+2025-02-04 01:05:51.400 +01:00 [INF] GET request completed
+2025-02-04 01:05:51.400 +01:00 [INF] GET request completed
+2025-02-04 01:05:51.397 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:05:51.421 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:05:51.426 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 01:05:57.191 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:57.191 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:57.191 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:57.191 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:57.191 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:05:57.297 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:05:57.297 +01:00 [INF] Send the get request for the type
+2025-02-04 01:05:57.297 +01:00 [INF] Send the post request object
+2025-02-04 01:05:57.297 +01:00 [INF] Send the get request for the type
+2025-02-04 01:05:57.297 +01:00 [INF] Send the get request for the type
+2025-02-04 01:05:57.300 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:05:57.300 +01:00 [INF] Get the response from the type
+2025-02-04 01:05:57.300 +01:00 [INF] Get the response from the type
+2025-02-04 01:05:57.300 +01:00 [INF] Get the response from the type
+2025-02-04 01:05:57.303 +01:00 [INF] Get the response for the created object
+2025-02-04 01:05:57.698 +01:00 [INF] Get request completed
+2025-02-04 01:05:57.708 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:05:57.728 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:05:57.730 +01:00 [INF] GET request completed
+2025-02-04 01:05:57.730 +01:00 [INF] GET request completed
+2025-02-04 01:05:57.730 +01:00 [INF] GET request completed
+2025-02-04 01:06:03.538 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:03.537 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:03.538 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:03.537 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:03.538 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:03.695 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:03.695 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:03.695 +01:00 [INF] Send the post request object
+2025-02-04 01:06:03.695 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:06:03.695 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:03.697 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:03.697 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:03.697 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:06:03.697 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:03.699 +01:00 [INF] Get the response for the created object
+2025-02-04 01:06:04.178 +01:00 [INF] Get request completed
+2025-02-04 01:06:04.185 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:06:04.205 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:06:04.206 +01:00 [INF] GET request completed
+2025-02-04 01:06:04.206 +01:00 [INF] GET request completed
+2025-02-04 01:06:04.206 +01:00 [INF] GET request completed
+2025-02-04 01:06:09.224 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:09.224 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:09.224 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:09.224 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:09.224 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:09.327 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:06:09.327 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:09.327 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:09.327 +01:00 [INF] Send the post request object
+2025-02-04 01:06:09.327 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:09.329 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:06:09.329 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:09.330 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:09.329 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:09.331 +01:00 [INF] Get the response for the created object
+2025-02-04 01:06:09.754 +01:00 [INF] Get request completed
+2025-02-04 01:06:09.769 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:06:09.789 +01:00 [INF] GET request completed
+2025-02-04 01:06:09.789 +01:00 [INF] GET request completed
+2025-02-04 01:06:09.789 +01:00 [INF] GET request completed
+2025-02-04 01:06:09.798 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:06:09.799 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 01:06:15.204 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:15.204 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:15.204 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:15.204 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:15.204 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:15.342 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:15.342 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:15.342 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:15.342 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:06:15.342 +01:00 [INF] Send the post request object
+2025-02-04 01:06:15.344 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:15.344 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:06:15.344 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:15.344 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:15.348 +01:00 [INF] Get the response for the created object
+2025-02-04 01:06:15.824 +01:00 [INF] Get request completed
+2025-02-04 01:06:15.837 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:06:15.858 +01:00 [INF] GET request completed
+2025-02-04 01:06:15.858 +01:00 [INF] GET request completed
+2025-02-04 01:06:15.858 +01:00 [INF] GET request completed
+2025-02-04 01:06:15.862 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:06:15.863 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 01:06:15.869 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 2, Name Ervin Howell
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate Content Type - Expected: application/json, Actual: application/json
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 3, Name Clementine Bauch
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 4, Name Patricia Lebsack
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 5, Name Chelsey Dietrich
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 6, Name Mrs. Dennis Schulist
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 7, Name Kurtis Weissnat
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 8, Name Nicholas Runolfsdottir V
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 9, Name Glenna Reichert
+2025-02-04 01:06:15.870 +01:00 [INF] Successfully validate each user: ID 10, Name Clementina DuBuque
+2025-02-04 01:06:20.603 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:20.603 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:20.603 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:20.603 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:20.603 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:20.731 +01:00 [INF] Send the post request object
+2025-02-04 01:06:20.731 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:20.731 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:20.731 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:20.731 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:06:20.734 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:20.734 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:20.734 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:06:20.734 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:20.736 +01:00 [INF] Get the response for the created object
+2025-02-04 01:06:21.150 +01:00 [INF] Get request completed
+2025-02-04 01:06:21.164 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:06:21.194 +01:00 [INF] GET request completed
+2025-02-04 01:06:21.194 +01:00 [INF] GET request completed
+2025-02-04 01:06:21.194 +01:00 [INF] GET request completed
+2025-02-04 01:06:21.198 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:06:21.199 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 01:06:28.648 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:28.648 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:28.648 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:28.648 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:28.648 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:28.791 +01:00 [INF] Send the post request object
+2025-02-04 01:06:28.791 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:06:28.791 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:28.791 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:28.791 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:28.793 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:06:28.794 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:28.794 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:28.795 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:28.799 +01:00 [INF] Get the response for the created object
+2025-02-04 01:06:29.366 +01:00 [INF] Get request completed
+2025-02-04 01:06:29.376 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:06:29.406 +01:00 [INF] GET request completed
+2025-02-04 01:06:29.406 +01:00 [INF] GET request completed
+2025-02-04 01:06:29.406 +01:00 [INF] GET request completed
+2025-02-04 01:06:29.410 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:06:29.412 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 01:06:36.916 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:36.916 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:36.916 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:36.916 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:36.916 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:06:37.112 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:37.112 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:37.113 +01:00 [INF] Send the post request object
+2025-02-04 01:06:37.112 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:06:37.112 +01:00 [INF] Send the get request for the type
+2025-02-04 01:06:37.115 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:37.115 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:06:37.115 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:37.115 +01:00 [INF] Get the response from the type
+2025-02-04 01:06:37.117 +01:00 [INF] Get the response for the created object
+2025-02-04 01:06:37.692 +01:00 [INF] Get request completed
+2025-02-04 01:06:37.707 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:06:37.740 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:06:37.741 +01:00 [INF] GET request completed
+2025-02-04 01:06:37.741 +01:00 [INF] GET request completed
+2025-02-04 01:06:37.741 +01:00 [INF] GET request completed
+2025-02-04 01:08:15.506 +01:00 [INF] Navigates to the About page
+2025-02-04 01:08:20.889 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-04 01:08:23.105 +01:00 [INF] Try to click the download button
+2025-02-04 01:08:23.880 +01:00 [INF] The download button clicked
+2025-02-04 01:08:23.883 +01:00 [INF] About page interactions completed successfully
+2025-02-04 01:08:25.179 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\Documents\Downloads"
+2025-02-04 01:08:27.631 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:08:27.661 +01:00 [INF] Send the get request for the type
+2025-02-04 01:08:27.663 +01:00 [INF] Get the response from the type
+2025-02-04 01:08:27.942 +01:00 [INF] GET request completed
+2025-02-04 01:08:27.953 +01:00 [INF] Successfully validate each user: ID 1, Name Leanne Graham
+2025-02-04 01:08:27.957 +01:00 [INF] Successfully validate each user: ID 2, Name Ervin Howell
+2025-02-04 01:08:27.957 +01:00 [INF] Successfully validate each user: ID 3, Name Clementine Bauch
+2025-02-04 01:08:27.957 +01:00 [INF] Successfully validate each user: ID 4, Name Patricia Lebsack
+2025-02-04 01:08:27.958 +01:00 [INF] Successfully validate each user: ID 5, Name Chelsey Dietrich
+2025-02-04 01:08:27.958 +01:00 [INF] Successfully validate each user: ID 6, Name Mrs. Dennis Schulist
+2025-02-04 01:08:27.958 +01:00 [INF] Successfully validate each user: ID 7, Name Kurtis Weissnat
+2025-02-04 01:08:27.958 +01:00 [INF] Successfully validate each user: ID 8, Name Nicholas Runolfsdottir V
+2025-02-04 01:08:27.958 +01:00 [INF] Successfully validate each user: ID 9, Name Glenna Reichert
+2025-02-04 01:08:27.958 +01:00 [INF] Successfully validate each user: ID 10, Name Clementina DuBuque
+2025-02-04 01:08:27.961 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 01:08:27.964 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 01:08:27.973 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:08:27.991 +01:00 [INF] Send the get request for the type
+2025-02-04 01:08:27.991 +01:00 [INF] Get the response from the type
+2025-02-04 01:08:28.098 +01:00 [INF] GET request completed
+2025-02-04 01:08:28.116 +01:00 [INF] Successfully validate Content Type - Expected: application/json, Actual: application/json
+2025-02-04 01:08:28.116 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 01:08:28.116 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 01:08:28.124 +01:00 [INF] Executing GET request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:08:28.144 +01:00 [INF] Send the get request for the type
+2025-02-04 01:08:28.144 +01:00 [INF] Get the response from the type
+2025-02-04 01:08:28.250 +01:00 [INF] GET request completed
+2025-02-04 01:08:28.262 +01:00 [INF] Successfully validate User List Count - Expected: 10, Actual: 10
+2025-02-04 01:08:28.287 +01:00 [INF] Successfully validate that All users IDs are unique
+2025-02-04 01:08:28.369 +01:00 [INF] Successfuly validate non-empty users: User Name Leanne Graham and Username Bret
+2025-02-04 01:08:28.375 +01:00 [INF] Successfuly validate non-empty users: User Name Ervin Howell and Username Antonette
+2025-02-04 01:08:28.376 +01:00 [INF] Successfuly validate non-empty users: User Name Clementine Bauch and Username Samantha
+2025-02-04 01:08:28.376 +01:00 [INF] Successfuly validate non-empty users: User Name Patricia Lebsack and Username Karianne
+2025-02-04 01:08:28.376 +01:00 [INF] Successfuly validate non-empty users: User Name Chelsey Dietrich and Username Kamren
+2025-02-04 01:08:28.376 +01:00 [INF] Successfuly validate non-empty users: User Name Mrs. Dennis Schulist and Username Leopoldo_Corkery
+2025-02-04 01:08:28.376 +01:00 [INF] Successfuly validate non-empty users: User Name Kurtis Weissnat and Username Elwyn.Skiles
+2025-02-04 01:08:28.376 +01:00 [INF] Successfuly validate non-empty users: User Name Nicholas Runolfsdottir V and Username Maxime_Nienow
+2025-02-04 01:08:28.376 +01:00 [INF] Successfuly validate non-empty users: User Name Glenna Reichert and Username Delphine
+2025-02-04 01:08:28.377 +01:00 [INF] Successfuly validate non-empty users: User Name Clementina DuBuque and Username Moriah.Stanton
+2025-02-04 01:08:28.389 +01:00 [INF] Successfuly validate users have company name - User: ID 1, Name: Leanne Graham, have Company name: Business.Model.Company
+2025-02-04 01:08:28.398 +01:00 [INF] Successfuly validate users have company name - User: ID 2, Name: Ervin Howell, have Company name: Business.Model.Company
+2025-02-04 01:08:28.399 +01:00 [INF] Successfuly validate users have company name - User: ID 3, Name: Clementine Bauch, have Company name: Business.Model.Company
+2025-02-04 01:08:28.399 +01:00 [INF] Successfuly validate users have company name - User: ID 4, Name: Patricia Lebsack, have Company name: Business.Model.Company
+2025-02-04 01:08:28.399 +01:00 [INF] Successfuly validate users have company name - User: ID 5, Name: Chelsey Dietrich, have Company name: Business.Model.Company
+2025-02-04 01:08:28.400 +01:00 [INF] Successfuly validate users have company name - User: ID 6, Name: Mrs. Dennis Schulist, have Company name: Business.Model.Company
+2025-02-04 01:08:28.400 +01:00 [INF] Successfuly validate users have company name - User: ID 7, Name: Kurtis Weissnat, have Company name: Business.Model.Company
+2025-02-04 01:08:28.403 +01:00 [INF] Successfuly validate users have company name - User: ID 8, Name: Nicholas Runolfsdottir V, have Company name: Business.Model.Company
+2025-02-04 01:08:28.403 +01:00 [INF] Successfuly validate users have company name - User: ID 9, Name: Glenna Reichert, have Company name: Business.Model.Company
+2025-02-04 01:08:28.404 +01:00 [INF] Successfuly validate users have company name - User: ID 10, Name: Clementina DuBuque, have Company name: Business.Model.Company
+2025-02-04 01:08:28.404 +01:00 [INF] Successfully validate API response - Expected Status: OK, Actual: "OK"
+2025-02-04 01:08:28.404 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 01:08:28.416 +01:00 [INF] Executing Post request for User at https://jsonplaceholder.typicode.com/
+2025-02-04 01:08:28.455 +01:00 [INF] Send the post request object
+2025-02-04 01:08:28.464 +01:00 [INF] Get the response for the created object
+2025-02-04 01:08:28.997 +01:00 [INF] Post request completed
+2025-02-04 01:08:28.999 +01:00 [INF] Successfuly validate Response Content - Expected: non-empty, Actual: {
+  "id": 11,
+  "name": "John",
+  "username": "Doe",
+  "email": null,
+  "address": null,
+  "phone": null,
+  "website": null,
+  "company": null
+}
+2025-02-04 01:08:29.000 +01:00 [INF] Successfully validate that the response contains a valid Id value: 11
+2025-02-04 01:08:29.001 +01:00 [INF] Successfully validate API response - Expected Status: Created (201), Actual: "Created"
+2025-02-04 01:08:29.002 +01:00 [INF] Successfully validate no error messages - Actual Error: None
+2025-02-04 01:08:29.007 +01:00 [INF] Executing GET request for invalid end point at https://jsonplaceholder.typicode.com/
+2025-02-04 01:08:29.035 +01:00 [INF] Send the get request for the invalid end point
+2025-02-04 01:08:29.036 +01:00 [INF] Get the response from the invalid end point
+2025-02-04 01:08:29.179 +01:00 [INF] Get request completed
+2025-02-04 01:08:29.181 +01:00 [INF] Successfuly validate Status Code - Expected: NotFound, Actual: "NotFound"
+2025-02-04 01:08:29.181 +01:00 [INF] Successfuly validate no error messages - Actual Error: None
+2025-02-04 01:08:44.345 +01:00 [INF] Navigates to the Careers page
+2025-02-04 01:08:46.825 +01:00 [INF] Enters a keyword into the search field
+2025-02-04 01:08:52.254 +01:00 [INF] Try to open the location dropdown list
+2025-02-04 01:08:53.417 +01:00 [INF] The location dropdown opened
+2025-02-04 01:08:53.417 +01:00 [INF] Selects all locations
+2025-02-04 01:08:54.328 +01:00 [INF] Try to check the remote filter
+2025-02-04 01:08:54.495 +01:00 [INF] The remote filter checked
+2025-02-04 01:08:54.496 +01:00 [INF] Submits the job search
+2025-02-04 01:08:57.336 +01:00 [INF] Try to open the latest job result
+2025-02-04 01:09:00.691 +01:00 [ERR] Error: element click intercepted: Element <a href="https://www.epam.com/careers/job-listings/job.epamgdo_blt91c6747c9117a35d_en-us_Other_Argentina.remote_net-developer" class="button-text primary-button-preset white-background-preset search-result__item-apply-23">...</a> is not clickable at point (1440, 1215). Other element would receive the click: <div id="onetrust-banner-sdk" class="otFlat bottom ot-wo-title vertical-align-content ot-buttons-fw" tabindex="0" role="region" aria-label="Cookie banner" style="bottom: 0px;">...</div>
+  (Session info: chrome=132.0.6834.160)
+2025-02-04 01:09:00.691 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-04 01:09:00.743 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-04 01:09:00.758 +01:00 [INF] Open the latest job result
+2025-02-04 01:09:03.535 +01:00 [INF] Error gracefully handled
+2025-02-04 01:09:03.535 +01:00 [INF] The latest job result opened
+2025-02-04 01:09:03.536 +01:00 [INF] Careers page interactions completed successfully
+2025-02-04 01:09:05.797 +01:00 [INF] Successfully validate that the article text ".NET Developer
+REMOTE" contains the keyword ".NET"
+2025-02-04 01:09:29.837 +01:00 [INF] Navigate to the Insights page
+2025-02-04 01:09:34.259 +01:00 [INF] Swipes the carousel
+2025-02-04 01:09:35.158 +01:00 [INF] Swipes the carousel
+2025-02-04 01:09:35.864 +01:00 [INF] Try to wait for the main article to be displayed
+2025-02-04 01:09:41.221 +01:00 [ERR] Error: Timed out after 5 seconds
+2025-02-04 01:09:41.221 +01:00 [INF] Swipes the carousel
+2025-02-04 01:09:41.841 +01:00 [INF] Error gracefully handled
+2025-02-04 01:09:41.916 +01:00 [INF] Main article displayed
+2025-02-04 01:09:41.916 +01:00 [INF] Try to click the Read More button in the carousel
+2025-02-04 01:09:42.003 +01:00 [ERR] Error: Element <a class="custom-link link-with-bottom-arrow color-link body-text font-900 slider-cta-link" href="https://www.epam.com/research-results-from-the-survey-of-leaders-in-it-and-people-departments"> is not clickable at point (939,571) because another element <div id="onetrust-group-container" class="ot-sdk-eight ot-sdk-columns"> obscures it
+2025-02-04 01:09:42.003 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-04 01:09:42.042 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-04 01:09:42.053 +01:00 [INF] Click the Read More button in the carousel
+2025-02-04 01:09:47.065 +01:00 [INF] Error gracefully handled
+2025-02-04 01:09:47.065 +01:00 [INF] The Read More button in the carousel clicked
+2025-02-04 01:09:47.065 +01:00 [INF] Insight page interactions completed successfully
+2025-02-04 01:09:47.427 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-02-04 01:09:58.991 +01:00 [INF] Opens the search bar
+2025-02-04 01:09:59.662 +01:00 [INF] Enters the search string
+2025-02-04 01:10:00.400 +01:00 [INF] Submits the search
+2025-02-04 01:10:03.722 +01:00 [INF] Scroll to the last link
+2025-02-04 01:10:05.423 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 01:10:05.721 +01:00 [ERR] Failed to validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-02-04 01:10:16.264 +01:00 [INF] Opens the search bar
+2025-02-04 01:10:16.763 +01:00 [INF] Enters the search string
+2025-02-04 01:10:17.260 +01:00 [INF] Submits the search
+2025-02-04 01:10:17.932 +01:00 [INF] Scroll to the last link
+2025-02-04 01:10:20.455 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 01:10:20.807 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-02-04 01:10:20.846 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 01:10:29.405 +01:00 [INF] Opens the search bar
+2025-02-04 01:10:29.905 +01:00 [INF] Enters the search string
+2025-02-04 01:10:30.391 +01:00 [INF] Submits the search
+2025-02-04 01:10:31.107 +01:00 [INF] Scroll to the last link
+2025-02-04 01:10:33.734 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 01:10:33.789 +01:00 [ERR] Failed to validate that not all links contain the keyword: "Automation"
+2025-02-04 01:16:37.056 +01:00 [INF] Opens the search bar
+2025-02-04 01:16:42.562 +01:00 [INF] Enters the search string
+2025-02-04 01:16:45.071 +01:00 [INF] Submits the search
+2025-02-04 01:16:50.578 +01:00 [INF] Scroll to the last link
+2025-02-04 01:16:52.005 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 01:16:52.952 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-02-04 01:16:53.062 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 01:17:06.494 +01:00 [INF] Opens the search bar
+2025-02-04 01:17:07.424 +01:00 [INF] Enters the search string
+2025-02-04 01:17:08.143 +01:00 [INF] Submits the search
+2025-02-04 01:17:11.626 +01:00 [INF] Scroll to the last link
+2025-02-04 01:17:13.351 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 01:17:13.980 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-02-04 01:17:14.049 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-04 01:17:20.057 +01:00 [INF] Opens the search bar
+2025-02-04 01:17:26.146 +01:00 [INF] Enters the search string
+2025-02-04 01:17:26.960 +01:00 [INF] Submits the search
+2025-02-04 01:17:28.079 +01:00 [INF] Scroll to the last link
+2025-02-04 01:17:30.957 +01:00 [INF] Search page interactions completed successfully
+2025-02-04 01:17:31.215 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-02-04 01:17:31.350 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
