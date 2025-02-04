@@ -1,0 +1,62 @@
+name: CI Pipeline with UI Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up .NET
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+
+      # Step 3: Install Chrome and ChromeDriver
+      - name: Install Chrome and ChromeDriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          CHROME_VERSION=$(google-chrome --version | awk '{print $3}')
+          CHROME_DRIVER_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION)
+          wget -q -O chromedriver.zip https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip
+          unzip chromedriver.zip
+          sudo mv chromedriver /usr/local/bin/chromedriver
+          sudo chmod +x /usr/local/bin/chromedriver
+
+      # Step 4: Build the project
+      - name: Build the project
+        run: dotnet build --configuration Release
+        working-directory: ./Tests
+
+      # Step 5: Set correct permissions
+      - name: Set correct permissions
+        run: |
+          chmod -R 755 ./Tests/bin
+          chmod -R 755 ./Tests/obj
+
+      # Step 6: Run UI Tests
+      - name: Run UI Tests
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
+        env:
+          BROWSER: ${{ github.event.inputs.browser }}
+        working-directory: ./Tests
+
+      # Step 7: Upload Test Results
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: ./Tests/TestResults
