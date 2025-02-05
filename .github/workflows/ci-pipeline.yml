@@ -60,7 +60,10 @@ jobs:
 
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
-        uses: browser-actions/setup-chrome@latest
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 120
+          install-chromedriver: true
 
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
@@ -77,9 +80,6 @@ jobs:
       - name: Build 
         run: dotnet build --no-restore 
         working-directory: ./Tests
-
-      - name: Ensure result directory exists
-        run: mkdir -p ./Tests/result
 
       # Step 5: Set correct permissions
       - name: Set correct permissions
