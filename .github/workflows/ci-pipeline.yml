@@ -78,11 +78,13 @@ jobs:
         run: dotnet build --no-restore 
         working-directory: ./Tests
 
+      - name: Ensure result directory exists
+        run: mkdir -p ./Tests/result
+
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
           chmod -R 755 ./Tests/screenshot
-          chmod -R 755 ./Tests/downloads
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
