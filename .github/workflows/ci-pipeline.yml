@@ -79,12 +79,11 @@ jobs:
         working-directory: ./Tests
 
       - name: Ensure screenshot directory exists
-        run: mkdir -p ./Tests/Downloads
+        run: mkdir -p ./Tests/screenshot
 
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
-          chmod -R 755 ./Tests/screenshot
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
