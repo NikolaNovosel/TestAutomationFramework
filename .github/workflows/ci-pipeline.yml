@@ -90,7 +90,7 @@ jobs:
           chmod -R 755 ./Tests/obj
 
       - name: Run UI Tests
-        run: dotnet test --no-build --filter Category=UI
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory .Tests/log_ui
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
