@@ -281,3 +281,9 @@ REMOTE" contains the keyword ".NET"
 2025-02-05 20:08:41.541 +01:00 [INF] The download button clicked
 2025-02-05 20:08:41.541 +01:00 [INF] About page interactions completed successfully
 2025-02-05 20:08:42.060 +01:00 [ERR] Failed to validate the file: "EPAM_Corporate_Overview_Q4_EOY.pdf" is downloaded to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-05 20:46:56.526 +01:00 [INF] Navigates to the About page
+2025-02-05 20:47:01.982 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-05 20:47:02.851 +01:00 [INF] Try to click the download button
+2025-02-05 20:47:08.217 +01:00 [INF] The download button clicked
+2025-02-05 20:47:08.217 +01:00 [INF] About page interactions completed successfully
+2025-02-05 20:47:08.502 +01:00 [ERR] Failed to validate the file: "EPAM_Corporate_Overview_Q4_EOY.pdf" is downloaded to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
