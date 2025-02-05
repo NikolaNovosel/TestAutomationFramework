@@ -36,6 +36,11 @@ namespace Core.Singleton
             var firefoxOptions = new FirefoxOptions();
             firefoxOptions.SetPreference("browser.download.folderList", 2);
             firefoxOptions.SetPreference("browser.download.dir", _downloadDir);
+            firefoxOptions.SetPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf,text/csv"); // Auto-download specific
+            firefoxOptions.SetPreference("pdfjs.disabled", true); // Disable built-in PDF viewer
+            firefoxOptions.SetPreference("browser.download.manager.showWhenStarting", false); // Hide download manager popup
+            firefoxOptions.SetPreference("browser.download.manager.useWindow", false); // No separate download window
+            firefoxOptions.SetPreference("browser.download.manager.focusWhenStarting", false); // Do not focus on downloads
             firefoxOptions.AddArgument("--headless");
             return firefoxOptions;
         }
