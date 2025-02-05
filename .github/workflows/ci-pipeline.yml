@@ -88,6 +88,7 @@ jobs:
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
+          chmod -R 755 ./Tests/screenshot
           chmod -R 755 ./Tests/downloads
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
@@ -109,4 +110,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-screenshots
-          path: Screenshots
+          path: ./Tests/screenshot
