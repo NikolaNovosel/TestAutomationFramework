@@ -25,7 +25,7 @@ namespace Business.Validation
             }
             catch (AssertionException)
             {
-                Log.Error(@$"Failed to validate the file: ""{ConfigProvider.FileName}"" is downloaded");
+                Log.Error(@$"Failed to validate the file: ""{ConfigProvider.FileName}"" is downloaded to: ""{DriverOption.DownloadDir}""");
 
                 throw;
             }
