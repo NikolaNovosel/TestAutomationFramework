@@ -60,10 +60,7 @@ jobs:
 
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
-        uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: 120
-          install-chromedriver: true
+        uses: browser-actions/setup-chrome@latest
 
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
@@ -84,7 +81,6 @@ jobs:
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
-          chmod -R 755 ./Tests/screenshot
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
@@ -105,4 +101,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-screenshots
-          path: .Tests/screenshot
+          path: screenshot
