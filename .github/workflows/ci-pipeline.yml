@@ -60,7 +60,10 @@ jobs:
 
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
-        uses: browser-actions/setup-chrome@latest
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 120
+          install-chromedriver: true
 
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
@@ -78,19 +81,15 @@ jobs:
         run: dotnet build --no-restore 
         working-directory: ./Tests
 
-      - name: Ensure Download Directory Exists
-        run: mkdir -p ./Tests/Downloads
-
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
           chmod -R 755 ./Tests/screenshot
-          chmod -R 755 ./Tests/downloads
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
       - name: Run UI Tests
-        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory result
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
@@ -99,7 +98,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-results
-          path: TestResults
+          path: .Tests/result
 
       - name: Upload UI Test Screenshots
         if: failure()
