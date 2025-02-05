@@ -85,7 +85,6 @@ jobs:
       - name: Set correct permissions
         run: |
           chmod -R 755 ./Tests/screenshot
-          chmod -R 755 ./Tests/log_ui
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
@@ -98,8 +97,8 @@ jobs:
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
         with:
-          name: api-test-results
-          path: "**/TestResults/*"
+          name: ui-test-results
+          path: TestResults
 
       - name: Upload UI Test Screenshots
         if: failure()
