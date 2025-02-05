@@ -1,4 +1,5 @@
 ﻿using Core.Data;
+using Core.Singleton;
 
 namespace Core.Helper
 {
@@ -7,6 +8,10 @@ namespace Core.Helper
     /// </summary>
     public static class AboutHelper
     {
+        // Path to the downloaded file
+        private static readonly string FilePath =
+        Path.Combine(DriverOption.DownloadDir, ConfigProvider.FileName!);
+
         // Timestamp marking the start of the file download wait period
         private static readonly DateTime _startTime = DateTime.Now;
 
@@ -14,7 +19,7 @@ namespace Core.Helper
         private static bool HasTimeElapsed => DateTime.Now < _startTime.AddSeconds(5);
 
         // Checks if the file exists at the specified path
-        private static bool DoesFileExist => File.Exists(ConfigProvider.FilePath);
+        private static bool DoesFileExist => File.Exists(FilePath);
 
         // Waits for the file to download within the specified time frame
         public static bool WaitForFileDownload()
@@ -23,6 +28,7 @@ namespace Core.Helper
             {
                 if (DoesFileExist)
                 {
+
                     return true;
                 }
             }

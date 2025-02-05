@@ -13,12 +13,22 @@ namespace Core.Data
         // Build the configuration and assign it to the Configuration property
         private static readonly IConfiguration ConfigReader = _builder.Build();
 
+        // Provide Path to the downloaded file section
+        private static readonly IConfiguration DownloadDir = ConfigReader.GetSection("downloadDir");
+
+
         // Provide Path to the downloaded file
-        public static readonly string FilePath =
-        Path.Combine(ConfigReader["downloadDir"]!, ConfigReader["fileName"]!);
+        //public static readonly string FilePath =
+        //Path.Combine(ConfigReader["downloadDir"]!, ConfigReader["fileName"]!);
 
         // Provide path to the downloaded directory
-        public static readonly string DownloadDir = Path.Combine(ConfigReader["downloadDir"]!);
+        //public static readonly string GitActionsDownloadDir = Path.Combine(ConfigReader["downloadDir"]!["gitActions"]);
+
+        // Provide path to the WebDriver downloaded directory
+        public static readonly string WebDriverDownloadDir = DownloadDir["webDriver"]!;
+
+        // Provide path to the GitActions downloaded directory
+        public static readonly string GitActionsDownloadDir = DownloadDir["gitActions"]!;
 
         // Provide the downloaded file name
         public static readonly string? FileName = ConfigReader["fileName"];

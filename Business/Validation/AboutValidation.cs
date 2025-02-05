@@ -1,5 +1,6 @@
 ﻿using Core.Data;
 using Core.Helper;
+using Core.Singleton;
 using FluentAssertions;
 using JetBrains.Annotations;
 using NUnit.Framework;
@@ -20,7 +21,7 @@ namespace Business.Validation
             try
             {
                 AboutHelper.WaitForFileDownload().Should().BeTrue();
-                Log.Information(@$"File downloaded successfully to: ""{ConfigProvider.DownloadDir}""");
+                Log.Information(@$"File: ""{ConfigProvider.FileName}"" downloaded successfully to: ""{DriverOption.DownloadDir}""");
             }
             catch (AssertionException)
             {

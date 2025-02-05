@@ -10,10 +10,14 @@ namespace Core.Singleton
     /// </summary>
     public static class DriverOption
     {
+        // Determine if GitActions path
+        public static bool IsGitActions() => Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true";
+
         // Determine the correct download path
-        private static readonly string _downloadDir = Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true"
-            ? "/home/runner/work/TestAutomationFramework/TestAutomationFramework/Tests/Downloads"
-            : ConfigProvider.DownloadDir;
+        private static readonly string _downloadDir = IsGitActions() ? ConfigProvider.GitActionsDownloadDir : ConfigProvider.WebDriverDownloadDir;
+
+        // Provides the correct download path
+        public static string DownloadDir => _downloadDir;
 
         // Gets ChromeOptions for headless Chrome with downloads to TestData.DownloadDir
         internal static ChromeOptions GetChromeOptions()
@@ -21,12 +25,8 @@ namespace Core.Singleton
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("--no-sandbox");
             chromeOptions.AddArgument("--disable-dev-shm-usage");
-            chromeOptions.AddArgument("headless");
+            chromeOptions.AddArgument("--headless");
             chromeOptions.AddUserProfilePreference("download.default_directory", _downloadDir);
-            chromeOptions.AddUserProfilePreference("download.prompt_for_download", false);
-            chromeOptions.AddUserProfilePreference("download.directory_upgrade", true);
-            chromeOptions.AddUserProfilePreference("safebrowsing.enabled", true);
-            chromeOptions.AddUserProfilePreference("safebrowsing.disable_download_protection", true);
             return chromeOptions;
         }
 
@@ -34,14 +34,11 @@ namespace Core.Singleton
         internal static FirefoxOptions GetFirefoxOptions()
         {
             var firefoxOptions = new FirefoxOptions();
+            firefoxOptions.AddArgument("--no-sandbox");
+            firefoxOptions.AddArgument("--disable-dev-shm-usage");
+            firefoxOptions.AddArgument("--headless");
             firefoxOptions.SetPreference("browser.download.folderList", 2);
             firefoxOptions.SetPreference("browser.download.dir", _downloadDir);
-            firefoxOptions.SetPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf,text/csv"); // Auto-download specific
-            firefoxOptions.SetPreference("pdfjs.disabled", true); // Disable built-in PDF viewer
-            firefoxOptions.SetPreference("browser.download.manager.showWhenStarting", false); // Hide download manager popup
-            firefoxOptions.SetPreference("browser.download.manager.useWindow", false); // No separate download window
-            firefoxOptions.SetPreference("browser.download.manager.focusWhenStarting", false); // Do not focus on downloads
-            firefoxOptions.AddArgument("--headless");
             return firefoxOptions;
         }
 

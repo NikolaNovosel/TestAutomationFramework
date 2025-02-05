@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
 using Core.Data;
+using Core.Singleton;
 
 namespace Core.Factory
 {
@@ -20,8 +21,8 @@ namespace Core.Factory
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("--no-sandbox");
             chromeOptions.AddArgument("--disable-dev-shm-usage");
-            chromeOptions.AddArgument("headless");
-            chromeOptions.AddUserProfilePreference("download.default_directory", ConfigProvider.DownloadDir);
+            chromeOptions.AddArgument("--headless");
+            chromeOptions.AddUserProfilePreference("download.default_directory", DriverOption.DownloadDir);
             return chromeOptions;
         }
 
