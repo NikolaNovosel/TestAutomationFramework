@@ -74,3 +74,20 @@ REMOTE" contains the keyword ".NET"
 2025-02-05 09:38:00.705 +01:00 [INF] Search page interactions completed successfully
 2025-02-05 09:38:00.836 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
 2025-02-05 09:38:00.915 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-05 09:55:02.440 +01:00 [INF] Navigates to the About page
+2025-02-05 09:55:11.788 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-05 09:55:12.376 +01:00 [INF] Try to click the download button
+2025-02-05 09:55:12.459 +01:00 [ERR] Error: Element <span class="button__content button__content--desktop"> is not clickable at point (260,673) because another element <div id="onetrust-button-group-parent" class="ot-sdk-three ot-sdk-columns"> obscures it
+2025-02-05 09:55:12.460 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-05 09:55:12.503 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-05 09:55:12.568 +01:00 [INF] Click the download button
+2025-02-05 09:55:18.241 +01:00 [INF] Error gracefully handled
+2025-02-05 09:55:18.242 +01:00 [INF] The download button clicked
+2025-02-05 09:55:18.242 +01:00 [INF] About page interactions completed successfully
+2025-02-05 09:55:18.362 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-05 09:56:30.194 +01:00 [INF] Navigates to the About page
+2025-02-05 09:56:38.741 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-05 09:56:39.219 +01:00 [INF] Try to click the download button
+2025-02-05 09:56:44.813 +01:00 [INF] The download button clicked
+2025-02-05 09:56:44.814 +01:00 [INF] About page interactions completed successfully
+2025-02-05 09:56:44.875 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
