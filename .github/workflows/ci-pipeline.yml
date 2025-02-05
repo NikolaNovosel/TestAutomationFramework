@@ -60,7 +60,7 @@ jobs:
 
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
-      - uses: browser-actions/setup-chrome@latest
+        uses: browser-actions/setup-chrome@latest
 
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
