@@ -1,4 +1,5 @@
 ﻿using Core.Data;
+using Core.Helper;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
@@ -10,15 +11,6 @@ namespace Core.Singleton
     /// </summary>
     public static class DriverOption
     {
-        // Determine if GitActions path
-        public static bool IsGitActions() => Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true";
-
-        // Determine the correct download path
-        private static readonly string _downloadDir = IsGitActions() ? ConfigProvider.GitActionsDownloadDir : ConfigProvider.WebDriverDownloadDir;
-
-        // Provides the correct download path
-        public static string DownloadDir => _downloadDir;
-
         // Gets ChromeOptions for headless Chrome with downloads to TestData.DownloadDir
         internal static ChromeOptions GetChromeOptions()
         {
@@ -26,7 +18,7 @@ namespace Core.Singleton
             chromeOptions.AddArgument("--no-sandbox");
             chromeOptions.AddArgument("--disable-dev-shm-usage");
             chromeOptions.AddArgument("--headless");
-            chromeOptions.AddUserProfilePreference("download.default_directory", _downloadDir);
+            chromeOptions.AddUserProfilePreference("download.default_directory", Location.DownloadDir);
             return chromeOptions;
         }
 
@@ -38,7 +30,7 @@ namespace Core.Singleton
             firefoxOptions.AddArgument("--disable-dev-shm-usage");
             firefoxOptions.AddArgument("--headless");
             firefoxOptions.SetPreference("browser.download.folderList", 2);
-            firefoxOptions.SetPreference("browser.download.dir", _downloadDir);
+            firefoxOptions.SetPreference("browser.download.dir", Location.DownloadDir);
             return firefoxOptions;
         }
 
@@ -49,7 +41,7 @@ namespace Core.Singleton
             edgeOptions.AddArgument("--no-sandbox");
             edgeOptions.AddArgument("--disable-dev-shm-usage");
             edgeOptions.AddArgument("--headless");
-            edgeOptions.AddUserProfilePreference("download.default_directory", _downloadDir);
+            edgeOptions.AddUserProfilePreference("download.default_directory", Location.DownloadDir);
             return edgeOptions;
         }
     }

@@ -3,7 +3,6 @@ using OpenQA.Selenium;
 using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager;
 using Core.Data;
-using Core.Singleton;
 
 namespace Core.Factory
 {
@@ -22,7 +21,7 @@ namespace Core.Factory
             edgeOptions.AddArgument("--no-sandbox");
             edgeOptions.AddArgument("--disable-dev-shm-usage");
             edgeOptions.AddArgument("--headless");
-            edgeOptions.AddUserProfilePreference("download.default_directory", DriverOption.DownloadDir);
+            edgeOptions.AddUserProfilePreference("download.default_directory", Location.DownloadDir);
             return edgeOptions;
         }
 

@@ -22,7 +22,7 @@ namespace Core.Factory
             chromeOptions.AddArgument("--no-sandbox");
             chromeOptions.AddArgument("--disable-dev-shm-usage");
             chromeOptions.AddArgument("--headless");
-            chromeOptions.AddUserProfilePreference("download.default_directory", DriverOption.DownloadDir);
+            chromeOptions.AddUserProfilePreference("download.default_directory", Location.DownloadDir);
             return chromeOptions;
         }
 

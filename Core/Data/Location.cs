@@ -1,4 +1,6 @@
-﻿namespace Core.Data
+﻿using Core.Helper;
+
+namespace Core.Data
 {
     public static class Location
     {
@@ -21,6 +23,9 @@
         public static readonly string ApiLogs = Path.Combine(_projectPath, "log_api", "log.txt");
 
         // Provide the path to main project directory
-        public readonly static string ScreenShot = _projectPath;
+        public static readonly string ScreenShot = TestUtils.IsGitActions() ? ConfigProvider.GitActionsScreenshot : _projectPath;
+
+        // Determine the correct download path
+        public static readonly string DownloadDir = TestUtils.IsGitActions() ? ConfigProvider.GitActionsDownloadDir : ConfigProvider.WebDriverDownloadDir;
     }
 }

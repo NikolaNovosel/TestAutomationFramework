@@ -21,11 +21,11 @@ namespace Business.Validation
             try
             {
                 AboutHelper.WaitForFileDownload().Should().BeFalse();
-                Log.Information(@$"File: ""{ConfigProvider.FileName}"" downloaded successfully to: ""{DriverOption.DownloadDir}""");
+                Log.Information(@$"File: ""{ConfigProvider.FileName}"" downloaded successfully to: ""{Location.DownloadDir}""");
             }
             catch (AssertionException)
             {
-                Log.Error(@$"Failed to validate the file: ""{ConfigProvider.FileName}"" is downloaded to: ""{DriverOption.DownloadDir}""");
+                Log.Error(@$"Failed to validate the file: ""{ConfigProvider.FileName}"" is downloaded to: ""{Location.DownloadDir}""");
 
                 throw;
             }

@@ -8,6 +8,9 @@ namespace Core.Helper
 {
     public class TestUtils(IWebDriver driver)
     {
+        // Determine if GitActions path
+        public static bool IsGitActions() => Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true";
+
         // Checks if the current test  is "ApiTest"
         public static bool IsNotApiTestRunning()
         {

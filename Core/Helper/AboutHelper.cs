@@ -10,7 +10,7 @@ namespace Core.Helper
     {
         // Path to the downloaded file
         private static readonly string FilePath =
-        Path.Combine(DriverOption.DownloadDir, ConfigProvider.FileName!);
+        Path.Combine(Location.DownloadDir, ConfigProvider.FileName!);
 
         // Timestamp marking the start of the file download wait period
         private static readonly DateTime _startTime = DateTime.Now;

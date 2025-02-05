@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager;
 using Core.Singleton;
+using Core.Data;
 
 namespace Core.Factory
 {
@@ -22,7 +23,7 @@ namespace Core.Factory
             firefoxOptions.AddArgument("--disable-dev-shm-usage");
             firefoxOptions.AddArgument("--headless");
             firefoxOptions.SetPreference("browser.download.folderList", 2);
-            firefoxOptions.SetPreference("browser.download.dir", DriverOption.DownloadDir);
+            firefoxOptions.SetPreference("browser.download.dir", Location.DownloadDir);
             return firefoxOptions;
         }
 
