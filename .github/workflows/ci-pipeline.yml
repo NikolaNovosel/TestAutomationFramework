@@ -107,4 +107,3 @@ jobs:
         with:
           name: ui-test-screenshots
           path: .Tests/screenshot
-          path: .Tests/screenshot
