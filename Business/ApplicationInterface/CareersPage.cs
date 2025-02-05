@@ -21,7 +21,7 @@ namespace Business.ApplicationInterface
         private IWebElement Location => Wait.Until(driver =>
         {
             var element = Driver.FindElement(By.XPath("//div[@class='recruiting-search__column']//span[@class='select2-selection__arrow']"));
-            return element.Displayed ? element : null;
+            return element.Displayed && element.Enabled ? element : null;
         });
 
         // All locations option  
