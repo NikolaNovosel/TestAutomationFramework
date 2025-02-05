@@ -86,9 +86,6 @@ jobs:
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
-      - name: Ensure Download Directory Exists
-        run: mkdir -p ./Tests/Downloads
-
       - name: Run UI Tests
         run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
