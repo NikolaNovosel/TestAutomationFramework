@@ -93,6 +93,9 @@ jobs:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
 
+      - name: Debug Screenshot Directory
+        run: ls -R TestResults
+
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
         with:
