@@ -1,0 +1,12 @@
+2025-02-05 02:09:50.500 +01:00 [INF] Navigates to the About page
+2025-02-05 02:09:53.056 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-05 02:09:53.946 +01:00 [INF] Try to click the download button
+2025-02-05 02:09:54.128 +01:00 [INF] The download button clicked
+2025-02-05 02:09:54.129 +01:00 [INF] About page interactions completed successfully
+2025-02-05 02:09:54.276 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-05 02:10:09.620 +01:00 [INF] Navigates to the About page
+2025-02-05 02:10:10.289 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-05 02:10:11.774 +01:00 [INF] Try to click the download button
+2025-02-05 02:10:12.062 +01:00 [INF] The download button clicked
+2025-02-05 02:10:12.062 +01:00 [INF] About page interactions completed successfully
+2025-02-05 02:10:12.094 +01:00 [INF] File downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"

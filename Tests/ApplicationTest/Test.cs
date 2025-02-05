@@ -6,6 +6,7 @@ using Core.Helper;
 using Core.Api;
 using Core.Singleton;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
 
 namespace Tests.ApplicationTest
 {
@@ -40,7 +41,7 @@ namespace Tests.ApplicationTest
             // Indicates whether the last Api test is running to initialize WebDriver instance
             if (TestUtils.IsNotApiTestRunning())
             {
-                _driver = DriverSingleton.GetDriver<FirefoxDriver>();
+                _driver = DriverSingleton.SwitchBetweenChromeAndFirefox();
                 DriverSingleton.ManageWindow();
                 DriverSingleton.GetUrl();
 

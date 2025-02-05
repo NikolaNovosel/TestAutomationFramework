@@ -12,7 +12,7 @@ namespace Core.Singleton
     {
         // Determine the correct download path
         private static readonly string _downloadDir = Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true"
-            ? "/home/runner/work/TestAutomationFramework/TestAutomationFramework/Downloads"
+            ? "/home/runner/work/TestAutomationFramework/TestAutomationFramework/Tests/Downloads"
             : ConfigProvider.DownloadDir;
 
         // Gets ChromeOptions for headless Chrome with downloads to TestData.DownloadDir
@@ -23,6 +23,10 @@ namespace Core.Singleton
             chromeOptions.AddArgument("--disable-dev-shm-usage");
             chromeOptions.AddArgument("headless");
             chromeOptions.AddUserProfilePreference("download.default_directory", _downloadDir);
+            chromeOptions.AddUserProfilePreference("download.prompt_for_download", false);
+            chromeOptions.AddUserProfilePreference("download.directory_upgrade", true);
+            chromeOptions.AddUserProfilePreference("safebrowsing.enabled", true);
+            chromeOptions.AddUserProfilePreference("safebrowsing.disable_download_protection", true);
             return chromeOptions;
         }
 
