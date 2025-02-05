@@ -78,6 +78,9 @@ jobs:
         run: dotnet build --no-restore 
         working-directory: ./Tests
 
+      - name: Ensure screenshot directory exists
+        run: mkdir -p ./Tests/screenshot
+
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
@@ -101,4 +104,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-screenshots
-          path: screenshot
+          path: ./Tests/screenshot
