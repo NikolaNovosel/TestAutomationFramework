@@ -78,6 +78,9 @@ jobs:
         run: dotnet build --no-restore 
         working-directory: ./Tests
 
+      - name: Ensure Download Directory Exists
+        run: mkdir -p ./Tests/Downloads
+
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
