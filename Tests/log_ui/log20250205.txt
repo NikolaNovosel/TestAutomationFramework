@@ -259,3 +259,14 @@ REMOTE" contains the keyword ".NET"
 2025-02-05 17:02:00.786 +01:00 [INF] The download button clicked
 2025-02-05 17:02:00.786 +01:00 [INF] About page interactions completed successfully
 2025-02-05 17:02:01.208 +01:00 [INF] File: "EPAM_Corporate_Overview_Q4_EOY.pdf" downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-05 17:25:05.941 +01:00 [INF] Navigates to the About page
+2025-02-05 17:25:11.205 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-05 17:25:11.904 +01:00 [INF] Try to click the download button
+2025-02-05 17:25:12.003 +01:00 [ERR] Error: Element <span class="button__content button__content--desktop"> is not clickable at point (260,673) because another element <div id="onetrust-group-container" class="ot-sdk-eight ot-sdk-columns"> obscures it
+2025-02-05 17:25:12.004 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-05 17:25:12.065 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-05 17:25:12.078 +01:00 [INF] Click the download button
+2025-02-05 17:25:17.679 +01:00 [INF] Error gracefully handled
+2025-02-05 17:25:17.679 +01:00 [INF] The download button clicked
+2025-02-05 17:25:17.679 +01:00 [INF] About page interactions completed successfully
+2025-02-05 17:25:17.716 +01:00 [INF] File: "EPAM_Corporate_Overview_Q4_EOY.pdf" downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
