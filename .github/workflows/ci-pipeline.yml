@@ -78,9 +78,6 @@ jobs:
         run: dotnet build --no-restore 
         working-directory: ./Tests
 
-      - name: Ensure Download Directory Exists
-        run: mkdir -p ./Tests/Downloads
-
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
@@ -90,7 +87,7 @@ jobs:
           chmod -R 755 ./Tests/obj
 
       - name: Run UI Tests
-        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory result
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
@@ -99,7 +96,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-results
-          path: TestResults
+          path: .Tests/result
 
       - name: Upload UI Test Screenshots
         if: failure()
