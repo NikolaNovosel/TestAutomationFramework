@@ -12,7 +12,7 @@ namespace Core.Singleton
     {
         // Determine the correct download path
         private static readonly string _downloadDir = Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true"
-            ? "/home/runner/work/your-repo/your-repo/Downloads"
+            ? "/home/runner/work/TestAutomationFramework/TestAutomationFramework/Downloads"
             : ConfigProvider.DownloadDir;
 
         // Gets ChromeOptions for headless Chrome with downloads to TestData.DownloadDir
