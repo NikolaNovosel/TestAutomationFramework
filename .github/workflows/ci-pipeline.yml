@@ -78,9 +78,6 @@ jobs:
         run: dotnet build --no-restore 
         working-directory: ./Tests
 
-      - name: Ensure screenshot directory exists
-        run: mkdir -p screenshot
-
       # Step 5: Set correct permissions
       - name: Set correct permissions
         run: |
@@ -92,9 +89,6 @@ jobs:
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
-
-      - name: Debug Screenshot Directory
-        run: ls -R TestResults
 
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
