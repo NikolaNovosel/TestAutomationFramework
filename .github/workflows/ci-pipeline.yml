@@ -70,6 +70,11 @@ jobs:
         if: ${{ github.event.inputs.browser == 'edge' }}
         uses: browser-actions/setup-edge@latest
 
+      - name: Update and start WebDriver Manager
+        run: |
+            webdriver-manager update
+            webdriver-manager start
+
       - name: Restore Dependencies
         run: dotnet restore
         working-directory: ./Tests
