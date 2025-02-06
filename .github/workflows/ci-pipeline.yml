@@ -58,12 +58,26 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Install Chrome and ChromeDriver
-        if: ${{ github.event.inputs.browser == 'chrome' }}
+      - name: Setup Chrome (latest version)
         run: |
-              sudo apt-get update
-              sudo apt-get install -y google-chrome-stable
-              google-chrome --version
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Verify Chrome version
+        run: google-chrome --version
+
+      - name: Setup ChromeDriver (matching Chrome version)
+        run: |
+          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d'.' -f1)
+          curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION -o LATEST_RELEASE
+          CHROMEDRIVER_VERSION=$(cat LATEST_RELEASE)
+          wget -q "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          rm chromedriver_linux64.zip LATEST_RELEASE
+
+      - name: Verify ChromeDriver version
+        run: chromedriver --version
 
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
