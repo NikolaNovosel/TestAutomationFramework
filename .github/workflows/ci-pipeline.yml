@@ -73,12 +73,6 @@ jobs:
         if: ${{ github.event.inputs.browser == 'edge' }}
         uses: browser-actions/setup-edge@latest
 
-      - name: Setup WebDriverManager
-        run: |
-              dotnet tool install --global WebDriverManager.Net
-              webdrivermanager update --browser chrome
-              webdrivermanager start
-
       - name: Restore Dependencies
         run: dotnet restore
         working-directory: ./Tests
