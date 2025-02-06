@@ -58,6 +58,10 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
+      - name: Install webdriver-manager
+        run: |
+          npm install -g webdriver-manager
+
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
         uses: browser-actions/setup-chrome@latest
