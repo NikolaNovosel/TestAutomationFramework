@@ -58,13 +58,12 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Install webdriver-manager
-        run: |
-          npm install -g webdriver-manager
-
-      - name: Install ChromeDriver
+      - name: Install Chrome and ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
-        uses: browser-actions/setup-chrome@latest
+        run: |
+              sudo apt-get update
+              sudo apt-get install -y google-chrome-stable
+              google-chrome --version
 
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
@@ -73,6 +72,12 @@ jobs:
       - name: Install EdgeDriver
         if: ${{ github.event.inputs.browser == 'edge' }}
         uses: browser-actions/setup-edge@latest
+
+      - name: Setup WebDriverManager
+        run: |
+              dotnet tool install --global WebDriverManager.Net
+              webdrivermanager update --browser chrome
+              webdrivermanager start
 
       - name: Restore Dependencies
         run: dotnet restore
