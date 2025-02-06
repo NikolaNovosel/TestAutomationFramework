@@ -61,9 +61,6 @@ jobs:
       - name: Install ChromeDriver
         if: ${{ github.event.inputs.browser == 'chrome' }}
         uses: browser-actions/setup-chrome@latest
-        with:
-            chrome-version: 132.0.6834.159
-            install-chromedriver: true
 
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
