@@ -41,7 +41,7 @@ namespace Tests.ApplicationTest
             // Indicates whether the last Api test is running to initialize WebDriver instance
             if (TestUtils.IsNotApiTestRunning())
             {
-                _driver = DriverSingleton.SwitchBetweenChromeAndFirefox();
+                _driver = DriverSingleton.GetDriver<FirefoxDriver>();
                 DriverSingleton.ManageWindow();
                 DriverSingleton.GetUrl();
 
