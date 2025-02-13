@@ -20,8 +20,6 @@ namespace Core.Factory
         {
             var firefoxOptions = new FirefoxOptions();
             firefoxOptions.AddArgument("--headless");
-            firefoxOptions.AddArgument("--disable-dev-shm-usage");
-            firefoxOptions.AddArgument("--headless");
             firefoxOptions.SetPreference("browser.download.folderList", 2);
             firefoxOptions.SetPreference("browser.download.dir", Location.DownloadDir);
             return firefoxOptions;

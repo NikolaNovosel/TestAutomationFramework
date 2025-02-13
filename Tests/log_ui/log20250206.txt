@@ -1,0 +1,64 @@
+2025-02-06 19:06:07.327 +01:00 [INF] Navigates to the About page
+2025-02-06 19:06:11.149 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-06 19:06:17.089 +01:00 [INF] Try to click the download button
+2025-02-06 19:06:20.449 +01:00 [INF] The download button clicked
+2025-02-06 19:06:20.450 +01:00 [INF] About page interactions completed successfully
+2025-02-06 19:06:23.859 +01:00 [INF] File: "EPAM_Corporate_Overview_Q4_EOY.pdf" downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-06 19:06:44.351 +01:00 [INF] Navigates to the Careers page
+2025-02-06 19:06:45.016 +01:00 [INF] Enters a keyword into the search field
+2025-02-06 19:06:47.706 +01:00 [INF] Try to open the location dropdown list
+2025-02-06 19:06:48.505 +01:00 [INF] The location dropdown opened
+2025-02-06 19:06:48.505 +01:00 [INF] Selects all locations
+2025-02-06 19:06:49.128 +01:00 [INF] Try to check the remote filter
+2025-02-06 19:06:49.231 +01:00 [INF] The remote filter checked
+2025-02-06 19:06:49.232 +01:00 [INF] Submits the job search
+2025-02-06 19:06:51.601 +01:00 [INF] Try to open the latest job result
+2025-02-06 19:06:54.277 +01:00 [ERR] Error: element click intercepted: Element <a href="https://www.epam.com/careers/job-listings/job.epamgdo_blt91c6747c9117a35d_en-us_Other_Argentina.remote_net-developer" class="button-text primary-button-preset white-background-preset search-result__item-apply-23">...</a> is not clickable at point (1440, 1215). Other element would receive the click: <div id="onetrust-banner-sdk" class="otFlat bottom ot-wo-title vertical-align-content ot-buttons-fw" tabindex="0" role="region" aria-label="Cookie banner" style="bottom: 0px;">...</div>
+  (Session info: chrome=133.0.6943.54)
+2025-02-06 19:06:54.278 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-06 19:06:54.355 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-06 19:06:54.375 +01:00 [INF] Open the latest job result
+2025-02-06 19:06:55.221 +01:00 [INF] Error gracefully handled
+2025-02-06 19:06:55.222 +01:00 [INF] The latest job result opened
+2025-02-06 19:06:55.222 +01:00 [INF] Careers page interactions completed successfully
+2025-02-06 19:06:57.766 +01:00 [INF] Successfully validate that the article text ".NET Developer
+REMOTE" contains the keyword ".NET"
+2025-02-06 19:07:16.535 +01:00 [INF] Navigate to the Insights page
+2025-02-06 19:07:18.342 +01:00 [INF] Swipes the carousel
+2025-02-06 19:07:19.149 +01:00 [INF] Swipes the carousel
+2025-02-06 19:07:19.775 +01:00 [INF] Try to wait for the main article to be displayed
+2025-02-06 19:07:25.159 +01:00 [ERR] Error: Timed out after 5 seconds
+2025-02-06 19:07:25.159 +01:00 [INF] Swipes the carousel
+2025-02-06 19:07:25.816 +01:00 [INF] Error gracefully handled
+2025-02-06 19:07:25.866 +01:00 [INF] Main article displayed
+2025-02-06 19:07:25.866 +01:00 [INF] Try to click the Read More button in the carousel
+2025-02-06 19:07:25.915 +01:00 [ERR] Error: Element <a class="custom-link link-with-bottom-arrow color-link body-text font-900 slider-cta-link" href="https://www.epam.com/research-results-from-the-survey-of-leaders-in-it-and-people-departments"> is not clickable at point (1171,571) because another element <div class="ot-sdk-row"> obscures it
+2025-02-06 19:07:25.915 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-06 19:07:25.938 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-06 19:07:25.944 +01:00 [INF] Click the Read More button in the carousel
+2025-02-06 19:07:30.898 +01:00 [INF] Error gracefully handled
+2025-02-06 19:07:30.898 +01:00 [INF] The Read More button in the carousel clicked
+2025-02-06 19:07:30.898 +01:00 [INF] Insight page interactions completed successfully
+2025-02-06 19:07:31.083 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-02-06 19:07:43.414 +01:00 [INF] Opens the search bar
+2025-02-06 19:07:44.174 +01:00 [INF] Enters the search string
+2025-02-06 19:07:44.870 +01:00 [INF] Submits the search
+2025-02-06 19:07:47.207 +01:00 [INF] Scroll to the last link
+2025-02-06 19:07:48.787 +01:00 [INF] Search page interactions completed successfully
+2025-02-06 19:07:48.964 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-02-06 19:07:49.049 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-06 19:07:57.819 +01:00 [INF] Opens the search bar
+2025-02-06 19:07:58.246 +01:00 [INF] Enters the search string
+2025-02-06 19:07:59.259 +01:00 [INF] Submits the search
+2025-02-06 19:08:01.298 +01:00 [INF] Scroll to the last link
+2025-02-06 19:08:03.099 +01:00 [INF] Search page interactions completed successfully
+2025-02-06 19:08:03.716 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-02-06 19:08:03.783 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-06 19:08:13.928 +01:00 [INF] Opens the search bar
+2025-02-06 19:08:16.960 +01:00 [INF] Enters the search string
+2025-02-06 19:08:17.565 +01:00 [INF] Submits the search
+2025-02-06 19:08:18.442 +01:00 [INF] Scroll to the last link
+2025-02-06 19:08:21.753 +01:00 [INF] Search page interactions completed successfully
+2025-02-06 19:08:21.866 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-02-06 19:08:21.944 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
