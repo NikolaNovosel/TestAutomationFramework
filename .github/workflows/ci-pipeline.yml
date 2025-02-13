@@ -3,8 +3,6 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: "0 3 * * *"
   workflow_dispatch:
     inputs:
       browser:
@@ -58,13 +56,14 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Install webdriver-manager
+      - name: Manually Install Latest Chrome (133)
         run: |
-          npm install -g webdriver-manager
+          wget -q -O google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome.deb || sudo apt-get -f install -y
+          rm google-chrome.deb
 
-      - name: Install ChromeDriver
-        if: ${{ github.event.inputs.browser == 'chrome' }}
-        uses: browser-actions/setup-chrome@latest
+      - name: Verify Chrome Version
+        run: google-chrome --version
 
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
@@ -81,7 +80,7 @@ jobs:
       - name: Build 
         run: dotnet build --no-restore 
         working-directory: ./Tests
-
+        
       - name: Ensure screenshot directory exists
         run: mkdir -p ./Tests/screenshot
 
