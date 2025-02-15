@@ -18,7 +18,29 @@ jobs:
  api-tests:
       name: Build and run API tests
       runs-on: ubuntu-latest
-      
+
+      services:
+       sonarqube:
+        image: sonarqube:lts
+        ports:
+          - 9000:9000
+        options: >-
+          --health-cmd="curl -f http://localhost:9000/api/system/status || exit 1"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+          
+          - name: Wait for SonarQube to be ready
+            run: |
+          echo "Waiting for SonarQube..."
+          for i in {1..30}; do
+            if curl -s http://localhost:9000/api/system/status | grep '"status":"UP"'; then
+              echo "SonarQube is up!"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "SonarQube did not start in time" && exit 1
       steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
