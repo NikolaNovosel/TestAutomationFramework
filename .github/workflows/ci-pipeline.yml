@@ -45,6 +45,11 @@ jobs:
  ui-tests:
     name: Build and run UI tests
     runs-on: ubuntu-latest
+    services:
+      sonarqube:
+        image: sonarqube:lts
+        ports:
+          - 9000:9000
     needs: api-tests
     if: always()
     steps:
@@ -56,11 +61,19 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: SonarQube scan
-        uses: sonarsource/sonarqube-scan-action@master
-        env:
-          SONAR_TOKEN: ${{}}
-          SONAR_HOST_URL: ${{}}
+      - name: Wait for SonarQube to Start
+        run: |
+          echo "Waiting for SonarQube..."
+          for i in {1..30}; do
+            curl -s http://localhost:9000/api/system/status | grep '"status":"UP"' && break
+            sleep 5
+          done
+
+      - name: Run SonarQube Analysis
+        run: |
+          dotnet sonarscanner begin /k:"your_project_key" /d:sonar.host.url="http://localhost:9000"
+          dotnet build
+          dotnet sonarscanner end
 
       - name: Manually Install Latest Chrome (133)
         run: |
