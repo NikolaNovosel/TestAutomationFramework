@@ -68,7 +68,12 @@ jobs:
             curl -s http://localhost:9000/api/system/status | grep '"status":"UP"' && break
             sleep 5
           done
-
+          
+      - name: Install dotnet-sonarscanner tool
+        run: |
+          dotnet tool install --global dotnet-sonarscanner
+          export PATH="$PATH:/root/.dotnet/tools"
+          
       - name: Run SonarQube Analysis
         run: |
           dotnet sonarscanner begin /k:"your_project_key" /d:sonar.host.url="http://localhost:9000"
