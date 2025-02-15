@@ -56,6 +56,12 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
+      - name: SonarQube scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{}}
+          SONAR_HOST_URL: ${{}}
+
       - name: Manually Install Latest Chrome (133)
         run: |
           wget -q -O google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
