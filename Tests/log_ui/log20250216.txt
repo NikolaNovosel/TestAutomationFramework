@@ -62,3 +62,67 @@ REMOTE" contains the keyword ".NET"
 2025-02-16 16:37:16.304 +01:00 [INF] Search page interactions completed successfully
 2025-02-16 16:37:16.481 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
 2025-02-16 16:37:16.591 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-16 16:53:05.156 +01:00 [INF] Navigates to the About page
+2025-02-16 16:53:06.253 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-16 16:53:08.983 +01:00 [INF] Try to click the download button
+2025-02-16 16:53:09.649 +01:00 [INF] The download button clicked
+2025-02-16 16:53:09.649 +01:00 [INF] About page interactions completed successfully
+2025-02-16 16:53:09.741 +01:00 [INF] File: "EPAM_Corporate_Overview_Q4_EOY.pdf" downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\downloads"
+2025-02-16 16:53:19.885 +01:00 [INF] Navigates to the Careers page
+2025-02-16 16:53:20.561 +01:00 [INF] Enters a keyword into the search field
+2025-02-16 16:53:23.793 +01:00 [INF] Try to open the location dropdown list
+2025-02-16 16:53:24.408 +01:00 [INF] The location dropdown opened
+2025-02-16 16:53:24.408 +01:00 [INF] Selects all locations
+2025-02-16 16:53:24.920 +01:00 [INF] Try to check the remote filter
+2025-02-16 16:53:25.044 +01:00 [INF] The remote filter checked
+2025-02-16 16:53:25.044 +01:00 [INF] Submits the job search
+2025-02-16 16:53:27.096 +01:00 [INF] Try to open the latest job result
+2025-02-16 16:53:30.119 +01:00 [ERR] Error: element click intercepted: Element <a href="https://www.epam.com/careers/job-listings/job.epamgdo_blt91c6747c9117a35d_en-us_Other_Argentina.remote_net-developer" class="button-text primary-button-preset white-background-preset search-result__item-apply-23">...</a> is not clickable at point (1440, 1215). Other element would receive the click: <div id="onetrust-banner-sdk" class="otFlat bottom ot-wo-title vertical-align-content ot-buttons-fw" tabindex="0" role="region" aria-label="Cookie banner" style="bottom: 0px;">...</div>
+  (Session info: chrome=133.0.6943.98)
+2025-02-16 16:53:30.120 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-16 16:53:30.208 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-16 16:53:30.234 +01:00 [INF] Open the latest job result
+2025-02-16 16:53:33.376 +01:00 [INF] Error gracefully handled
+2025-02-16 16:53:33.377 +01:00 [INF] The latest job result opened
+2025-02-16 16:53:33.377 +01:00 [INF] Careers page interactions completed successfully
+2025-02-16 16:53:34.407 +01:00 [INF] Successfully validate that the article text ".NET Developer
+REMOTE" contains the keyword ".NET"
+2025-02-16 16:53:49.795 +01:00 [INF] Navigate to the Insights page
+2025-02-16 16:53:51.579 +01:00 [INF] Swipes the carousel
+2025-02-16 16:53:52.298 +01:00 [INF] Swipes the carousel
+2025-02-16 16:53:52.871 +01:00 [INF] Try to wait for the main article to be displayed
+2025-02-16 16:53:58.047 +01:00 [ERR] Error: Timed out after 5 seconds
+2025-02-16 16:53:58.048 +01:00 [INF] Swipes the carousel
+2025-02-16 16:53:58.642 +01:00 [INF] Error gracefully handled
+2025-02-16 16:53:58.682 +01:00 [INF] Main article displayed
+2025-02-16 16:53:58.682 +01:00 [INF] Try to click the Read More button in the carousel
+2025-02-16 16:53:58.723 +01:00 [ERR] Error: Element <a class="custom-link link-with-bottom-arrow color-link body-text font-900 slider-cta-link" href="https://www.epam.com/research-results-from-the-survey-of-leaders-in-it-and-people-departments"> is not clickable at point (1201,571) because another element <div class="ot-sdk-container"> obscures it
+2025-02-16 16:53:58.723 +01:00 [INF] Wait for the cookie to be displayed
+2025-02-16 16:53:58.746 +01:00 [INF] Execute java script to set cookie display to none
+2025-02-16 16:53:58.753 +01:00 [INF] Click the Read More button in the carousel
+2025-02-16 16:54:03.460 +01:00 [INF] Error gracefully handled
+2025-02-16 16:54:03.460 +01:00 [INF] The Read More button in the carousel clicked
+2025-02-16 16:54:03.460 +01:00 [INF] Insight page interactions completed successfully
+2025-02-16 16:54:03.734 +01:00 [INF] Successfully validate that the main page article: "Three Ways Leaders Impede Their Company’s Digital Transformation" 
+                    is equal to the inside article: "Three Ways Leaders Impede Their Company’s Digital Transformation"
+2025-02-16 16:54:13.365 +01:00 [INF] Opens the search bar
+2025-02-16 16:54:13.803 +01:00 [INF] Enters the search string
+2025-02-16 16:54:14.825 +01:00 [INF] Submits the search
+2025-02-16 16:54:16.536 +01:00 [INF] Scroll to the last link
+2025-02-16 16:54:18.162 +01:00 [INF] Search page interactions completed successfully
+2025-02-16 16:54:18.439 +01:00 [INF] Successfully validate that not all links contain the keyword: "BLOCKCHAIN"
+2025-02-16 16:54:18.523 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-16 16:54:26.735 +01:00 [INF] Opens the search bar
+2025-02-16 16:54:27.133 +01:00 [INF] Enters the search string
+2025-02-16 16:54:28.063 +01:00 [INF] Submits the search
+2025-02-16 16:54:28.746 +01:00 [INF] Scroll to the last link
+2025-02-16 16:54:31.384 +01:00 [INF] Search page interactions completed successfully
+2025-02-16 16:54:31.460 +01:00 [INF] Successfully validate that all links contain the keyword: "Cloud"
+2025-02-16 16:54:31.526 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
+2025-02-16 16:54:39.080 +01:00 [INF] Opens the search bar
+2025-02-16 16:54:39.435 +01:00 [INF] Enters the search string
+2025-02-16 16:54:40.443 +01:00 [INF] Submits the search
+2025-02-16 16:54:41.169 +01:00 [INF] Scroll to the last link
+2025-02-16 16:54:43.335 +01:00 [INF] Search page interactions completed successfully
+2025-02-16 16:54:43.459 +01:00 [INF] Successfully validate that not all links contain the keyword: "Automation"
+2025-02-16 16:54:43.540 +01:00 [INF] Successfully validated that all links, including the last one, are included in the validation
