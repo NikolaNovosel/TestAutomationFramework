@@ -97,7 +97,16 @@ jobs:
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
-
+        
+      - name: Build and analyze with SonarCloud
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          dotnet sonarscanner begin /k:"NikolaNovosel_TestAutomationFramework" /d:sonar.login=$SONAR_TOKEN
+          dotnet build --no-restore
+          dotnet test --no-restore
+          dotnet sonarscanner end /d:sonar.login=$SONAR_TOKEN
+          
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
         with:
