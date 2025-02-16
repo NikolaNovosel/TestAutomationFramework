@@ -100,7 +100,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          args: '/d:sonar.projectKey= ${{ secrets.SONAR_PROJECT_KEY }} /d:sonar.organization= ${{ secrets.ORGANIZATION_KEY }} /d:sonar.host.url=https://sonarcloud.io'
+          args: '/d:sonar.projectKey=NikolaNovosel_TestAutomationFramework /d:sonar.organization=nikola-novosel /d:sonar.host.url=https://sonarcloud.io'
           
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
