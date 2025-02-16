@@ -95,14 +95,10 @@ jobs:
       - name: Install SonarScanner tool
         run: dotnet tool install --global dotnet-sonarscanner
 
-      - name: Build and analyze with SonarCloud
+      - name: SonarQube Scan
+        uses: sonarsource/sonarcloud-github-action@v4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          dotnet sonarscanner begin /k:"NikolaNovosel_TestAutomationFramework" /d:sonar.login=$SONAR_TOKEN /d:sonar.host.url="http://localhost:9000"
-          dotnet build --no-restore
-          dotnet test --no-restore
-          dotnet sonarscanner end /d:sonar.login=$SONAR_TOKEN
           
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
