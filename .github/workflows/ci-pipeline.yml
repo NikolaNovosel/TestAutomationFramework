@@ -94,14 +94,20 @@ jobs:
 
       - name: Install SonarScanner tool
         run: dotnet tool install --global dotnet-sonarscanner
-
+        
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@v2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          args: '/d:sonar.projectKey=NikolaNovosel_TestAutomationFramework /d:sonar.organization=nikola-novosel /d:sonar.host.url=https://sonarcloud.io'
-          
+          args: '-D:sonar.projectKey=NikolaNovosel_TestAutomationFramework -D:sonar.organization=nikola-novosel -D:sonar.host.url=https://sonarcloud.io'
+
+      - name: Run UI Tests
+        run: dotnet test --no-build --filter Category=UI --logger "trx;LogFileName=ui-tests.trx" --results-directory TestResults
+        env:
+          BROWSER: ${{ github.event.inputs.browser }}
+        working-directory: ./Tests
+        
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
         with:
