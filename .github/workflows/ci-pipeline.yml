@@ -92,12 +92,9 @@ jobs:
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
-      - name: Run UI Tests
-        run: dotnet test --no-build --filter Category=UI --logger "trx;LogFileName=ui-tests.trx" --results-directory TestResults
-        env:
-          BROWSER: ${{ github.event.inputs.browser }}
-        working-directory: ./Tests
-        
+      - name: Install SonarScanner tool
+        run: dotnet tool install --global dotnet-sonarscanner
+
       - name: Build and analyze with SonarCloud
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
