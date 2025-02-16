@@ -1,5 +1,4 @@
 ﻿using Core.Data;
-using Core.Helper;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
@@ -26,8 +25,6 @@ namespace Core.Singleton
         internal static FirefoxOptions GetFirefoxOptions()
         {
             var firefoxOptions = new FirefoxOptions();
-            firefoxOptions.AddArgument("--no-sandbox");
-            firefoxOptions.AddArgument("--disable-dev-shm-usage");
             firefoxOptions.AddArgument("--headless");
             firefoxOptions.SetPreference("browser.download.folderList", 2);
             firefoxOptions.SetPreference("browser.download.dir", Location.DownloadDir);
