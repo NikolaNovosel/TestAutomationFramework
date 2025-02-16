@@ -1,5 +1,8 @@
 name: CI Pipeline for API & UI Tests
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
