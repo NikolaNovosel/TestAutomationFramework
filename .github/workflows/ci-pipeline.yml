@@ -99,7 +99,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          dotnet sonarscanner begin /k:"NikolaNovosel_TestAutomationFramework" /d:sonar.login=$SONAR_TOKEN
+          dotnet sonarscanner begin /k:"NikolaNovosel_TestAutomationFramework" /d:sonar.login=$SONAR_TOKEN /d:sonar.host.url="http://localhost:9000"
           dotnet build --no-restore
           dotnet test --no-restore
           dotnet sonarscanner end /d:sonar.login=$SONAR_TOKEN
