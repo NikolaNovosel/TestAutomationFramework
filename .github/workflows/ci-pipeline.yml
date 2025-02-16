@@ -99,6 +99,9 @@ jobs:
         uses: sonarsource/sonarcloud-github-action@v4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          ORGANIZATION_KEY: ${{ secrets.ORGANIZATION_KEY }}
+          SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
           
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
