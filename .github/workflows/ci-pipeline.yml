@@ -100,7 +100,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          args: '-D:sonar.projectKey=NikolaNovosel_TestAutomationFramework -D:sonar.organization=nikola-novosel -D:sonar.host.url=https://sonarcloud.io -X'
+          args: '-Dsonar.projectKey=NikolaNovosel_TestAutomationFramework -Dsonar.organization=nikola-novosel -Dsonar.host.url=https://sonarcloud.io -X'
 
       - name: Run UI Tests
         run: dotnet test --no-build --filter Category=UI --logger "trx;LogFileName=ui-tests.trx" --results-directory TestResults
