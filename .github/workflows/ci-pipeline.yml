@@ -47,15 +47,14 @@ jobs:
           name: api-test-results
           path: TestResults
 
-      - name: Extract Test Results and Update Summary
+      - name: Parse Test Results and Update Summary
         run: |
-          dotnet tool install --global trx2junit
-          trx2junit TestResults.trx TestResults.xml
-      
-          total_tests=$(xmllint --xpath "count(//testcase)" TestResults.xml)
-          passed_tests=$(xmllint --xpath "count(//testcase[not(@result='Failed')])" TestResults.xml)
-          failed_tests=$(($total_tests - $passed_tests))
-      
+          sudo apt-get install jq
+        
+          total_tests=$(xmllint --xpath "count(//testcase)" TestResults/test_results.trx)
+          passed_tests=$(xmllint --xpath "count(//testcase[not(@result='Failed')])" TestResults/test_results.trx)
+          failed_tests=$((total_tests - passed_tests))
+
           echo "### Test Results" >> $GITHUB_STEP_SUMMARY
           echo "Total: $total_tests, Passed: $passed_tests, Failed: $failed_tests" >> $GITHUB_STEP_SUMMARY
  ui-tests:
