@@ -23,7 +23,6 @@ jobs:
       runs-on: ubuntu-latest
       permissions:
          checks: write
-      
       steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -41,6 +40,9 @@ jobs:
         
       - name: Run API Tests
         run: dotnet test --no-build --filter Category=API --logger trx --results-directory TestResults
+
+      - name: Add Summary
+        run: echo "### ✅ Tests Passed" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload API test results
         uses: actions/upload-artifact@v4
