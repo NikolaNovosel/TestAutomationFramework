@@ -47,6 +47,9 @@ jobs:
           name: api-test-results
           path: TestResults
 
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
       - name: Parse Test Results and Update Summary
         run: |
           sudo apt-get install jq
