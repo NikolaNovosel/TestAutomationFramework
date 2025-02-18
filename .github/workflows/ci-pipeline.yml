@@ -21,6 +21,8 @@ jobs:
  api-tests:
       name: Build and run API tests
       runs-on: ubuntu-latest
+      permissions:
+         checks: write
       
       steps:
       - name: Checkout Repository
