@@ -41,8 +41,16 @@ jobs:
       - name: Run API Tests
         run: dotnet test --no-build --filter Category=API --logger trx --results-directory TestResults
 
-      - name: Add Summary
-        run: echo "### ✅ Tests Passed" >> $GITHUB_STEP_SUMMARY
+      - name: Extract test results and update summary
+        run: |
+          TEST_RESULT=$(tail -n 20 result.log | grep -oP '(?<=\()[0-9]+(?= tests?)' | head -n 1)
+          PASSED=$(tail -n 20 result.log | grep -oP '(?<=passed=)[0-9]+' | head -n 1)
+          FAILED=$(tail -n 20 result.log | grep -oP '(?<=failed=)[0-9]+' | head -n 1)
+          SKIPPED=$(tail -n 20 result.log | grep -oP '(?<=skipped=)[0-9]+' | head -n 1)
+          TOTAL=$(($PASSED + $FAILED + $SKIPPED))
+
+          echo "### Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "Total: $TOTAL, Passed: $PASSED, Failed: $FAILED, Skipped: $SKIPPED" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload API test results
         uses: actions/upload-artifact@v4
