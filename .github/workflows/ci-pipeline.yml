@@ -40,23 +40,24 @@ jobs:
         
       - name: Run API Tests
         run: dotnet test --no-build --filter Category=API --logger trx --results-directory TestResults
-
-      - name: Extract Test Results and Update Summary
-        run: |
-          dotnet tool install --global trx2junit
-          trx2junit test_results.trx test_results.xml
       
-          total_tests=$(xmllint --xpath "count(//testcase)" test_results.xml)
-          passed_tests=$(xmllint --xpath "count(//testcase[not(@result='Failed')])" test_results.xml)
-          failed_tests=$(($total_tests - $passed_tests))
-      
-          echo "### Test Results" >> $GITHUB_STEP_SUMMARY
-          echo "Total: $total_tests, Passed: $passed_tests, Failed: $failed_tests" >> $GITHUB_STEP_SUMMARY
       - name: Upload API test results
         uses: actions/upload-artifact@v4
         with:
           name: api-test-results
           path: TestResults
+
+      - name: Extract Test Results and Update Summary
+        run: |
+          dotnet tool install --global trx2junit
+          trx2junit test_results.trx TestResults.xml
+      
+          total_tests=$(xmllint --xpath "count(//testcase)" TestResults.xml)
+          passed_tests=$(xmllint --xpath "count(//testcase[not(@result='Failed')])" TestResults.xml)
+          failed_tests=$(($total_tests - $passed_tests))
+      
+          echo "### Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "Total: $total_tests, Passed: $passed_tests, Failed: $failed_tests" >> $GITHUB_STEP_SUMMARY
  ui-tests:
     name: Build and run UI tests
     runs-on: ubuntu-latest
