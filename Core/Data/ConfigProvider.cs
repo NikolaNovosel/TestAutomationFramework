@@ -22,9 +22,6 @@ namespace Core.Data
         // Provide path to the GitActions downloaded directory
         public static readonly string GitActionsDownloadDir = DownloadDir["gitActions"]!;
 
-        // Provide path to the GitActions screenshot directory
-        public static readonly string GitActionsScreenshot = ConfigReader["gitActionsScreenshot"]!;
-
         // Provide the downloaded file name
         public static readonly string? FileName = ConfigReader["fileName"];
 
