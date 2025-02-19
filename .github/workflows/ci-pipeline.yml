@@ -89,7 +89,7 @@ jobs:
         
       - name: Ensure screenshot directory exists
         run: mkdir -p ./Tests/Screenshot
-
+        
       - name: Set correct permissions
         run: |
           chmod -R 755 ./Tests/bin
