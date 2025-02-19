@@ -17,10 +17,11 @@ on:
           - chrome
           - firefox
           - edge
-env:
-  BROWSER: ${{ github.event.inputs.browser }}
-  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
+env:
+  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  BROWSER: ${{ github.event.inputs.browser }}
+  
 jobs:
  api-tests:
       name: Build and run API tests
@@ -50,6 +51,7 @@ jobs:
         with:
           name: api-test-results
           path: TestResults
+          
  ui-tests:
     name: Build and run UI tests
     runs-on: ubuntu-latest
