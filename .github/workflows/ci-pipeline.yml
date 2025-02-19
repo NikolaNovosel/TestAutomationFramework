@@ -86,7 +86,10 @@ jobs:
       - name: Build 
         run: dotnet build --no-restore 
         working-directory: ./Tests
-
+        
+      - name: Ensure screenshot directory exists
+        run: mkdir -p ./Tests/Screenshot
+        
       - name: Set correct permissions
         run: |
           chmod -R 755 ./Tests/bin
