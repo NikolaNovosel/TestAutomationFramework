@@ -29,7 +29,7 @@ namespace Tests.ApplicationTest
         protected IWebDriver? Driver => _driver;
 
         // Stores access to the Rest instance
-        private Rest _rest;
+        private Rest? _rest;
 
         // Provides access to the Rest instance
         protected Rest? Rest => _rest;
