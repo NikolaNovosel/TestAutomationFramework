@@ -106,7 +106,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
 
       - name: Run UI Tests
-        run: dotnet test --no-build --filter Category=UI --logger "trx;LogFileName=ui-tests.trx" --results-directory TestResults
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
