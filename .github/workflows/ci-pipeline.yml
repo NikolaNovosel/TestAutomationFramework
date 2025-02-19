@@ -1,5 +1,8 @@
 name: CI Pipeline for API & UI Tests
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -55,13 +58,7 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'
-
-      - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@master
-        env:
-         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} //Sonar Token generated 
-         SONAR_HOST_URL: http://127.0.0.1:9000
-
+          
       - name: Manually Install Latest Chrome (133)
         run: |
           wget -q -O google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -95,12 +92,22 @@ jobs:
           chmod -R 755 ./Tests/bin
           chmod -R 755 ./Tests/obj
 
+      - name: Install SonarScanner tool
+        run: dotnet tool install --global dotnet-sonarscanner
+        
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@v2
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: '-Dsonar.projectKey=NikolaNovosel_TestAutomationFramework -Dsonar.organization=nikola-novosel -Dsonar.host.url=https://sonarcloud.io -X'
+
       - name: Run UI Tests
         run: dotnet test --no-build --filter Category=UI --logger "trx;LogFileName=ui-tests.trx" --results-directory TestResults
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
-
+        
       - name: Upload UI Test Results
         uses: actions/upload-artifact@v4
         with:
