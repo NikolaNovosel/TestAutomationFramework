@@ -40,13 +40,13 @@ jobs:
         run: dotnet build --no-restore 
         
       - name: Run API Tests
-        run: dotnet test --no-build --filter Category=API --logger trx --results-directory ApiTestResults
+        run: dotnet test --no-build --filter Category=API --logger trx --results-directory TestResults
       
       - name: Upload API test results
         uses: actions/upload-artifact@v4
         with:
           name: api-test-results
-          path: ApiTestResults
+          path: TestResults
           
  ui-tests:
     name: Build and run UI tests
@@ -106,7 +106,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
 
       - name: Run UI Tests
-        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory UITestResults
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
@@ -115,7 +115,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-results
-          path: UITestResults
+          path: "**/TestResults"
 
       - name: Upload UI Test Screenshots
         if: failure()
