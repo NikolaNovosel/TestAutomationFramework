@@ -88,7 +88,7 @@ jobs:
         working-directory: ./Tests
         
       - name: Ensure screenshot directory exists
-        run: mkdir -p ./Tests/screenshot
+        run: mkdir -p ./Tests/Screenshot
 
       - name: Set correct permissions
         run: |
@@ -100,10 +100,10 @@ jobs:
         
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@v2
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: '-Dsonar.projectKey=NikolaNovosel_TestAutomationFramework -Dsonar.organization=nikola-novosel -Dsonar.host.url=https://sonarcloud.io -X'
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
 
       - name: Run UI Tests
         run: dotnet test --no-build --filter Category=UI --logger "trx;LogFileName=ui-tests.trx" --results-directory TestResults
@@ -122,4 +122,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-screenshots
-          path: ./Tests/screenshot
+          path: ./Tests/Screenshot
