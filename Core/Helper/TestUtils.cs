@@ -51,7 +51,9 @@ namespace Core.Helper
         public TestUtils TakeScreenShot()
         {
             var screenshot = ((ITakesScreenshot)driver!).GetScreenshot();
-            var screenshotPath = Path.Combine(Location.ScreenShot, "screenshot", $"screenshot_{DateTime.Now:yyyyMMdd_HHmmss}.png");
+            var screenshotPath = IsGitActions() ? 
+                Path.Combine(Location.ScreenShot, "Screenshot", $"screenshot_{DateTime.Now:yyyyMMdd_HHmmss}.png") : 
+                Path.Combine(Location.ScreenShot, "screenshot", $"screenshot_{DateTime.Now:yyyyMMdd_HHmmss}.png");
             screenshot.SaveAsFile(screenshotPath);
 
             return this;
