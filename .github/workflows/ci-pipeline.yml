@@ -88,7 +88,7 @@ jobs:
         working-directory: ./Tests
         
       - name: Ensure screenshot directory exists
-        run: mkdir -p ./Tests/Screenshot
+        run: mkdir -p ./Tests/screenshot
 
       - name: Set correct permissions
         run: |
@@ -122,4 +122,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-screenshots
-          path: ./Tests/Screenshot
+          path: ./Tests/screenshot
