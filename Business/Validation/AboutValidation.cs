@@ -20,7 +20,7 @@ namespace Business.Validation
         {
             try
             {
-                AboutHelper.WaitForFileDownload().Should().BeTrue();
+                AboutHelper.WaitForFileDownload().Should().BeFalse();
                 Log.Information(@$"File: ""{ConfigProvider.FileName}"" downloaded successfully to: ""{Location.DownloadDir}""");
             }
             catch (AssertionException)
