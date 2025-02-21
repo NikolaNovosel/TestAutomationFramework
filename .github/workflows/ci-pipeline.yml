@@ -87,8 +87,7 @@ jobs:
 
       - name: Set permissions
         run: |
-             chmod -R 755 ./Tests/bin
-             chmod -R 755 ./Tests/debug
+             chmod -R 755 ./Tests/bin/debug
       - name: Install SonarScanner tool
         run: dotnet tool install --global dotnet-sonarscanner
         
