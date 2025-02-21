@@ -62,7 +62,7 @@ jobs:
         with:
           dotnet-version: '8.0.x'
           
-      - name: Install Firefox
+      - name: Install Chrome
         if: ${{ github.event.inputs.browser == 'chrome' }}
         uses: browser-actions/setup-chrome@v1
         with:
