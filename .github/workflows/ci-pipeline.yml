@@ -22,8 +22,7 @@ jobs:
  api-tests:
       name: Build and run API tests
       runs-on: ubuntu-latest
-      permissions:
-         checks: write
+
       steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -53,6 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: api-tests
     if: always()
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -62,15 +62,14 @@ jobs:
         with:
           dotnet-version: '8.0.x'
           
-      - name: Manually Install Latest Chrome (133)
-        run: |
-          wget -q -O google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome.deb || sudo apt-get -f install -y
-          rm google-chrome.deb
-
-      - name: Verify Chrome Version
-        run: google-chrome --version
-
+      - name: Install Firefox
+        if: ${{ github.event.inputs.browser == 'chrome' }}
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 'stable'
+          install-dependencies: true
+          install-chromedriver: true
+        
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
         uses: browser-actions/setup-firefox@latest
