@@ -85,6 +85,10 @@ jobs:
       - name: Ensure screenshot directory exists
         run: mkdir -p ./Tests/Screenshot
 
+      - name: Set permissions
+        run: |
+             chmod -R 755 .Tests/bin
+             chmod -R 755 .Tests/debug
       - name: Install SonarScanner tool
         run: dotnet tool install --global dotnet-sonarscanner
         
