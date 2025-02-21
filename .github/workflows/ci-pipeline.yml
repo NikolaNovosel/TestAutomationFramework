@@ -64,11 +64,7 @@ jobs:
           
       - name: Install Chrome
         if: ${{ github.event.inputs.browser == 'chrome' }}
-        uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: 'stable'
-          install-dependencies: true
-          install-chromedriver: true
+        uses: browser-actions/setup-chrome@latest
         
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
