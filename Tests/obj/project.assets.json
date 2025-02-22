@@ -31,19 +31,6 @@
           }
         }
       },
-      "JetBrains.Annotations/2024.3.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/JetBrains.Annotations.dll": {
-            "related": ".deps.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/JetBrains.Annotations.dll": {
-            "related": ".deps.json;.xml"
-          }
-        }
-      },
       "Microsoft.CodeCoverage/17.12.0": {
         "type": "package",
         "compile": {
@@ -835,7 +822,6 @@
         "dependencies": {
           "Core": "1.0.0",
           "FluentAssertions": "8.0.1",
-          "JetBrains.Annotations": "2024.3.0",
           "Selenium.Support": "4.28.0",
           "Selenium.WebDriver": "4.28.0"
         },
@@ -920,29 +906,6 @@
         "lib/netstandard2.1/FluentAssertions.pdb",
         "lib/netstandard2.1/FluentAssertions.xml",
         "tools/init.ps1"
-      ]
-    },
-    "JetBrains.Annotations/2024.3.0": {
-      "sha512": "ox5pkeLQXjvJdyAB4b2sBYAlqZGLh3PjSnP1bQNVx72ONuTJ9+34/+Rq91Fc0dG29XG9RgZur9+NcP4riihTug==",
-      "type": "package",
-      "path": "jetbrains.annotations/2024.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "jetbrains.annotations.2024.3.0.nupkg.sha512",
-        "jetbrains.annotations.nuspec",
-        "lib/net20/JetBrains.Annotations.dll",
-        "lib/net20/JetBrains.Annotations.xml",
-        "lib/netstandard1.0/JetBrains.Annotations.deps.json",
-        "lib/netstandard1.0/JetBrains.Annotations.dll",
-        "lib/netstandard1.0/JetBrains.Annotations.xml",
-        "lib/netstandard2.0/JetBrains.Annotations.deps.json",
-        "lib/netstandard2.0/JetBrains.Annotations.dll",
-        "lib/netstandard2.0/JetBrains.Annotations.xml",
-        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.dll",
-        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml",
-        "readme.md"
       ]
     },
     "Microsoft.CodeCoverage/17.12.0": {

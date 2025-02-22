@@ -26,6 +26,6 @@ namespace Core.Data
         public static readonly string ScreenShot = _projectPath;
 
         // Determine the correct download path
-        public static readonly string DownloadDir = TestUtils.IsGitActions() ? ConfigProvider.GitActionsDownloadDir : ConfigProvider.WebDriverDownloadDir;
+        public static string DownloadDir = TestUtils.IsGitActions() ? ConfigProvider.GitActionsDownloadDir : ConfigProvider.WebDriverDownloadDir;
     }
 }

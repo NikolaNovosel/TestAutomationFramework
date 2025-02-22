@@ -1,7 +1,5 @@
 ﻿using Business.ApplicationInterface;
-using Core.Helper;
 using FluentAssertions;
-using JetBrains.Annotations;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using Serilog;
@@ -27,7 +25,6 @@ namespace Business.Validation
         private string GetCareersArticleText() => _careersPage.GetCareersArticleText();
 
         // Validates that the job title text contains the specified keyword.
-        [AssertionMethod]
         public CareersValidation ValidateCareersArticleTextContainKeyword(string keyword)
         {
             try

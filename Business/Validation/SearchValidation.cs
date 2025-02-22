@@ -1,6 +1,5 @@
 ﻿using Business.ApplicationInterface;
 using FluentAssertions;
-using JetBrains.Annotations;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using Serilog;
@@ -29,7 +28,6 @@ namespace Business.Validation
         public bool CheckIfAllLinksContainKeyword(string keyword) => _searchPage.CheckIfAllLinksContainKeyword(keyword);
 
         // Validates that not all links contain the keyword "BLOCKCHAIN" and Automation
-        [AssertionMethod]
         public SearchValidation ValidateAllLinksNotContainOtherKeywords(string keyword)
         {
             try
@@ -51,7 +49,6 @@ namespace Business.Validation
         }
 
         // Validates that all links contain the keyword "Cloud"
-        [AssertionMethod]
         public SearchValidation ValidateAllLinksContainTheKeywordCloud(string keyword)
         {
             try
@@ -73,7 +70,6 @@ namespace Business.Validation
         }
 
         // Asserts the last link in search results is displayed  
-        [AssertionMethod]
         public SearchValidation ValidateLastLinkResultsDisplayed()
         {
             try

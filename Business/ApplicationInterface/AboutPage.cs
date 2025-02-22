@@ -1,5 +1,4 @@
-﻿using Core.Helper;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.Extensions;
 using Serilog;
 

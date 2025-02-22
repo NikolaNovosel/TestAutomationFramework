@@ -1,6 +1,5 @@
 ﻿using Business.ApplicationInterface;
 using FluentAssertions;
-using JetBrains.Annotations;
 using Serilog;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -29,7 +28,6 @@ namespace Business.Validation
         public string GetInsideArticleText() => _insightPage.GetInsideArticleText();
 
         /// Validates that the trimmed text of the main page article matches the text of the inside article.
-        [AssertionMethod]
         public InsightValidation ValidateMainPageArticleTextTrimIsEqualToInsideArticleText(string mainPageArticleTextTrim)
         {
             try

@@ -129,8 +129,8 @@ C:\Users\DELL\IdeaProjects\TestAutomationFramework\Tests\obj\Debug\net8.0\Tests.
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\Tests\obj\Debug\net8.0\Tests.genruntimeconfig.cache
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\Tests\obj\Debug\net8.0\ref\Tests.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Tests
-C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\testhost.dll
+C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
@@ -146,7 +146,6 @@ C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\T
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\Tests.pdb
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\AngleSharp.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\FluentAssertions.dll
-C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\JetBrains.Annotations.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -166,6 +165,7 @@ C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\T
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\nunit.framework.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\RestSharp.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\WebDriver.Support.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\WebDriver.dll
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\Serilog.dll
@@ -259,4 +259,3 @@ C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\T
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\obj\Debug\net8.0\Tests.pdb
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\obj\Debug\net8.0\Tests.genruntimeconfig.cache
 C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\obj\Debug\net8.0\ref\Tests.dll
-C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\bin\Debug\net8.0\RestSharp.dll

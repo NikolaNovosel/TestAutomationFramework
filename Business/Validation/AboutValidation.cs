@@ -1,8 +1,6 @@
 ﻿using Core.Data;
 using Core.Helper;
-using Core.Singleton;
 using FluentAssertions;
-using JetBrains.Annotations;
 using NUnit.Framework;
 using Serilog;
 
@@ -15,7 +13,6 @@ namespace Business.Validation
     public class AboutValidation
     {
         // Validates that a file has been successfully downloaded.
-        [AssertionMethod]
         public AboutValidation ValidateFileDownloaded()
         {
             try
