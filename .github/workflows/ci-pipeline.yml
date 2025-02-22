@@ -22,8 +22,7 @@ jobs:
  api-tests:
       name: Build and run API tests
       runs-on: ubuntu-latest
-      permissions:
-         checks: write
+
       steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -53,6 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: api-tests
     if: always()
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -62,15 +62,10 @@ jobs:
         with:
           dotnet-version: '8.0.x'
           
-      - name: Manually Install Latest Chrome (133)
-        run: |
-          wget -q -O google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome.deb || sudo apt-get -f install -y
-          rm google-chrome.deb
-
-      - name: Verify Chrome Version
-        run: google-chrome --version
-
+      - name: Install Chrome
+        if: ${{ github.event.inputs.browser == 'chrome' }}
+        uses: browser-actions/setup-chrome@latest
+        
       - name: Install Firefox
         if: ${{ github.event.inputs.browser == 'firefox' }}
         uses: browser-actions/setup-firefox@latest
@@ -89,12 +84,12 @@ jobs:
         
       - name: Ensure screenshot directory exists
         run: mkdir -p ./Tests/Screenshot
-        
-      - name: Set correct permissions
-        run: |
-          chmod -R 755 ./Tests/bin
-          chmod -R 755 ./Tests/obj
 
+      - name: Set permissions
+        run: |
+             chmod -R 755 ./Tests/bin
+             chmod -R 755 ./Tests/obj
+             
       - name: Install SonarScanner tool
         run: dotnet tool install --global dotnet-sonarscanner
         
@@ -106,7 +101,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
 
       - name: Run UI Tests
-        run: dotnet test --no-build --filter Category=UI --logger "trx;LogFileName=ui-tests.trx" --results-directory TestResults
+        run: dotnet test --no-build --filter Category=UI --logger trx --results-directory TestResults
         env:
           BROWSER: ${{ github.event.inputs.browser }}
         working-directory: ./Tests
@@ -115,7 +110,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-results
-          path: "**/TestResults/*"
+          path: "**/TestResults"
 
       - name: Upload UI Test Screenshots
         if: failure()
