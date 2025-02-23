@@ -13,17 +13,20 @@ namespace Core.Data
         // Build the configuration and assign it to the Configuration property
         private static readonly IConfiguration ConfigReader = _builder.Build();
 
+        // Provide access to Url section in appsettings.json
+        private static readonly IConfiguration GetUrl = ConfigReader.GetSection("url");
+
         // Provide path to the GitActions downloaded directory
-        public static readonly string GitActionsDownloadDir = ConfigReader["gitActionsDownloadDir"]!;
+        public static readonly string GitActionsDownloadDir = ConfigReader["runnerDownloadDir"]!;
 
         // Provide the downloaded file name
         public static readonly string? FileName = ConfigReader["fileName"];
 
         // Provide the WebDriver url
-        public static readonly string? Url = ConfigReader["url"];
+        public static readonly string? UiUrl = GetUrl["ui"];
 
         // Provide the Api url
-        public static readonly string? Api = ConfigReader["api"];
+        public static readonly string? ApiUrl = GetUrl["api"];
 
         // Provide the Api endpoint users
         public static readonly string? Users = ConfigReader["endpoint:0"];

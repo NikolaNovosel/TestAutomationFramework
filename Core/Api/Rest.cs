@@ -10,7 +10,7 @@ namespace Core.Api
     public class Rest
     {
         // RestClient configured with base API URL from configuration
-        private readonly RestClient _client = new(ConfigProvider.Api!);
+        private readonly RestClient _client = new(ConfigProvider.ApiUrl!);
 
         // Send the get request for the type and get the response for the type
         public async Task<RestResponse<List<T>>> GetAsync<T>()

@@ -85,7 +85,7 @@ namespace Core.Singleton
         // Set the WebDriver Url
         public static void GetUrl()
         {
-            _driver!.Url = ConfigProvider.Url;
+            _driver!.Url = ConfigProvider.UiUrl;
         }
     }
 }

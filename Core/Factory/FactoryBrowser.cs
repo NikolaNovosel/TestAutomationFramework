@@ -62,7 +62,7 @@ namespace Core.Factory
         // Set the WebDriver Url
         public static void GetUrl()
         {
-            _driver!.Url = ConfigProvider.Url;
+            _driver!.Url = ConfigProvider.UiUrl;
         }
 
         // Returns the appropriate browser instance based on the driver kind.
