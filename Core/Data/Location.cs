@@ -22,7 +22,7 @@ namespace Core.Data
         // Path to api log data text
         public static readonly string ApiLogs = Path.Combine(_projectPath, "log_api", "log.txt");
 
-        // Path to api log data text
+        // Path to download directory
         public static readonly string Download = Path.Combine(_projectPath, "download");
 
         // Provide the path to main project directory
