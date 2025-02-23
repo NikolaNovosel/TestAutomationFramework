@@ -153,10 +153,6 @@
               "target": "Package",
               "version": "[4.2.0, )"
             },
-            "Serilog.Formatting.Compact": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
             "Serilog.Sinks.Console": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -258,10 +254,6 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.28.0, )"
-            },
-            "Serilog.Sinks.Console": {
-              "target": "Package",
-              "version": "[6.0.0, )"
             }
           },
           "imports": [
