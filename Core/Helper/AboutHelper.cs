@@ -1,5 +1,4 @@
 ﻿using Core.Data;
-using Core.Singleton;
 
 namespace Core.Helper
 {
@@ -9,7 +8,7 @@ namespace Core.Helper
     public static class AboutHelper
     {
         // Path to the downloaded file
-        private static readonly string FilePath =
+        private static string FilePath =>
         Path.Combine(Location.DownloadDir, ConfigProvider.FileName!);
 
         // Timestamp marking the start of the file download wait period

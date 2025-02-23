@@ -2,7 +2,6 @@
 using OpenQA.Selenium;
 using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager;
-using Core.Singleton;
 using Core.Data;
 
 namespace Core.Factory

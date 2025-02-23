@@ -22,10 +22,13 @@ namespace Core.Data
         // Path to api log data text
         public static readonly string ApiLogs = Path.Combine(_projectPath, "log_api", "log.txt");
 
+        // Path to api log data text
+        public static readonly string Download = Path.Combine(_projectPath, "download");
+
         // Provide the path to main project directory
         public static readonly string ScreenShot = _projectPath;
 
         // Determine the correct download path
-        public static string DownloadDir = TestUtils.IsGitActions() ? ConfigProvider.GitActionsDownloadDir : ConfigProvider.WebDriverDownloadDir;
+        public static string DownloadDir => TestUtils.IsGitActions() ? ConfigProvider.GitActionsDownloadDir : Download;
     }
 }

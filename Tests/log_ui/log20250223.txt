@@ -1,0 +1,12 @@
+2025-02-23 07:56:29.672 +01:00 [INF] Navigates to the About page
+2025-02-23 07:56:33.207 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-23 07:56:33.964 +01:00 [INF] Try to click the download button
+2025-02-23 07:56:34.453 +01:00 [INF] The download button clicked
+2025-02-23 07:56:34.453 +01:00 [INF] About page interactions completed successfully
+2025-02-23 07:56:54.203 +01:00 [ERR] Failed to validate the file: "EPAM_Corporate_Overview_Q4FY-2024" is downloaded to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\download"
+2025-02-23 08:30:37.944 +01:00 [INF] Navigates to the About page
+2025-02-23 08:30:41.167 +01:00 [INF] Scrolls to "Epam At Glance section"
+2025-02-23 08:30:42.310 +01:00 [INF] Try to click the download button
+2025-02-23 08:30:42.521 +01:00 [INF] The download button clicked
+2025-02-23 08:30:42.521 +01:00 [INF] About page interactions completed successfully
+2025-02-23 08:30:43.001 +01:00 [INF] File: "EPAM_Corporate_Overview_Q4FY-2024.pdf" downloaded successfully to: "C:\Users\DELL\IdeaProjects\TestAutomationFramework\TestAutomationFramework_git\Tests\download"
