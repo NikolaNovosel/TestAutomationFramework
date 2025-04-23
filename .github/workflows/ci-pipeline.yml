@@ -1,7 +1,5 @@
 name: CI Pipeline for API & UI Tests
 on:
-  schedule:
-    - cron: "0 2 * * *"
   push:
     branches:
       - main
