@@ -13,9 +13,9 @@ namespace Tests.ApplicationTest
     [Parallelizable]
     internal class ApiTest : Test
     {
-        //Tasks #1. Validate that the list of users can be received successfully
+        //Validate that the list of users can be received successfully
         [Test]
-        public async Task Task1()
+        public async Task GetUser()
         {
             Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.ApiUrl + ConfigProvider.Users);
 
@@ -27,9 +27,9 @@ namespace Tests.ApplicationTest
             ApiValidation.ValidateOkResponse(response);
         }
 
-        //Tasks #2. Validate response header for a list of users 
+        //Validate response header for a list of users 
         [Test]
-        public async Task Task2()
+        public async Task UsersHeaders()
         {
             Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.ApiUrl + ConfigProvider.Users);
 
@@ -41,9 +41,9 @@ namespace Tests.ApplicationTest
             ApiValidation.ValidateOkResponse(response);
         }
 
-        //Tasks #3. Validate response header for a list of users 
+        //Validate response header for a list of users 
         [Test]
-        public async Task Task3()
+        public async Task GetUsers()
         {
             Log.Information("Executing GET request for User at {Endpoint}", ConfigProvider.ApiUrl + ConfigProvider.Users);
 
@@ -58,9 +58,9 @@ namespace Tests.ApplicationTest
             ApiValidation.ValidateOkResponse(response);
         }
 
-        //Tasks #4. Validate that user can be created
+        //Validate that user can be created
         [Test]
-        public async Task Task4()
+        public async Task UserCreated()
         {
             var user = new User
             {
@@ -79,9 +79,9 @@ namespace Tests.ApplicationTest
             ApiValidation.ValidateOkResponse(response);
         }
 
-        //Tasks #5. Validate that user is notified if resource doesn’t exist
+        //Validate that user is notified if resource doesn’t exist
         [Test]
-        public async Task Task5()
+        public async Task NotFound()
         {
             Log.Information("Executing GET request for invalid end point at {Endpoint}", ConfigProvider.ApiUrl + ConfigProvider.Invalid);
 
