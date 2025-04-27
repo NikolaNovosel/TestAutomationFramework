@@ -26,18 +26,6 @@ namespace Business.Validation
 
                 throw;
             }
-
-            try
-            {
-                response.ErrorMessage.Should().BeNullOrEmpty();
-                Log.Information("Successfully validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage ?? "None");
-            }
-            catch (AssertionException)
-            {
-                Log.Error("Fail to validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage);
-
-                throw;
-            }
         }
 
         // Validates that the response status code is Created (201) and there are no error messages
@@ -55,7 +43,9 @@ namespace Business.Validation
 
                 throw;
             }
-
+        }
+        public static void ValidateNullErrorMessage(RestResponse<List<User>> response)
+        {
             try
             {
                 response.ErrorMessage.Should().BeNullOrEmpty();
@@ -63,7 +53,36 @@ namespace Business.Validation
             }
             catch (AssertionException)
             {
-                Log.Information("Fail to validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage ?? "None");
+                Log.Error("Fail to validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage);
+
+                throw;
+            }
+        }
+        public static void ValidateNullErrorMessage(RestResponse<User> response)
+        {
+            try
+            {
+                response.ErrorMessage.Should().BeNullOrEmpty();
+                Log.Information("Successfully validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage ?? "None");
+            }
+            catch (AssertionException)
+            {
+                Log.Error("Fail to validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage);
+
+                throw;
+            }
+        }
+
+        public static void ValidateNullErrorMessage(RestResponse response)
+        {
+            try
+            {
+                response.ErrorMessage.Should().BeNullOrEmpty();
+                Log.Information("Successfully validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage ?? "None");
+            }
+            catch (AssertionException)
+            {
+                Log.Error("Fail to validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage);
 
                 throw;
             }
@@ -227,18 +246,6 @@ namespace Business.Validation
             catch (AssertionException)
             {
                 Log.Error("Fail to validate Status Code - Expected: NotFound, Actual: {StatusCode}", response.StatusCode);
-
-                throw;
-            }
-
-            try
-            {
-                response.ErrorMessage.Should().BeNullOrEmpty();
-                Log.Information("Successfuly validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage ?? "None");
-            }
-            catch (AssertionException)
-            {
-                Log.Error("Fail to validate no error messages - Actual Error: {ErrorMessage}", response.ErrorMessage ?? "None");
 
                 throw;
             }

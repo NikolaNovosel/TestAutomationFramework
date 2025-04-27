@@ -25,6 +25,7 @@ namespace Tests.ApplicationTest
 
             ApiValidation.ValidateUser(response);
             ApiValidation.ValidateOkResponse(response);
+            ApiValidation.ValidateNullErrorMessage(response);
         }
 
         //Validate response header for a list of users 
@@ -39,6 +40,7 @@ namespace Tests.ApplicationTest
 
             ApiValidation.ValidateContentTypeHeader(response);
             ApiValidation.ValidateOkResponse(response);
+            ApiValidation.ValidateNullErrorMessage(response);
         }
 
         //Validate response header for a list of users 
@@ -56,6 +58,7 @@ namespace Tests.ApplicationTest
             ApiValidation.ValidateUsersNameAndUsername(response);
             ApiValidation.ValidateUsersCompanyName(response);
             ApiValidation.ValidateOkResponse(response);
+            ApiValidation.ValidateNullErrorMessage(response);
         }
 
         //Validate that user can be created
@@ -77,6 +80,7 @@ namespace Tests.ApplicationTest
             ApiValidation.ValidateResponseNotEmpty(response);
             ApiValidation.ValidateResponseContainsId(response);
             ApiValidation.ValidateOkResponse(response);
+            ApiValidation.ValidateNullErrorMessage(response);
         }
 
         //Validate that user is notified if resource doesn’t exist
@@ -90,6 +94,7 @@ namespace Tests.ApplicationTest
             Log.Information("Get request completed");
 
             ApiValidation.ValidateNotFoundResponse(response);
+            ApiValidation.ValidateNullErrorMessage(response);
         }
     }
 }
